@@ -224,9 +224,11 @@
           <h3>🎯 아이엔케이(주) 수주 가능성 순위 <span class="hint">추정 모델 · 가능성순 정렬</span></h3>
           <div class="ink-table-wrap" id="ink-ranking"></div>
           <div class="ink-note">
-            ※ 가능성(%)은 <b>분야 적합도(35)</b> + <b>용역 성격(30)</b> + <b>예산 규모(20)</b> + <b>발주처 친화도(15)</b> 를
-            가중 합산한 <b>추정치</b>이며, 실제 입찰 경쟁·평가위원 성향·컨소시엄 구성에 따라 달라집니다. 참고용으로만 활용하세요.
-            상단 필터(유형·키워드·지역 등)를 적용하면 순위도 함께 갱신됩니다.
+            ※ 아이엔케이(주) <b>실적 프로파일</b> 반영 모델 — 주력분야(농업·식량 정책/제도 + 스마트팜·원예 R&D),
+            적정 규모(<b>1억 미만 소형</b>), 주력 고객(공공기관·지자체).
+            <b>분야 적합도(30)</b> + <b>용역 성격(28)</b> + <b>예산 규모(22·소형 선호)</b> + <b>발주처 친화도(20)</b> 가중 합산.
+            <b>추정치</b>이며 실제 입찰 경쟁·평가위원 성향·컨소시엄 구성에 따라 달라집니다.
+            상단 필터를 적용하면 순위도 함께 갱신됩니다.
           </div>
         </div>
       </div>
@@ -534,44 +536,54 @@ function timelineChart(canvasId, items) {
     ]}, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:"bottom" } }, scales:{ y:{ beginAtZero:true, ticks:{ precision:0 } } } } });
 }
 
-// ── 아이엔케이(주) 수주 가능성 추정 ──
-// 분야 적합도(35) + 용역 성격(30) + 예산 규모(20) + 발주처 친화도(15)
+// ── 아이엔케이(주) 수주 가능성 추정 (실적 프로파일 반영) ──
+// INK 프로파일: ①주력=농업·식량 정책/제도 + 스마트팜·원예 기술R&D  ②적정규모=1억 미만 소형
+//               ③주력고객=공공기관·광역/기초 지자체
+// 배점: 분야 적합도(30) + 용역 성격(28) + 예산 규모(22, 소형 선호) + 발주처 친화도(20)
+const INK_CORE_KW = ["농업","식량","농촌","스마트팜","노지 스마트","노지스마트","원예"]; // 주력 키워드
 function winProbability(it) {
   const text = [it.title, it.description, it.bsns_div].filter(Boolean).join(" ");
   const reasons = [];
 
-  // 1) 분야 적합도 — 매칭 키워드 가중치 합(score) 기반, 최대 35
-  const fit = Math.min(35, Math.round((it.score || 0) * 3.5));
+  // 1) 분야 적합도 (30) — 키워드 가중치 기본 + INK 주력 키워드 보너스
   const mk = it.matched_keywords || [];
-  if (mk.length) reasons.push("분야 " + mk.slice(0,3).join("·"));
+  const coreHits = mk.filter(k => INK_CORE_KW.includes(k)).length;
+  const baseFit = Math.min(20, Math.round((it.score || 0) * 2));
+  const coreBonus = Math.min(10, coreHits * 5);
+  const fit = Math.min(30, baseFit + coreBonus);
+  if (mk.length) reasons.push((coreHits ? "주력분야 " : "분야 ") + mk.slice(0,3).join("·"));
 
-  // 2) 용역 성격 — 학술·정책연구일수록 INK 적합, 최대 30
-  let nature = 12, natLabel = "일반 용역";
-  if (/정책\s*연구|기본\s*계획|마스터플랜|중장기|종합\s*계획|전략\s*수립|타당성/.test(text)) { nature = 30; natLabel = "정책·계획·타당성"; }
-  else if (/학술|연구\s*용역|기초\s*연구|기획\s*연구|R&D|연구개발/.test(text))            { nature = 25; natLabel = "학술·연구개발"; }
-  else if (/실태\s*조사|조사\s*연구|모니터링|분석|진단|평가/.test(text))                  { nature = 18; natLabel = "조사·분석"; }
-  else if (/위탁\s*조사|안전\s*점검|점검|측량|이행|단순/.test(text))                      { nature = 8;  natLabel = "단순·위탁"; }
+  // 2) 용역 성격 (28) — INK 강점: 정책·제도 연구 + 기술 R&D
+  let nature = 10, natLabel = "일반 용역";
+  if (/정책\s*연구|제도\s*개선|기본\s*계획|마스터플랜|중장기|종합\s*계획|전략\s*수립|타당성|개선\s*방안|개정\s*방향/.test(text)) { nature = 28; natLabel = "정책·제도·계획"; }
+  else if (/학술|연구\s*용역|기초\s*연구|기획\s*연구|R&D|연구개발|개발\s*연구|마커|육종|품종/.test(text))                       { nature = 25; natLabel = "기술·연구개발"; }
+  else if (/실태\s*조사|조사\s*연구|모니터링|분석|진단|평가/.test(text))                                                       { nature = 15; natLabel = "조사·분석"; }
+  else if (/위탁\s*조사|안전\s*점검|점검|측량|이행|단순/.test(text))                                                           { nature = 6;  natLabel = "단순·위탁"; }
   reasons.push(natLabel);
 
-  // 3) 예산 규모 — INK 규모에 맞는 1~10억이 최적, 최대 20
-  let bScore = 10, bLabel = "예산 미공개";
+  // 3) 예산 규모 (22) — INK는 1억 미만 소형이 스위트스팟 (클수록 감점)
+  let bScore = 12, bLabel = "예산 미공개";
   const b = it.budget_amount;
   if (typeof b === "number" && b > 0) {
-    if (b >= 1e8 && b <= 10e8)                         { bScore = 20; bLabel = "적정(1~10억)"; }
-    else if ((b >= 5e7 && b < 1e8) || (b > 10e8 && b <= 30e8)) { bScore = 13; bLabel = "차선 규모"; }
-    else                                               { bScore = 7;  bLabel = b < 5e7 ? "소형(<5천만)" : "대형(>30억)"; }
+    if (b < 3e7)            { bScore = 16; bLabel = "초소형(<3천만)"; }
+    else if (b < 1e8)       { bScore = 22; bLabel = "소형(3천만~1억) 적정"; }
+    else if (b < 3e8)       { bScore = 16; bLabel = "중형(1~3억)"; }
+    else if (b < 5e8)       { bScore = 10; bLabel = "중대형(3~5억)"; }
+    else                    { bScore = 5;  bLabel = "대형(5억~)"; }
   }
   reasons.push(bLabel);
 
-  // 4) 발주처 친화도 — 공공기관·중앙부처(농어촌공사/농촌진흥청/산림청 등) 주력, 최대 15
-  let aScore = 7;
+  // 4) 발주처 친화도 (20) — INK 주력: 공공기관·지자체(광역/기초)
+  let aScore = 7, aLabel = "";
   const at = it.agency_type || "";
-  if (at === "공공기관" || at === "중앙부처") aScore = 15;
-  else if (at === "지자체") aScore = 11;
-  else if (at === "교육기관") aScore = 9;
+  if (at === "공공기관")      { aScore = 20; aLabel = "공공기관"; }
+  else if (at === "지자체")   { aScore = 20; aLabel = "지자체"; }
+  else if (at === "중앙부처") { aScore = 13; aLabel = "중앙부처"; }
+  else if (at === "교육기관") { aScore = 9;  aLabel = "교육기관"; }
+  else                        { aScore = 7;  aLabel = "기타"; }
 
   let pct = fit + nature + bScore + aScore;
-  pct = Math.max(5, Math.min(97, pct));
+  pct = Math.max(5, Math.min(98, pct));
   return { pct, reasons };
 }
 
