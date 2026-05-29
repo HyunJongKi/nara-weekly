@@ -1,14 +1,76 @@
 {
-  "generated_at": "2026-05-27T08:07:27.604498+09:00",
+  "generated_at": "2026-05-29T11:19:53.990492+09:00",
   "stats": {
-    "total": 11,
-    "fetched_this_run": 1912,
-    "research_passed_this_run": 160,
-    "new_this_run": 2,
+    "total": 19,
+    "fetched_this_run": 1883,
+    "research_passed_this_run": 163,
+    "new_this_run": 8,
     "min_score": 5,
     "research_only": true
   },
   "items": [
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00232870",
+      "title": "(연구용역)차세대중형위성 4호 후속 농업위성 개념 설계 및 개발 로드맵 수립",
+      "agency": "농촌진흥청 국립농업과학원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 121222000,
+      "order_planned_date": "2026-05-27T13:00:06+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 국립농업과학원-20260526\n[1^8090901001^농림수산연구조사서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00232870&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00232870&fileType=BFDTL&fileSeq=1",
+      "ref_no": "국립농업과학원-20260526",
+      "officer": "권오건",
+      "officer_tel": "070-4056-8969",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00233698",
+      "title": "흑삼 산업 활성화를 위한 시장조사 및 전략 수립 연구 용역",
+      "agency": "농촌진흥청 국립원예특작과학원 인삼특작부",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-05-28T16:13:42+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 인삼260528",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233698&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233698&fileType=BFDTL&fileSeq=1",
+      "ref_no": "인삼260528",
+      "officer": "김주연",
+      "officer_tel": null,
+      "score": 10,
+      "matched_keywords": [
+        "농촌",
+        "원예"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
     {
       "source_type": "order_plan",
       "external_id": "order_plan::R26DD20770097",
@@ -55,44 +117,6 @@
     },
     {
       "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00230986",
-      "title": "양산시 동면 농촌중심지활성화사업 기본계획수립 용역",
-      "agency": "한국농어촌공사 경남지역본부",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 322020000,
-      "order_planned_date": "2026-05-21T15:06:54+09:00",
-      "region": "경남",
-      "description": "일반용역\n참조번호: 경남농지관리-4913",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=1",
-      "ref_no": "경남농지관리-4913",
-      "officer": "원고훈",
-      "officer_tel": "055-940-5513",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-27T08:07:27.604498+09:00"
-    },
-    {
-      "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00231315",
       "title": "예천군 가곡 등 46지구 농업용 암반관정 지하수 영향조사 용역",
       "agency": "한국농어촌공사 경북지역본부",
@@ -123,7 +147,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-27T08:07:27.604498+09:00"
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -157,7 +181,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-27T08:07:27.604498+09:00"
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -182,6 +206,208 @@
       "ref_no": "재무회계팀",
       "officer": "김경록",
       "officer_tel": "055-320-0455",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20774908",
+      "title": "구좌권역 농업용 광역관정 연장허가를 위한 지하수 영향조사 용역",
+      "agency": "한국농어촌공사 제주지역본부",
+      "agency_dept": "농지은행관리부",
+      "agency_type": "공공기관",
+      "contract_method": "수의계약",
+      "bsns_div": "용역",
+      "budget_amount": 52224000,
+      "order_planned_date": "2026-05-29T09:48:08+09:00",
+      "region": "제주",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20774908",
+      "officer": "하승보",
+      "officer_tel": "064-750-8819",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20774203",
+      "title": "양산시 동면 농촌중심지활성화사업 기본계획 수립 용역",
+      "agency": "한국농어촌공사 경남지역본부",
+      "agency_dept": "농지은행관리부",
+      "agency_type": "공공기관",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 322020000,
+      "order_planned_date": "2026-05-28T16:06:44+09:00",
+      "region": "경남",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20774203",
+      "officer": "원고훈",
+      "officer_tel": "055-269-9332",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20774854",
+      "title": "후계농업경영인육성자금 및 귀농창업자금 개선방안 연구",
+      "agency": "농림축산식품부",
+      "agency_dept": "운영지원과",
+      "agency_type": "중앙부처",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 40000000,
+      "order_planned_date": "2026-05-29T09:24:57+09:00",
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20774854",
+      "officer": "박은재",
+      "officer_tel": "044-201-1288",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20773668",
+      "title": "대산면 사거지구 농촌공간 정비사업(정비형) 기본계획 수립용역",
+      "agency": "전북특별자치도 고창군",
+      "agency_dept": "농촌활력과",
+      "agency_type": "지자체",
+      "contract_method": "일반경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 144740000,
+      "order_planned_date": "2026-05-28T11:47:21+09:00",
+      "region": "전북",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20773668",
+      "officer": "권혁중",
+      "officer_tel": "063-560-2708",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00233508",
+      "title": "수박 고온 내성 마커 개발을 위한 유용 변이 선발 연구용역(긴급)",
+      "agency": "충청북도 농업기술원",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 53900000,
+      "order_planned_date": "2026-05-28T13:39:38+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 수박연구소-426",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233508&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233508&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233508&fileType=BFDTL&fileSeq=1",
+      "ref_no": "수박연구소-426",
+      "officer": "김현림",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00233547",
+      "title": "농어업경영체 육성 및 지원에 관한 법률 개정 방향 연구용역",
+      "agency": "농림축산식품부 국립농산물품질관리원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 52000000,
+      "order_planned_date": "2026-05-28T14:03:07+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 농업경영체과-1011",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233547&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00233547&fileType=BFDTL&fileSeq=1",
+      "ref_no": "농업경영체과-1011",
+      "officer": "유혜림",
+      "officer_tel": "054-429-7712",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:19:53.990492+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00230986",
+      "title": "양산시 동면 농촌중심지활성화사업 기본계획수립 용역",
+      "agency": "한국농어촌공사 경남지역본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 322020000,
+      "order_planned_date": "2026-05-21T15:06:54+09:00",
+      "region": "경남",
+      "description": "일반용역\n참조번호: 경남농지관리-4913",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00230986&fileType=BFDTL&fileSeq=1",
+      "ref_no": "경남농지관리-4913",
+      "officer": "원고훈",
+      "officer_tel": "055-940-5513",
       "score": 5,
       "matched_keywords": [
         "농촌"
