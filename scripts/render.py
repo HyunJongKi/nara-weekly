@@ -119,6 +119,25 @@ HTML = r"""<!doctype html>
   .kwset a.btn-link:hover { background:#1d4ed8; }
   .kwset .new-yml { background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; padding:10px 12px; border-radius:8px; font-family: monospace; font-size:12.5px; margin-top:8px; white-space: pre-wrap; }
 
+  /* INK 수주 가능성 테이블 */
+  .ink-table-wrap { overflow-x:auto; }
+  .ink-table { width:100%; border-collapse:collapse; font-size:13px; }
+  .ink-table th, .ink-table td { padding:8px 10px; border-bottom:1px solid var(--border); text-align:left; vertical-align:top; }
+  .ink-table th { background:#f8fafc; color:var(--muted); font-weight:600; font-size:12px; position:sticky; top:0; }
+  .ink-table .rank { font-weight:800; color:var(--accent); text-align:center; width:38px; }
+  .ink-table .rank .medal { font-size:15px; }
+  .ink-table .title { font-weight:600; max-width:340px; }
+  .ink-table .title a { color:var(--text); }
+  .ink-table small { color:var(--muted); }
+  .ink-table .prob { white-space:nowrap; min-width:130px; }
+  .ink-table .prob b { margin-left:6px; font-size:13.5px; }
+  .ink-table .reasons { color:var(--muted); font-size:12px; max-width:260px; }
+  .ink-bar { display:inline-block; width:72px; height:9px; background:#e2e8f0; border-radius:999px; overflow:hidden; vertical-align:middle; }
+  .ink-bar span { display:block; height:100%; border-radius:999px; }
+  .ink-bar.high span { background:#16a34a; }
+  .ink-bar.mid  span { background:#d97706; }
+  .ink-bar.low  span { background:#94a3b8; }
+  .ink-note { color:var(--muted); font-size:11.5px; margin-top:8px; line-height:1.6; }
   .empty { color: var(--muted); text-align:center; padding: 40px; }
   .footnote { color: var(--muted); font-size:11.5px; padding: 10px 4px; }
 
@@ -214,6 +233,15 @@ HTML = r"""<!doctype html>
           <h3>키워드별 언급 빈도</h3>
           <div class="chart-box"><canvas id="ch-keyword"></canvas></div>
           <div class="kwcloud" id="kwcloud"></div>
+        </div>
+        <div class="panel col-12">
+          <h3>🎯 아이엔케이(주) 수주 가능성 순위 <span class="hint">추정 모델 · 가능성순 정렬</span></h3>
+          <div class="ink-table-wrap" id="ink-ranking"></div>
+          <div class="ink-note">
+            ※ 가능성(%)은 <b>분야 적합도(35)</b> + <b>용역 성격(30)</b> + <b>예산 규모(20)</b> + <b>발주처 친화도(15)</b> 를
+            가중 합산한 <b>추정치</b>이며, 실제 입찰 경쟁·평가위원 성향·컨소시엄 구성에 따라 달라집니다. 참고용으로만 활용하세요.
+            상단 필터(유형·키워드·지역 등)를 적용하면 순위도 함께 갱신됩니다.
+          </div>
         </div>
       </div>
       <div class="footnote">※ 본 통계는 나라장터에 게시된 발주계획·사전규격 공고를 기반으로 분석되었으며, 실제 계약과는 차이가 있을 수 있습니다.</div>
@@ -499,6 +527,69 @@ function timelineChart(canvasId, items) {
     ]}, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:"bottom" } }, scales:{ y:{ beginAtZero:true, ticks:{ precision:0 } } } } });
 }
 
+// ── 아이엔케이(주) 수주 가능성 추정 ──
+// 분야 적합도(35) + 용역 성격(30) + 예산 규모(20) + 발주처 친화도(15)
+function winProbability(it) {
+  const text = [it.title, it.description, it.bsns_div].filter(Boolean).join(" ");
+  const reasons = [];
+
+  // 1) 분야 적합도 — 매칭 키워드 가중치 합(score) 기반, 최대 35
+  const fit = Math.min(35, Math.round((it.score || 0) * 3.5));
+  const mk = it.matched_keywords || [];
+  if (mk.length) reasons.push("분야 " + mk.slice(0,3).join("·"));
+
+  // 2) 용역 성격 — 학술·정책연구일수록 INK 적합, 최대 30
+  let nature = 12, natLabel = "일반 용역";
+  if (/정책\s*연구|기본\s*계획|마스터플랜|중장기|종합\s*계획|전략\s*수립|타당성/.test(text)) { nature = 30; natLabel = "정책·계획·타당성"; }
+  else if (/학술|연구\s*용역|기초\s*연구|기획\s*연구|R&D|연구개발/.test(text))            { nature = 25; natLabel = "학술·연구개발"; }
+  else if (/실태\s*조사|조사\s*연구|모니터링|분석|진단|평가/.test(text))                  { nature = 18; natLabel = "조사·분석"; }
+  else if (/위탁\s*조사|안전\s*점검|점검|측량|이행|단순/.test(text))                      { nature = 8;  natLabel = "단순·위탁"; }
+  reasons.push(natLabel);
+
+  // 3) 예산 규모 — INK 규모에 맞는 1~10억이 최적, 최대 20
+  let bScore = 10, bLabel = "예산 미공개";
+  const b = it.budget_amount;
+  if (typeof b === "number" && b > 0) {
+    if (b >= 1e8 && b <= 10e8)                         { bScore = 20; bLabel = "적정(1~10억)"; }
+    else if ((b >= 5e7 && b < 1e8) || (b > 10e8 && b <= 30e8)) { bScore = 13; bLabel = "차선 규모"; }
+    else                                               { bScore = 7;  bLabel = b < 5e7 ? "소형(<5천만)" : "대형(>30억)"; }
+  }
+  reasons.push(bLabel);
+
+  // 4) 발주처 친화도 — 공공기관·중앙부처(농어촌공사/농촌진흥청/산림청 등) 주력, 최대 15
+  let aScore = 7;
+  const at = it.agency_type || "";
+  if (at === "공공기관" || at === "중앙부처") aScore = 15;
+  else if (at === "지자체") aScore = 11;
+  else if (at === "교육기관") aScore = 9;
+
+  let pct = fit + nature + bScore + aScore;
+  pct = Math.max(5, Math.min(97, pct));
+  return { pct, reasons };
+}
+
+function renderInkRanking(items) {
+  const el = document.getElementById("ink-ranking");
+  if (!el) return;
+  const ranked = items.map(it => ({ it, ...winProbability(it) })).sort((a,b) => b.pct - a.pct);
+  if (!ranked.length) { el.innerHTML = '<div class="empty">조건에 맞는 공고가 없습니다.</div>'; return; }
+  const medal = i => i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1);
+  el.innerHTML = `<table class="ink-table">
+    <thead><tr><th>순위</th><th>공고명</th><th>발주처</th><th>예산</th><th>수주 가능성</th><th>주요 근거</th></tr></thead>
+    <tbody>` + ranked.map((r,i) => {
+      const grade = r.pct>=75?"high":r.pct>=55?"mid":"low";
+      const titleHtml = r.it.url ? `<a href="${r.it.url}" target="_blank" rel="noopener">${r.it.title||""}</a>` : (r.it.title||"");
+      return `<tr>
+        <td class="rank"><span class="medal">${medal(i)}</span></td>
+        <td class="title">${titleHtml}<br><small>${TYPE_LABEL[r.it.source_type]||""}</small></td>
+        <td>${r.it.agency||""}<br><small>${r.it.agency_type||""} · ${r.it.region||""}</small></td>
+        <td>${fmtMoney(r.it.budget_amount)||"-"}</td>
+        <td class="prob"><span class="ink-bar ${grade}"><span style="width:${r.pct}%"></span></span><b>${r.pct}%</b></td>
+        <td class="reasons">${r.reasons.join(" · ")}</td>
+      </tr>`;
+    }).join("") + `</tbody></table>`;
+}
+
 function renderKwCloud(byKw) {
   const el = document.getElementById("kwcloud"); if (!el) return;
   const entries = Object.entries(byKw).sort((a,b)=>b[1]-a[1]);
@@ -540,6 +631,7 @@ function renderAll() {
     const kw = Object.entries(A.byKw).sort((a,b)=>b[1]-a[1]);
     barChart("ch-keyword", kw.map(([k])=>k), kw.map(([,v])=>v), "건수", {colors:"#2563eb"});
     renderKwCloud(A.byKw);
+    renderInkRanking(items);
   }
   if (CURRENT_VIEW === "keyword") {
     const kw = Object.entries(A.byKw).sort((a,b)=>b[1]-a[1]);
