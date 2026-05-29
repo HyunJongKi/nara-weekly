@@ -386,6 +386,27 @@ function bucketOf(amount) {
 }
 function destroy(name) { if (CHARTS[name]) { CHARTS[name].destroy(); delete CHARTS[name]; } }
 
+// ── 중복 제거: 같은 사업이 발주계획+사전규격에 동시에 있으면 사전규격(pre_spec) 우선 ──
+function dedupe(items) {
+  const norm = s => (s || "").toLowerCase().replace(/[\s()\[\]\-_,./·:、，]/g, "");
+  const map = new Map();
+  for (const it of items) {
+    const key = norm(it.title) || it.external_id;
+    const cur = map.get(key);
+    if (!cur) { map.set(key, it); continue; }
+    // 이미 있는 항목과 충돌: 사전규격을 우선 채택
+    if (it.source_type === "pre_spec" && cur.source_type !== "pre_spec") {
+      // first_seen_at 은 더 이른 값 보존
+      const merged = {...it};
+      if (cur.first_seen_at && (!merged.first_seen_at || cur.first_seen_at < merged.first_seen_at))
+        merged.first_seen_at = cur.first_seen_at;
+      map.set(key, merged);
+    }
+    // 둘 다 같은 유형이거나 기존이 이미 사전규격이면 기존 유지
+  }
+  return [...map.values()];
+}
+
 // ── 임시 키워드 적용 ──
 function applyTempKeywords(items) {
   if (!TEMP_KW.length) return items.map(x => ({...x, _temp_matched: []}));
@@ -805,7 +826,7 @@ function setView(name) {
 fetch("./tenders.json?ts=" + Date.now())
   .then(r => r.json())
   .then(data => {
-    ALL = data.items || [];
+    ALL = dedupe(data.items || []);
     document.getElementById("generated").textContent = "최근 수집 " + (fmtDate(data.generated_at) || "—");
     // keywords.yml 미리보기 (render.py 가 docs/keywords.yml 로 미러링한 것)
     fetch("./keywords.yml?ts=" + Date.now()).then(r => r.ok ? r.text() : "").then(t => {
