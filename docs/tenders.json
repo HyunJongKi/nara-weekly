@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-29T11:33:48.113261+09:00",
+  "generated_at": "2026-05-29T11:55:26.990936+09:00",
   "stats": {
     "total": 19,
-    "fetched_this_run": 1890,
-    "research_passed_this_run": 162,
+    "fetched_this_run": 1887,
+    "research_passed_this_run": 161,
     "new_this_run": 0,
     "min_score": 5,
     "research_only": true
@@ -38,7 +38,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -69,7 +69,7 @@
         "원예"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "order_plan",
@@ -147,7 +147,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -181,7 +181,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -211,7 +211,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-05-26T10:05:00.107934+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "order_plan",
@@ -236,7 +236,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "order_plan",
@@ -261,7 +261,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "order_plan",
@@ -286,32 +286,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
-    },
-    {
-      "source_type": "order_plan",
-      "external_id": "order_plan::R26DD20773668",
-      "title": "대산면 사거지구 농촌공간 정비사업(정비형) 기본계획 수립용역",
-      "agency": "전북특별자치도 고창군",
-      "agency_dept": "농촌활력과",
-      "agency_type": "지자체",
-      "contract_method": "일반경쟁",
-      "bsns_div": "용역",
-      "budget_amount": 144740000,
-      "order_planned_date": "2026-05-28T11:47:21+09:00",
-      "region": "전북",
-      "description": null,
-      "attachments": [],
-      "url": null,
-      "ref_no": "R26DD20773668",
-      "officer": "권혁중",
-      "officer_tel": "063-560-2708",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -345,7 +320,7 @@
         "농업"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
-      "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -373,6 +348,31 @@
       "score": 5,
       "matched_keywords": [
         "농업"
+      ],
+      "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
+      "last_seen_at": "2026-05-29T11:55:26.990936+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20773668",
+      "title": "대산면 사거지구 농촌공간 정비사업(정비형) 기본계획 수립용역",
+      "agency": "전북특별자치도 고창군",
+      "agency_dept": "농촌활력과",
+      "agency_type": "지자체",
+      "contract_method": "일반경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 144740000,
+      "order_planned_date": "2026-05-28T11:47:21+09:00",
+      "region": "전북",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20773668",
+      "officer": "권혁중",
+      "officer_tel": "063-560-2708",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
       ],
       "first_seen_at": "2026-05-29T11:19:53.990492+09:00",
       "last_seen_at": "2026-05-29T11:33:48.113261+09:00"
