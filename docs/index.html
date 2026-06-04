@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nara Weekly — 농림업 학술연구용역 모니터</title>
+<title>Nara Radar — 농림업 학술연구용역 모니터</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <style>
@@ -142,7 +142,7 @@
 <body>
   <aside class="sidebar">
     <div class="brand">
-      <h1>🌾 Nara Weekly</h1>
+      <h1>🌾 Nara Radar</h1>
       <div class="sub">농림업 학술연구용역 모니터</div>
     </div>
     <nav class="nav">
@@ -755,7 +755,7 @@ function downloadXlsx() {
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, "공고목록");
   const today = new Date().toISOString().slice(0,10).replace(/-/g,"");
-  XLSX.writeFile(wb, `nara-weekly_${today}_${items.length}건.xlsx`);
+  XLSX.writeFile(wb, `nara-radar_${today}_${items.length}건.xlsx`);
 }
 
 // ── 키워드 설정 UI ──
