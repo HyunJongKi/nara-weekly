@@ -1,14 +1,76 @@
 {
-  "generated_at": "2026-06-03T15:09:24.548336+09:00",
+  "generated_at": "2026-06-05T11:07:32.748408+09:00",
   "stats": {
-    "total": 26,
-    "fetched_this_run": 1967,
-    "research_passed_this_run": 175,
-    "new_this_run": 7,
+    "total": 30,
+    "fetched_this_run": 1920,
+    "research_passed_this_run": 145,
+    "new_this_run": 4,
     "min_score": 5,
     "research_only": true
   },
   "items": [
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00235583",
+      "title": "(연구용역) 차세대중형위성4호(농림위성) 절대복사보정계수 검증",
+      "agency": "농촌진흥청 국립농업과학원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-06-02T13:45:37+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 국립농업과학원-20260602",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235583&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235583&fileType=BFDTL&fileSeq=1",
+      "ref_no": "국립농업과학원-20260602",
+      "officer": "김지연",
+      "officer_tel": "063-238-2230",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00235713",
+      "title": "농업·농촌 기후변화 영향·취약성 평가 및 개선사항 도출 연구 용역",
+      "agency": "농촌진흥청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 45000000,
+      "order_planned_date": "2026-06-02T15:16:02+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 연구개발과-1381",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235713&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235713&fileType=BFDTL&fileSeq=1",
+      "ref_no": "연구개발과-1381",
+      "officer": "오기영",
+      "officer_tel": "063-238-0266",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
     {
       "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00232870",
@@ -98,68 +160,6 @@
       "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
     },
     {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00235583",
-      "title": "(연구용역) 차세대중형위성4호(농림위성) 절대복사보정계수 검증",
-      "agency": "농촌진흥청 국립농업과학원",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 50000000,
-      "order_planned_date": "2026-06-02T13:45:37+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 국립농업과학원-20260602",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235583&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235583&fileType=BFDTL&fileSeq=1",
-      "ref_no": "국립농업과학원-20260602",
-      "officer": "김지연",
-      "officer_tel": "063-238-2230",
-      "score": 10,
-      "matched_keywords": [
-        "농업",
-        "농촌"
-      ],
-      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
-      "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00235713",
-      "title": "농업·농촌 기후변화 영향·취약성 평가 및 개선사항 도출 연구 용역",
-      "agency": "농촌진흥청",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 45000000,
-      "order_planned_date": "2026-06-02T15:16:02+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 연구개발과-1381",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235713&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00235713&fileType=BFDTL&fileSeq=1",
-      "ref_no": "연구개발과-1381",
-      "officer": "오기영",
-      "officer_tel": "063-238-0266",
-      "score": 10,
-      "matched_keywords": [
-        "농업",
-        "농촌"
-      ],
-      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
-      "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
-    },
-    {
       "source_type": "order_plan",
       "external_id": "order_plan::R26DD20770097",
       "title": "(연구용역)차세대중형위성 4호 후속 농업위성 개념 설계 및 개발 로드맵 수립",
@@ -231,7 +231,175 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
-      "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00234314",
+      "title": "2026년 산사태 발생 우려지역 실태조사 용역",
+      "agency": "충청남도 보령시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 83426000,
+      "order_planned_date": "2026-05-29T14:47:43+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 산림과-9668(2026. 5. 27.)호",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림과-9668(2026. 5. 27.)호",
+      "officer": "이동영",
+      "officer_tel": "041-930-3574",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00234613",
+      "title": "[협상에의한계약]고흥군 농촌공간 재구조화 및 재생 기본계획 수립 용역",
+      "agency": "전라남도 고흥군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 319550000,
+      "order_planned_date": "2026-05-29T21:59:22+09:00",
+      "region": "전남",
+      "description": "일반용역\n참조번호: 고흥군",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=1",
+      "ref_no": "고흥군",
+      "officer": "장진우",
+      "officer_tel": "061-830-5292",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20780770",
+      "title": "2026년 산사태 발생 우려지역 실태조사 용역",
+      "agency": "대전광역시",
+      "agency_dept": "산림녹지정책과",
+      "agency_type": "지자체",
+      "contract_method": "수의계약",
+      "bsns_div": "용역",
+      "budget_amount": 72406000,
+      "order_planned_date": "2026-06-04T17:16:39+09:00",
+      "region": "대전",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20780770",
+      "officer": "하승표",
+      "officer_tel": "042-270-5588",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-06-05T11:07:32.748408+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20781284",
+      "title": "2026년 제주 농업용수 통합 광역화사업 2공구 시추조사 용역",
+      "agency": "한국농어촌공사 제주지역본부",
+      "agency_dept": "농지은행관리부",
+      "agency_type": "공공기관",
+      "contract_method": "수의계약",
+      "bsns_div": "용역",
+      "budget_amount": 6270000,
+      "order_planned_date": "2026-06-05T09:48:40+09:00",
+      "region": "제주",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20781284",
+      "officer": "황선영",
+      "officer_tel": "064-750-8828",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-06-05T11:07:32.748408+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20780401",
+      "title": "2026년 청주시 산사태 발생 우려지역 실태조사 용역",
+      "agency": "충청북도 청주시",
+      "agency_dept": "산림관리과",
+      "agency_type": "지자체",
+      "contract_method": "수의계약",
+      "bsns_div": "용역",
+      "budget_amount": 76260000,
+      "order_planned_date": "2026-06-04T15:07:11+09:00",
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20780401",
+      "officer": "김범중",
+      "officer_tel": "043-201-2323",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-06-05T11:07:32.748408+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20781311",
+      "title": "서울특별시 산림교육지역계획 수립 학술용역",
+      "agency": "서울특별시",
+      "agency_dept": "공원여가사업과",
+      "agency_type": "지자체",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-06-05T09:59:35+09:00",
+      "region": "서울",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20781311",
+      "officer": "송유진",
+      "officer_tel": "02-2133-9376",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-06-05T11:07:32.748408+09:00",
+      "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -318,74 +486,6 @@
       "score": 5,
       "matched_keywords": [
         "산림"
-      ],
-      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
-      "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00234314",
-      "title": "2026년 산사태 발생 우려지역 실태조사 용역",
-      "agency": "충청남도 보령시",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 83426000,
-      "order_planned_date": "2026-05-29T14:47:43+09:00",
-      "region": "중앙/전국",
-      "description": "기술용역\n참조번호: 산림과-9668(2026. 5. 27.)호",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234314&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산림과-9668(2026. 5. 27.)호",
-      "officer": "이동영",
-      "officer_tel": "041-930-3574",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
-      "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00234613",
-      "title": "[협상에의한계약]고흥군 농촌공간 재구조화 및 재생 기본계획 수립 용역",
-      "agency": "전라남도 고흥군",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 319550000,
-      "order_planned_date": "2026-05-29T21:59:22+09:00",
-      "region": "전남",
-      "description": "일반용역\n참조번호: 고흥군",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00234613&fileType=BFDTL&fileSeq=1",
-      "ref_no": "고흥군",
-      "officer": "장진우",
-      "officer_tel": "061-830-5292",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
       "last_seen_at": "2026-06-03T15:09:24.548336+09:00"
