@@ -1,41 +1,75 @@
 name: weekly-nara
 
+# GitHub Actions scheduled workflow 는 부하에 따라 수십 분~수 시간 지연되거나
+# 누락될 수 있어, 같은 요일에 백업 cron 을 여러 개 두고 첫 성공 후엔 게이트로 skip 한다.
 on:
   schedule:
-    # 매주 수요일 10:00 KST = 01:00 UTC (수=3)
+    # 매주 수요일 — KST 10:00 / 10:30 / 11:00 (UTC 01:00 / 01:30 / 02:00)
     - cron: "0 1 * * 3"
-    # 매주 금요일 10:00 KST = 01:00 UTC (금=5)
+    - cron: "30 1 * * 3"
+    - cron: "0 2 * * 3"
+    # 매주 금요일 — KST 10:00 / 10:30 / 11:00 (UTC 01:00 / 01:30 / 02:00)
     - cron: "0 1 * * 5"
-  workflow_dispatch: {}  # 수동 실행 가능
+    - cron: "30 1 * * 5"
+    - cron: "0 2 * * 5"
+  workflow_dispatch: {}   # 수동 실행 (게이트 우회)
 
 permissions:
-  contents: write  # commit & push 권한
+  contents: write
+
+# 동시 실행 방지 (두 cron 이 거의 동시에 trigger 되면 한쪽이 큐에서 취소)
+concurrency:
+  group: weekly-nara
+  cancel-in-progress: false
 
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 50   # 게이트가 최근 commit log 를 조회
+
+      - name: 게이트 - 오늘 이미 성공 실행됐는지 확인
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "수동 실행 → 게이트 우회"
+            echo "skip=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          if git log --since="${TODAY} 00:00 UTC" --grep="weekly update ${TODAY}" --oneline | grep -q .; then
+            echo "::notice::${TODAY} 이미 성공 실행 (commit 존재) → skip"
+            echo "skip=true" >> $GITHUB_OUTPUT
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
 
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.skip != 'true'
         with:
           python-version: "3.11"
           cache: "pip"
 
-      - run: pip install -r requirements.txt
+      - if: steps.gate.outputs.skip != 'true'
+        run: pip install -r requirements.txt
 
       - name: 수집 + 키워드 매칭
+        if: steps.gate.outputs.skip != 'true'
         env:
           G2B_SERVICE_KEY: ${{ secrets.G2B_SERVICE_KEY }}
           LOOKBACK_DAYS: "7"
           LOOKAHEAD_DAYS: "90"
-          RESEARCH_ONLY: "1"   # 학술연구용역만 통과
+          RESEARCH_ONLY: "1"
         run: python scripts/collect.py
 
       - name: 대시보드 HTML 생성
+        if: steps.gate.outputs.skip != 'true'
         run: python scripts/render.py
 
       - name: 카톡 발송 (나에게 보내기)
+        if: steps.gate.outputs.skip != 'true'
         id: kakao
         env:
           KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
@@ -45,13 +79,15 @@ jobs:
         run: python scripts/kakao.py
 
       - name: 변경분 커밋 & 푸시
+        if: steps.gate.outputs.skip != 'true'
         run: |
           git config user.name "nara-weekly-bot"
           git config user.email "bot@users.noreply.github.com"
           git add data/tenders.json docs/tenders.json docs/index.html docs/keywords.yml
           if git diff --staged --quiet; then
-            echo "no changes"
+            # 데이터 변경이 없어도 그날 실행 완료 표시 commit 을 남겨 게이트가 작동하게 함
+            git commit --allow-empty -m "weekly update $(date -u +%Y-%m-%d) (no data changes)"
           else
             git commit -m "weekly update $(date -u +%Y-%m-%d)"
-            git push
           fi
+          git push
