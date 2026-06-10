@@ -9,6 +9,8 @@ venv/
 # 로컬 토큰 갱신 결과 (Secrets에만 보관)
 .tokens.json
 .oauth_code.json
+# 사용자 PC Task Scheduler 트리거 로그
+trigger.log
 # 카톡 발송용 임시 파일 (run 마다 새로 생성)
 data/new_items.json
 # 로컬 일회용 검증/마이그레이션 스크립트
