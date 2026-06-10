@@ -4,15 +4,28 @@ name: weekly-nara
 # 누락될 수 있어, 같은 요일에 백업 cron 을 여러 개 두고 첫 성공 후엔 게이트로 skip 한다.
 on:
   schedule:
-    # 매주 수요일 — KST 10:00 / 10:30 / 11:00 (UTC 01:00 / 01:30 / 02:00)
+    # 매주 수요일 — 10:00 / 10:15 / 10:30 / 10:45 / 11:00 / 11:30 / 12:00 / 13:00 KST
+    # (UTC: 01:00 / 01:15 / 01:30 / 01:45 / 02:00 / 02:30 / 03:00 / 04:00)
     - cron: "0 1 * * 3"
+    - cron: "15 1 * * 3"
     - cron: "30 1 * * 3"
+    - cron: "45 1 * * 3"
     - cron: "0 2 * * 3"
-    # 매주 금요일 — KST 10:00 / 10:30 / 11:00 (UTC 01:00 / 01:30 / 02:00)
+    - cron: "30 2 * * 3"
+    - cron: "0 3 * * 3"
+    - cron: "0 4 * * 3"
+    # 매주 금요일 — 동일 시각
     - cron: "0 1 * * 5"
+    - cron: "15 1 * * 5"
     - cron: "30 1 * * 5"
+    - cron: "45 1 * * 5"
     - cron: "0 2 * * 5"
+    - cron: "30 2 * * 5"
+    - cron: "0 3 * * 5"
+    - cron: "0 4 * * 5"
   workflow_dispatch: {}   # 수동 실행 (게이트 우회)
+  repository_dispatch:    # 외부 cron 서비스(cron-job.org 등)에서 강제 트리거 가능
+    types: [force-weekly]
 
 permissions:
   contents: write

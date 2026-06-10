@@ -143,16 +143,45 @@ repo → **Actions** → `weekly-nara` → **Run workflow**.
 
 ## 2. 운영 메모
 
-### 2-1. 스케줄
+### 2-1. 스케줄 (다중 방어선)
 
-`.github/workflows/weekly.yml` 에 정의됨.
+GitHub Actions scheduled workflow 는 부하 시 **수십 분~수 시간 지연되거나 누락**될 수 있습니다.
+이를 방지하기 위해 3중 방어선을 두었습니다.
 
-| 요일 | KST | UTC | cron |
-|---|---|---|---|
-| 수요일 | 10:00 | 01:00 | `0 1 * * 3` |
-| 금요일 | 10:00 | 01:00 | `0 1 * * 5` |
+**🛡 1차: weekly-nara cron 8회 분산** (`.github/workflows/weekly.yml`)
+- 수·금 각각 **10:00 / 10:15 / 10:30 / 10:45 / 11:00 / 11:30 / 12:00 / 13:00 KST** 자동 trigger
+- 첫 성공 후엔 게이트(commit 검사)로 나머지 backup 은 자동 skip → 카톡 1회만
 
-`workflow_dispatch` 로 수동 실행도 가능.
+**🛡 2차: weekly-watchdog 매일 점검** (`.github/workflows/watchdog.yml`)
+- 매일 KST **11:30 / 14:00 / 17:00** 에 가벼운 점검
+- 그날이 수/금인데 `weekly update` 커밋이 없으면 → `weekly-nara` 강제 trigger
+
+**🛡 3차: 외부 cron 서비스(권장, 정시 100% 보장)**
+
+GitHub Actions 가 통째로 늦거나 누락되는 최악의 경우까지 막으려면, 무료 외부 cron 서비스를 함께 쓰세요.
+
+1. **PAT 발급** — GitHub → Settings → Developer settings → **Fine-grained personal access tokens** → Generate
+   - Repository access: `nara-weekly` 만
+   - Repository permissions: **Actions = Read and write**, Contents = Read, Metadata = Read
+   - 생성 후 토큰 1회 복사 (재확인 불가)
+2. **[cron-job.org](https://cron-job.org)** 가입 (무료, 회원가입만 하면 됨)
+3. **Create cronjob** ×2 (수·금 따로):
+   - Title: `nara-weekly 수요일 10시`
+   - URL: `https://api.github.com/repos/HyunJongKi/nara-weekly/actions/workflows/weekly.yml/dispatches`
+   - Request method: **POST**
+   - Headers:
+     ```
+     Authorization: Bearer <위에서 발급한 PAT>
+     Accept: application/vnd.github+json
+     X-GitHub-Api-Version: 2022-11-28
+     ```
+   - Body: `{"ref":"main"}`
+   - Schedule: **매주 수요일 10:00** (Time zone: Asia/Seoul)
+4. 동일하게 금요일용 cron 1개 더 추가.
+
+> 외부 서비스가 정시에 GitHub API → workflow_dispatch 를 호출 → GitHub Actions cron 누락과 무관하게 보장. 사용자가 외부 cron 을 한 번 설정해두면 영구히 작동.
+
+`workflow_dispatch` 로 언제든 수동 실행 가능 (Actions 탭 → Run workflow).
 
 ### 2-2. 키워드 수정
 

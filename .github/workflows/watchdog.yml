@@ -1,0 +1,44 @@
+name: weekly-watchdog
+
+# 매일 점검: 오늘이 수/금인데 weekly-nara 가 아직 안 돌았으면 강제 실행시킨다.
+# weekly-nara 의 cron 8개가 모두 누락되는 최악의 시나리오에도 작동.
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 매일 KST 11:30
+    - cron: "0 5 * * *"    # 매일 KST 14:00
+    - cron: "0 8 * * *"    # 매일 KST 17:00
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  actions: write          # 다른 워크플로 trigger 권한
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 20
+
+      - name: 수·금 미실행 감지 → weekly-nara 강제 실행
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 한국 시간 기준 요일·날짜 계산 (UTC + 9시간)
+          export TZ=Asia/Seoul
+          DOW=$(date +%u)            # 1=월 ... 7=일
+          TODAY_KST=$(date +%Y-%m-%d)
+          echo "현재 KST: $(date) — 요일=$DOW (3=수, 5=금)"
+          if [ "$DOW" != "3" ] && [ "$DOW" != "5" ]; then
+            echo "::notice::오늘은 수/금이 아님 — skip"
+            exit 0
+          fi
+          # 오늘(KST 일자) 'weekly update' 커밋이 있으면 정상, 없으면 강제 실행
+          if git log --since="${TODAY_KST} 00:00 KST" --grep="weekly update" --oneline | grep -q .; then
+            echo "::notice::오늘 (${TODAY_KST}) weekly update 완료 확인됨"
+            exit 0
+          fi
+          echo "::warning::${TODAY_KST}(수/금) weekly-nara 누락 감지 → 강제 trigger"
+          gh workflow run weekly-nara.yml --ref main --repo "${{ github.repository }}"
+          echo "::notice::weekly-nara workflow_dispatch trigger 발사"
