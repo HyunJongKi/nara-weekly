@@ -820,7 +820,53 @@ function setView(name) {
   renderAll();
 }
 
-// ── 초기화 ──
+// ── UI 이벤트 바인딩 (데이터 로드 성공 여부와 무관하게 항상 실행) ──
+const DEFAULT_REPO_URL = "https://github.com/HyunJongKi/nara-weekly";
+function initUI() {
+  // 필터
+  ["q","type","kw","region","agency_type","sort"].forEach(id => {
+    const el = document.getElementById(id); if (el) el.addEventListener("input", renderAll);
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    ["q","type","kw","region","agency_type"].forEach(id => document.getElementById(id).value = "");
+    document.getElementById("sort").value = "recent";
+    renderAll();
+  });
+  document.getElementById("xlsx").addEventListener("click", downloadXlsx);
+  document.querySelectorAll(".nav button").forEach(b =>
+    b.addEventListener("click", () => setView(b.dataset.view))
+  );
+
+  // 키워드 설정 — 임시 키워드(localStorage)
+  document.getElementById("add-kw").addEventListener("click", () => {
+    const t = document.getElementById("new-term").value.trim();
+    const w = parseInt(document.getElementById("new-weight").value || "5", 10);
+    if (!t) return;
+    if (!TEMP_KW.some(k => k.term === t)) TEMP_KW.push({term: t, weight: w});
+    localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
+    document.getElementById("new-term").value = "";
+    rebuildAugmented(); renderTempKwList(); renderAll();
+  });
+  document.getElementById("clear-kw").addEventListener("click", () => {
+    if (!confirm("임시 키워드를 모두 삭제할까요?")) return;
+    TEMP_KW = []; localStorage.setItem(LS_TEMP_KW, "[]");
+    rebuildAugmented(); renderTempKwList(); renderAll();
+  });
+  document.getElementById("new-term").addEventListener("keydown", e => { if (e.key === "Enter") document.getElementById("add-kw").click(); });
+
+  // 영구 반영 — GitHub repo URL & yml 한 줄 (repo URL 기본값 자동 입력 → 편집 버튼 즉시 활성)
+  const savedRepo = localStorage.getItem(LS_REPO_URL);
+  document.getElementById("repo-url").value = savedRepo || DEFAULT_REPO_URL;
+  updateGithubEditLink();
+  document.getElementById("repo-url").addEventListener("input", updateGithubEditLink);
+  ["yml-term","yml-weight","yml-group"].forEach(id => document.getElementById(id).addEventListener("input", updateNewYmlLine));
+
+  renderTempKwList();
+  setView("dashboard");
+}
+initUI();
+
+// ── 데이터 로드 (실패해도 위 UI 컨트롤은 정상 동작) ──
 fetch("./tenders.json?ts=" + Date.now())
   .then(r => r.json())
   .then(data => {
@@ -843,52 +889,11 @@ fetch("./tenders.json?ts=" + Date.now())
       });
     };
     fill("region", rSet); fill("agency_type", atSet);
-
-    // 이벤트
-    ["q","type","kw","region","agency_type","sort"].forEach(id =>
-      document.getElementById(id).addEventListener("input", renderAll)
-    );
-    document.getElementById("reset").addEventListener("click", () => {
-      ["q","type","kw","region","agency_type"].forEach(id => document.getElementById(id).value = "");
-      document.getElementById("sort").value = "recent";
-      renderAll();
-    });
-    document.getElementById("xlsx").addEventListener("click", downloadXlsx);
-
-    document.querySelectorAll(".nav button").forEach(b =>
-      b.addEventListener("click", () => setView(b.dataset.view))
-    );
-
-    // 키워드 설정 이벤트
-    document.getElementById("add-kw").addEventListener("click", () => {
-      const t = document.getElementById("new-term").value.trim();
-      const w = parseInt(document.getElementById("new-weight").value || "5", 10);
-      if (!t) return;
-      if (!TEMP_KW.some(k => k.term === t)) TEMP_KW.push({term: t, weight: w});
-      localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
-      document.getElementById("new-term").value = "";
-      rebuildAugmented(); renderTempKwList(); renderAll();
-    });
-    document.getElementById("clear-kw").addEventListener("click", () => {
-      if (!confirm("임시 키워드를 모두 삭제할까요?")) return;
-      TEMP_KW = []; localStorage.setItem(LS_TEMP_KW, "[]");
-      rebuildAugmented(); renderTempKwList(); renderAll();
-    });
-    document.getElementById("new-term").addEventListener("keydown", e => { if (e.key === "Enter") document.getElementById("add-kw").click(); });
-
-    // 영구 반영 — GitHub repo URL & yml 한 줄
-    const savedRepo = localStorage.getItem(LS_REPO_URL);
-    if (savedRepo) document.getElementById("repo-url").value = savedRepo;
-    updateGithubEditLink();
-    document.getElementById("repo-url").addEventListener("input", updateGithubEditLink);
-    ["yml-term","yml-weight","yml-group"].forEach(id => document.getElementById(id).addEventListener("input", updateNewYmlLine));
-
-    renderTempKwList();
-    setView("dashboard");
+    renderAll();
   })
   .catch(err => {
-    document.querySelector('[data-view-pane="dashboard"]').innerHTML =
-      '<div class="empty">데이터를 불러오지 못했습니다: ' + err + '</div>';
+    const pane = document.querySelector('[data-view-pane="dashboard"]');
+    if (pane) pane.innerHTML = '<div class="empty">데이터를 불러오지 못했습니다: ' + err + '</div>';
   });
 </script>
 </body>
