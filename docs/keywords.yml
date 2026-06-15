@@ -5,7 +5,7 @@ min_score: 5
 
 keywords:
   - { term: "농업",         weight: 5, group: "agriculture" }
-  - { term: "농촌",         weight: 5, group: "agriculture" }
+  - { term: "농촌",         weight: 5, group: "rural space" }
   - { term: "식량",         weight: 5, group: "agriculture" }
   - { term: "원예",         weight: 5, group: "agriculture" }
   - { term: "스마트팜",     weight: 6, group: "smartfarm" }
@@ -13,3 +13,5 @@ keywords:
   - { term: "노지스마트",   weight: 6, group: "smartfarm" }
   - { term: "산림",         weight: 5, group: "forestry" }
   - { term: "임업",         weight: 5, group: "forestry" }
+  - { term: "친환경농업",   weight: 5, group: "agriculture" }
+  - { term: "유기농산업",   weight: 5, group: "agriculture" }
