@@ -278,6 +278,7 @@ def _normalize_order_plan(raw: dict[str, Any]) -> dict[str, Any] | None:
         "bsns_div": _nonempty(raw.get("bsnsDivNm")),
         "budget_amount": _to_int(raw.get("sumOrderAmt")),
         "order_planned_date": _parse_dt(raw.get("nticeDt")),
+        "deadline": None,   # 발주계획은 입찰마감 개념 없음(예정) → 경과는 last_seen 기준으로 판정
         "region": _extract_region(raw_region, agency),
         "description": description,
         "attachments": [],  # 발주계획 단계에는 첨부 없음 (입찰공고 단계에서 생김)
@@ -326,6 +327,7 @@ def _normalize_pre_spec(raw: dict[str, Any]) -> dict[str, Any] | None:
         "bsns_div": bsns_div,
         "budget_amount": _to_int(raw.get("asignBdgtAmt")),
         "order_planned_date": _parse_dt(raw.get("rcptDt") or raw.get("rgstDt")),
+        "deadline": _parse_dt(raw.get("opninRgtClseDt") or raw.get("opninRgtClsDt")),  # 의견제출 마감
         "region": _extract_region(agency),
         "description": description,
         "attachments": attachments,
@@ -389,6 +391,16 @@ def collect(service_key: str, lookback: int = 10, lookahead: int = 60,
     keywords, min_score = _load_keywords()
     existing = load_existing()
     run_started = datetime.now(KST).isoformat()
+    # 연도말(12/31) 갱신: 저장된 데이터의 연도가 올해와 다르면 누적을 초기화하고 새해부터 다시 축적.
+    cur_year = datetime.now(KST).year
+    try:
+        _prev = json.loads(DATA_FILE.read_text(encoding="utf-8")) if DATA_FILE.exists() else {}
+        _prev_year = int((_prev.get("generated_at") or "0000")[:4] or 0)
+    except Exception:
+        _prev_year = 0
+    if _prev_year and _prev_year != cur_year:
+        logger.info("연도 변경(%s→%s) 감지 → 누적 데이터 초기화(연말 갱신)", _prev_year, cur_year)
+        existing = {}
 
     fetched = 0
     research_passed = 0
