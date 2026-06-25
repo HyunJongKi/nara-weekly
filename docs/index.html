@@ -183,7 +183,7 @@
       <select id="region"><option value="">전체 지역</option></select>
       <select id="agency_type"><option value="">전체 발주처</option></select>
       <select id="sort">
-        <option value="recent">최근 갱신순</option>
+        <option value="recent">최신순</option>
         <option value="score">점수순</option>
         <option value="budget">예산순</option>
       </select>
@@ -348,12 +348,13 @@
 <script>
 const TYPE_LABEL = { order_plan: "발주계획", pre_spec: "사전규격" };
 const BUDGET_BUCKETS = [
-  { label: "1억 미만",   max: 1e8 },
-  { label: "1~5억",      max: 5e8 },
-  { label: "5~10억",     max: 10e8 },
-  { label: "10~50억",    max: 50e8 },
-  { label: "50~100억",   max: 100e8 },
-  { label: "100억 이상", max: Infinity },
+  { label: "5천만 미만", max: 5e7 },
+  { label: "0.5~1억",   max: 1e8 },
+  { label: "1~2억",     max: 2e8 },
+  { label: "2~3억",     max: 3e8 },
+  { label: "3~4억",     max: 4e8 },
+  { label: "4~5억",     max: 5e8 },
+  { label: "5억 이상",  max: Infinity },
 ];
 const COLORS = ["#2563eb","#16a34a","#dc2626","#d97706","#7e22ce","#0891b2","#db2777","#65a30d","#475569","#0ea5e9","#a16207","#be123c"];
 const LS_TEMP_KW = "nw_temp_kw_v1";
@@ -609,7 +610,13 @@ function winProbability(it) {
 function renderInkRanking(items) {
   const el = document.getElementById("ink-ranking");
   if (!el) return;
-  const ranked = items.map(it => ({ it, ...winProbability(it) })).sort((a,b) => b.pct - a.pct);
+  // 가능성순, 동점일 땐 최신(발주예정일/갱신일)순으로 tiebreak
+  const ranked = items.map(it => ({ it, ...winProbability(it) })).sort((a,b) => {
+    if (b.pct !== a.pct) return b.pct - a.pct;
+    const ka = a.it.order_planned_date || a.it.last_seen_at || "";
+    const kb = b.it.order_planned_date || b.it.last_seen_at || "";
+    return kb.localeCompare(ka);
+  });
   if (!ranked.length) { el.innerHTML = '<div class="empty">조건에 맞는 공고가 없습니다.</div>'; return; }
   const medal = i => i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1);
   el.innerHTML = `<table class="ink-table">
@@ -702,7 +709,9 @@ function renderList(items, f) {
     arr = arr.filter(it => !isExpired(it));
     hidden = before - arr.length;
   }
-  if (f.sort === "recent") arr.sort((a,b) => (b.last_seen_at||"").localeCompare(a.last_seen_at||""));
+  // 최신순: 발주예정일 우선, 없으면 갱신일 — 둘 다 ISO/yyyy-mm-dd 형식이라 문자열 정렬 OK
+  const dateKey = it => it.order_planned_date || it.last_seen_at || "";
+  if (f.sort === "recent") arr.sort((a,b) => dateKey(b).localeCompare(dateKey(a)));
   if (f.sort === "budget") arr.sort((a,b) => (b.budget_amount||0) - (a.budget_amount||0));
   if (f.sort === "score")  arr.sort((a,b) => (b.score||0) - (a.score||0));
 
