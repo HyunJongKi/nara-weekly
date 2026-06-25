@@ -226,7 +226,7 @@
           <div class="kwcloud" id="kwcloud"></div>
         </div>
         <div class="panel col-12">
-          <h3>🎯 아이엔케이(주) 수주 가능성 순위 <span class="hint">추정 모델 · 가능성순 정렬</span></h3>
+          <h3>🎯 아이엔케이(주) 수주 가능성 <span class="hint">추정 모델 · 최신 공고일자순 정렬 (동점 시 가능성순)</span></h3>
           <div class="ink-table-wrap" id="ink-ranking"></div>
           <div class="ink-note">
             ※ 아이엔케이(주) <b>실적 프로파일</b> 반영 모델 — 주력분야(농업·식량 정책/제도 + 스마트팜·원예 R&D),
@@ -610,12 +610,13 @@ function winProbability(it) {
 function renderInkRanking(items) {
   const el = document.getElementById("ink-ranking");
   if (!el) return;
-  // 가능성순, 동점일 땐 최신(발주예정일/갱신일)순으로 tiebreak
+  // 최신 공고일자 우선, 동점일 땐 수주 가능성(%)이 높은 순으로 tiebreak
   const ranked = items.map(it => ({ it, ...winProbability(it) })).sort((a,b) => {
-    if (b.pct !== a.pct) return b.pct - a.pct;
     const ka = a.it.order_planned_date || a.it.last_seen_at || "";
     const kb = b.it.order_planned_date || b.it.last_seen_at || "";
-    return kb.localeCompare(ka);
+    const dateCmp = kb.localeCompare(ka);
+    if (dateCmp !== 0) return dateCmp;
+    return b.pct - a.pct;
   });
   if (!ranked.length) { el.innerHTML = '<div class="empty">조건에 맞는 공고가 없습니다.</div>'; return; }
   const medal = i => i===0?"🥇":i===1?"🥈":i===2?"🥉":(i+1);
