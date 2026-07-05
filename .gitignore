@@ -16,3 +16,4 @@ data/new_items.json
 # 로컬 일회용 검증/마이그레이션 스크립트
 scripts/_inspect.py
 scripts/_*.py
+rotate.log
