@@ -1,14 +1,46 @@
 {
-  "generated_at": "2026-07-01T14:46:37.040841+09:00",
+  "generated_at": "2026-07-05T16:07:36.736472+09:00",
   "stats": {
-    "total": 73,
-    "fetched_this_run": 1725,
-    "research_passed_this_run": 122,
+    "total": 74,
+    "fetched_this_run": 1256,
+    "research_passed_this_run": 77,
     "new_this_run": 1,
     "min_score": 5,
     "research_only": true
   },
   "items": [
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00247884",
+      "title": "(연구용역)2025년 농업과학기반기술 분야 신기술보급사업 경제성 평가",
+      "agency": "농촌진흥청 국립농업과학원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 30000000,
+      "order_planned_date": "2026-07-03T07:58:37+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 농과원-20260703",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00247884&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00247884&fileType=BFDTL&fileSeq=1",
+      "ref_no": "농과원-20260703",
+      "officer": "정창식",
+      "officer_tel": "063-238-2230",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-07-05T16:07:36.736472+09:00",
+      "last_seen_at": "2026-07-05T16:07:36.736472+09:00"
+    },
     {
       "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00242874",
