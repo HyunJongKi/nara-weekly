@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-05T16:07:36.736472+09:00",
+  "generated_at": "2026-07-05T16:35:27.497301+09:00",
   "stats": {
     "total": 74,
-    "fetched_this_run": 1256,
-    "research_passed_this_run": 77,
-    "new_this_run": 1,
+    "fetched_this_run": 2591,
+    "research_passed_this_run": 179,
+    "new_this_run": 0,
     "min_score": 5,
     "research_only": true
   },
@@ -20,7 +20,7 @@
       "bsns_div": "일반용역",
       "budget_amount": 30000000,
       "order_planned_date": "2026-07-03T07:58:37+09:00",
-      "deadline": null,
+      "deadline": "2026-07-08T23:59:00+09:00",
       "region": "중앙/전국",
       "description": "일반용역\n참조번호: 농과원-20260703",
       "attachments": [
@@ -39,7 +39,70 @@
         "농촌"
       ],
       "first_seen_at": "2026-07-05T16:07:36.736472+09:00",
-      "last_seen_at": "2026-07-05T16:07:36.736472+09:00"
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00243542",
+      "title": "2027~2036 「화성시 농촌공간 재구조화 및 재생 기본계획」 수립 연구용역",
+      "agency": "경기도 화성시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 450000000,
+      "order_planned_date": "2026-06-22T14:27:01+09:00",
+      "deadline": "2026-06-26T23:59:00+09:00",
+      "region": "경기",
+      "description": "일반용역\n참조번호: 농업정책과-18351",
+      "attachments": [],
+      "url": null,
+      "ref_no": "농업정책과-18351",
+      "officer": "고지은",
+      "officer_tel": "031-5189-2265",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00243598",
+      "title": "2027~2036 「화성시 농촌공간 재구조화 및 재생 기본계획」 수립 연구용역",
+      "agency": "경기도 화성시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 450000000,
+      "order_planned_date": "2026-06-22T15:20:47+09:00",
+      "deadline": "2026-06-27T23:59:00+09:00",
+      "region": "경기",
+      "description": "일반용역\n참조번호: 농업정책과-18351",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=1",
+      "ref_no": "농업정책과-18351",
+      "officer": "고지은",
+      "officer_tel": "031-5189-2265",
+      "score": 10,
+      "matched_keywords": [
+        "농업",
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -69,69 +132,6 @@
       "ref_no": "농촌개발과-4322",
       "officer": "손용권",
       "officer_tel": "033-670-2702",
-      "score": 10,
-      "matched_keywords": [
-        "농업",
-        "농촌"
-      ],
-      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
-      "last_seen_at": "2026-06-26T10:00:12.347502+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00243542",
-      "title": "2027~2036 「화성시 농촌공간 재구조화 및 재생 기본계획」 수립 연구용역",
-      "agency": "경기도 화성시",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 450000000,
-      "order_planned_date": "2026-06-22T14:27:01+09:00",
-      "deadline": null,
-      "region": "경기",
-      "description": "일반용역\n참조번호: 농업정책과-18351",
-      "attachments": [],
-      "url": null,
-      "ref_no": "농업정책과-18351",
-      "officer": "고지은",
-      "officer_tel": "031-5189-2265",
-      "score": 10,
-      "matched_keywords": [
-        "농업",
-        "농촌"
-      ],
-      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
-      "last_seen_at": "2026-06-26T10:00:12.347502+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00243598",
-      "title": "2027~2036 「화성시 농촌공간 재구조화 및 재생 기본계획」 수립 연구용역",
-      "agency": "경기도 화성시",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 450000000,
-      "order_planned_date": "2026-06-22T15:20:47+09:00",
-      "deadline": null,
-      "region": "경기",
-      "description": "일반용역\n참조번호: 농업정책과-18351",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00243598&fileType=BFDTL&fileSeq=1",
-      "ref_no": "농업정책과-18351",
-      "officer": "고지은",
-      "officer_tel": "031-5189-2265",
       "score": 10,
       "matched_keywords": [
         "농업",
@@ -614,7 +614,7 @@
       "bsns_div": "일반용역",
       "budget_amount": 40000000,
       "order_planned_date": "2026-06-24T10:02:04+09:00",
-      "deadline": null,
+      "deadline": "2026-06-29T23:59:00+09:00",
       "region": "중앙/전국",
       "description": "일반용역\n참조번호: 농자재산업과-4695",
       "attachments": [
@@ -632,7 +632,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-06-26T10:00:12.347502+09:00",
-      "last_seen_at": "2026-07-01T14:46:37.040841+09:00"
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -645,7 +645,7 @@
       "bsns_div": "일반용역",
       "budget_amount": 417000000,
       "order_planned_date": "2026-06-25T10:50:21+09:00",
-      "deadline": null,
+      "deadline": "2026-06-30T23:59:00+09:00",
       "region": "경기",
       "description": "일반용역\n참조번호: 경기농지관리-5488",
       "attachments": [
@@ -667,7 +667,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-06-26T10:00:12.347502+09:00",
-      "last_seen_at": "2026-07-01T14:46:37.040841+09:00"
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -680,7 +680,7 @@
       "bsns_div": "일반용역",
       "budget_amount": 50000000,
       "order_planned_date": "2026-06-26T08:11:13+09:00",
-      "deadline": null,
+      "deadline": "2026-07-01T23:59:00+09:00",
       "region": "중앙/전국",
       "description": "일반용역\n참조번호: 해외자원담당관실-2000",
       "attachments": [
@@ -698,7 +698,7 @@
         "산림"
       ],
       "first_seen_at": "2026-06-26T10:00:12.347502+09:00",
-      "last_seen_at": "2026-07-01T14:46:37.040841+09:00"
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -711,7 +711,7 @@
       "bsns_div": "일반용역",
       "budget_amount": 131298000,
       "order_planned_date": "2026-06-26T17:16:37+09:00",
-      "deadline": null,
+      "deadline": "2026-07-01T23:59:00+09:00",
       "region": "중앙/전국",
       "description": "일반용역\n참조번호: 운영지원실-2606251\n[1^8090901001^농림수산연구조사서비스]",
       "attachments": [
@@ -729,7 +729,42 @@
         "농업"
       ],
       "first_seen_at": "2026-07-01T14:46:37.040841+09:00",
-      "last_seen_at": "2026-07-01T14:46:37.040841+09:00"
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00244255",
+      "title": "2025년 기준 종자업 실태조사",
+      "agency": "한국농촌경제연구원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 120000000,
+      "order_planned_date": "2026-06-23T17:09:08+09:00",
+      "deadline": "2026-06-28T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 학술 제2026-08호",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=1",
+      "ref_no": "학술 제2026-08호",
+      "officer": "이정연",
+      "officer_tel": "061-820-2370",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
+      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -829,41 +864,6 @@
       "ref_no": "양구군 세무회계과",
       "officer": "이지원",
       "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-06-24T10:00:15.439250+09:00",
-      "last_seen_at": "2026-06-26T10:00:12.347502+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00244255",
-      "title": "2025년 기준 종자업 실태조사",
-      "agency": "한국농촌경제연구원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 120000000,
-      "order_planned_date": "2026-06-23T17:09:08+09:00",
-      "deadline": null,
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 학술 제2026-08호",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00244255&fileType=BFDTL&fileSeq=1",
-      "ref_no": "학술 제2026-08호",
-      "officer": "이정연",
-      "officer_tel": "061-820-2370",
       "score": 5,
       "matched_keywords": [
         "농촌"

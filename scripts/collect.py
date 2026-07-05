@@ -327,7 +327,9 @@ def _normalize_pre_spec(raw: dict[str, Any]) -> dict[str, Any] | None:
         "bsns_div": bsns_div,
         "budget_amount": _to_int(raw.get("asignBdgtAmt")),
         "order_planned_date": _parse_dt(raw.get("rcptDt") or raw.get("rgstDt")),
-        "deadline": _parse_dt(raw.get("opninRgtClseDt") or raw.get("opninRgtClsDt")),  # 의견제출 마감
+        # 의견 등록 마감일 — 이 시각이 지나면 곧 입찰공고 단계로 넘어감(참고 시한 만료).
+        # 카카오 raw 필드명은 opninRgstClseDt (Rgst=등록). 이전엔 오타로 채워지지 않았음.
+        "deadline": _parse_dt(raw.get("opninRgstClseDt") or raw.get("opninRgtClseDt") or raw.get("opninRgtClsDt")),
         "region": _extract_region(agency),
         "description": description,
         "attachments": attachments,
