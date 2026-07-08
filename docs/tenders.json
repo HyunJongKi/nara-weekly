@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-05T16:35:27.497301+09:00",
+  "generated_at": "2026-07-08T10:00:17.859904+09:00",
   "stats": {
-    "total": 74,
-    "fetched_this_run": 2591,
-    "research_passed_this_run": 179,
-    "new_this_run": 0,
+    "total": 78,
+    "fetched_this_run": 1683,
+    "research_passed_this_run": 120,
+    "new_this_run": 4,
     "min_score": 5,
     "research_only": true
   },
@@ -39,7 +39,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-07-05T16:07:36.736472+09:00",
-      "last_seen_at": "2026-07-05T16:35:27.497301+09:00"
+      "last_seen_at": "2026-07-08T10:00:17.859904+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -602,6 +602,128 @@
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
       "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20813938",
+      "title": "농촌진흥청 연구직 중간 리더십 강화를 위한 관리역량 진단 및 환류체계 구축 연구 용역",
+      "agency": "농촌진흥청",
+      "agency_dept": "운영지원과",
+      "agency_type": "중앙부처",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 25000000,
+      "order_planned_date": "2026-07-07T19:38:02+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20813938",
+      "officer": "오기영",
+      "officer_tel": "063-238-0266",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-07-08T10:00:17.859904+09:00",
+      "last_seen_at": "2026-07-08T10:00:17.859904+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20813274",
+      "title": "2026년 근골격계부담작업 유해요인조사",
+      "agency": "산림청 국립산림과학원",
+      "agency_dept": "운영지원과",
+      "agency_type": "중앙부처",
+      "contract_method": "수의계약",
+      "bsns_div": "용역",
+      "budget_amount": 7700000,
+      "order_planned_date": "2026-07-07T13:55:49+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20813274",
+      "officer": "김성균",
+      "officer_tel": "02-961-2534",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-07-08T10:00:17.859904+09:00",
+      "last_seen_at": "2026-07-08T10:00:17.859904+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00248659",
+      "title": "합천군 평구2지구 농촌공간정비사업(특화지구형) 기본계획수립 용역",
+      "agency": "한국농어촌공사 경남지역본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 233270000,
+      "order_planned_date": "2026-07-06T14:00:41+09:00",
+      "deadline": "2026-07-12T23:59:00+09:00",
+      "region": "경남",
+      "description": "일반용역\n참조번호: 경남농지관리-6462",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00248659&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00248659&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00248659&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00248659&fileType=BFDTL&fileSeq=1",
+      "ref_no": "경남농지관리-6462",
+      "officer": "원고훈",
+      "officer_tel": "055-940-5513",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-07-08T10:00:17.859904+09:00",
+      "last_seen_at": "2026-07-08T10:00:17.859904+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00249529",
+      "title": "농촌진흥청 연구직 중간 리더십 강화를 위한 관리역량 진단 및 환류체계 구축 연구 용역",
+      "agency": "농촌진흥청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 25000000,
+      "order_planned_date": "2026-07-07T19:53:31+09:00",
+      "deadline": "2026-07-12T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 연구정책과-1812",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00249529&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00249529&fileType=BFDTL&fileSeq=1",
+      "ref_no": "연구정책과-1812",
+      "officer": "오기영",
+      "officer_tel": "063-238-0266",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-07-08T10:00:17.859904+09:00",
+      "last_seen_at": "2026-07-08T10:00:17.859904+09:00"
     },
     {
       "source_type": "pre_spec",
