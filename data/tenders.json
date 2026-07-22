@@ -1,14 +1,50 @@
 {
-  "generated_at": "2026-07-17T10:00:18.635358+09:00",
+  "generated_at": "2026-07-22T10:00:13.613136+09:00",
   "stats": {
-    "total": 85,
-    "fetched_this_run": 1516,
-    "research_passed_this_run": 113,
+    "total": 88,
+    "fetched_this_run": 1417,
+    "research_passed_this_run": 109,
     "new_this_run": 3,
     "min_score": 5,
     "research_only": true
   },
   "items": [
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00253943",
+      "title": "스마트팜 혁신밸리 청년보육사업 지속발전 방안수립 연구용역",
+      "agency": "경상북도 상주시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 136469600,
+      "order_planned_date": "2026-07-20T15:51:34+09:00",
+      "deadline": "2026-07-25T23:59:00+09:00",
+      "region": "경북",
+      "description": "일반용역\n참조번호: 스마트농업과-3056\n[1^8090901401^인력개발및교육연구조사서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00253943&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00253943&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00253943&fileType=BFDTL&fileSeq=1",
+      "ref_no": "스마트농업과-3056",
+      "officer": "한성연",
+      "officer_tel": "070-4056-7969",
+      "score": 11,
+      "matched_keywords": [
+        "농업",
+        "스마트팜"
+      ],
+      "first_seen_at": "2026-07-22T10:00:13.613136+09:00",
+      "last_seen_at": "2026-07-22T10:00:13.613136+09:00"
+    },
     {
       "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00252395",
@@ -47,7 +83,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-07-17T10:00:18.635358+09:00",
-      "last_seen_at": "2026-07-17T10:00:18.635358+09:00"
+      "last_seen_at": "2026-07-22T10:00:13.613136+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -79,7 +115,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-07-17T10:00:18.635358+09:00",
-      "last_seen_at": "2026-07-17T10:00:18.635358+09:00"
+      "last_seen_at": "2026-07-22T10:00:13.613136+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -674,6 +710,58 @@
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
       "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20825602",
+      "title": "양식수산물재해보험 비용보전방식 손해평가기법 개발 연구",
+      "agency": "농업정책보험금융원",
+      "agency_dept": "농어업보험부",
+      "agency_type": "공공기관",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 30000000,
+      "order_planned_date": "2026-07-21T17:18:52+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20825602",
+      "officer": "정유경",
+      "officer_tel": "02-3771-6860",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-07-22T10:00:13.613136+09:00",
+      "last_seen_at": "2026-07-22T10:00:13.613136+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20825896",
+      "title": "2026년 제1차 입목처분 위탁조사 용역",
+      "agency": "산림청 서부지방산림청 무주국유림관리소",
+      "agency_dept": "운영지원팀",
+      "agency_type": "중앙부처",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 3192000,
+      "order_planned_date": "2026-07-22T09:06:40+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20825896",
+      "officer": "송혜진",
+      "officer_tel": "063-320-3612",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-07-22T10:00:13.613136+09:00",
+      "last_seen_at": "2026-07-22T10:00:13.613136+09:00"
     },
     {
       "source_type": "pre_spec",
