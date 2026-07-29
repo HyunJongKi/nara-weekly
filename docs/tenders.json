@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-24T10:00:15.063706+09:00",
+  "generated_at": "2026-07-29T10:00:13.541393+09:00",
   "stats": {
-    "total": 88,
-    "fetched_this_run": 1404,
-    "research_passed_this_run": 99,
-    "new_this_run": 0,
+    "total": 92,
+    "fetched_this_run": 1558,
+    "research_passed_this_run": 106,
+    "new_this_run": 4,
     "min_score": 5,
     "research_only": true
   },
@@ -710,6 +710,145 @@
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
       "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20831771",
+      "title": "신불산군립공원 자연자원조사 용역(긴급)",
+      "agency": "울산광역시 울주군",
+      "agency_dept": "산림휴양과",
+      "agency_type": "지자체",
+      "contract_method": "제한경쟁",
+      "bsns_div": "용역",
+      "budget_amount": 114435000,
+      "order_planned_date": "2026-07-28T16:08:46+09:00",
+      "deadline": null,
+      "region": "울산",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20831771",
+      "officer": "편원경",
+      "officer_tel": "052-204-1754",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-07-29T10:00:13.541393+09:00",
+      "last_seen_at": "2026-07-29T10:00:13.541393+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00256174",
+      "title": "농촌용수개발사업 기본조사 용역(10억원 미만-4건)",
+      "agency": "한국농어촌공사 안전기술본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 3314935000,
+      "order_planned_date": "2026-07-24T10:43:03+09:00",
+      "deadline": "2026-07-29T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 안전기술기획-2680",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=5",
+          "name": "첨부5"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256174&fileType=BFDTL&fileSeq=1",
+      "ref_no": "안전기술기획-2680",
+      "officer": "박준형",
+      "officer_tel": "042-479-8209",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-07-29T10:00:13.541393+09:00",
+      "last_seen_at": "2026-07-29T10:00:13.541393+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00256593",
+      "title": "목재교육의 고시 외 과목 도입전략 정책연구",
+      "agency": "산림청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 60000000,
+      "order_planned_date": "2026-07-24T17:22:47+09:00",
+      "deadline": "2026-07-31T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 11",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256593&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00256593&fileType=BFDTL&fileSeq=1",
+      "ref_no": "11",
+      "officer": "이주현",
+      "officer_tel": "042-481-4017",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-07-29T10:00:13.541393+09:00",
+      "last_seen_at": "2026-07-29T10:00:13.541393+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00257682",
+      "title": "신불산군립공원 자연자원조사 용역(긴급)",
+      "agency": "울산광역시 울주군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 114435000,
+      "order_planned_date": "2026-07-28T17:14:47+09:00",
+      "deadline": "2026-07-31T23:59:00+09:00",
+      "region": "울산",
+      "description": "일반용역\n참조번호: 산림휴양과-15493",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00257682&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00257682&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00257682&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림휴양과-15493",
+      "officer": "이하누리",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-07-29T10:00:13.541393+09:00",
+      "last_seen_at": "2026-07-29T10:00:13.541393+09:00"
     },
     {
       "source_type": "order_plan",
