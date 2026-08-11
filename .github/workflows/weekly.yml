@@ -84,12 +84,19 @@ jobs:
       - name: 카톡 발송 (나에게 보내기)
         if: steps.gate.outputs.skip != 'true'
         id: kakao
+        # 알림 실패(토큰 만료 등)가 '데이터 커밋'까지 막지 않도록 비치명 처리.
+        # 2026-08-07 카카오 토큰 만료로 이 단계가 실패 → 커밋 skip → 대시보드 정지 사고 재발 방지.
+        continue-on-error: true
         env:
           KAKAO_REST_KEY: ${{ secrets.KAKAO_REST_KEY }}
           KAKAO_REFRESH_TOKEN: ${{ secrets.KAKAO_REFRESH_TOKEN }}
           KAKAO_CLIENT_SECRET: ${{ secrets.KAKAO_CLIENT_SECRET }}
           DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
         run: python scripts/kakao.py
+
+      - name: 카톡 실패 경고 (데이터 파이프라인은 계속)
+        if: steps.gate.outputs.skip != 'true' && steps.kakao.outcome == 'failure'
+        run: echo "::warning::카카오 알림 실패(토큰 재인증 필요 가능) — 수집·커밋은 정상 진행됨"
 
       - name: 변경분 커밋 & 푸시
         if: steps.gate.outputs.skip != 'true'
