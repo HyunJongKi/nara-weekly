@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-14T10:00:16.490608+09:00",
+  "generated_at": "2026-08-19T10:00:15.813356+09:00",
   "stats": {
-    "total": 101,
-    "fetched_this_run": 1463,
-    "research_passed_this_run": 94,
-    "new_this_run": 7,
+    "total": 103,
+    "fetched_this_run": 1235,
+    "research_passed_this_run": 72,
+    "new_this_run": 2,
     "min_score": 5,
     "research_only": true
   },
@@ -46,33 +46,6 @@
       "last_seen_at": "2026-07-24T10:00:15.063706+09:00"
     },
     {
-      "source_type": "order_plan",
-      "external_id": "order_plan::R26DD20845778",
-      "title": "산림과학기술 R&D 중장기 핵심 전략 수립",
-      "agency": "한국임업진흥원",
-      "agency_dept": "안전운영실",
-      "agency_type": "공공기관",
-      "contract_method": "제한경쟁",
-      "bsns_div": "일반용역",
-      "budget_amount": 85000000,
-      "order_planned_date": "2026-08-13T17:35:46+09:00",
-      "deadline": null,
-      "region": "중앙/전국",
-      "description": null,
-      "attachments": [],
-      "url": null,
-      "ref_no": "R26DD20845778",
-      "officer": "박은영",
-      "officer_tel": "02-6393-2549",
-      "score": 10,
-      "matched_keywords": [
-        "산림",
-        "임업"
-      ],
-      "first_seen_at": "2026-08-14T10:00:16.490608+09:00",
-      "last_seen_at": "2026-08-14T10:00:16.490608+09:00"
-    },
-    {
       "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00263889",
       "title": "산림과학기술 R&D 중장기 핵심 전략 수립",
@@ -96,6 +69,33 @@
       "ref_no": "R&D기획실-852",
       "officer": "박은영",
       "officer_tel": null,
+      "score": 10,
+      "matched_keywords": [
+        "산림",
+        "임업"
+      ],
+      "first_seen_at": "2026-08-14T10:00:16.490608+09:00",
+      "last_seen_at": "2026-08-19T10:00:15.813356+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20845778",
+      "title": "산림과학기술 R&D 중장기 핵심 전략 수립",
+      "agency": "한국임업진흥원",
+      "agency_dept": "안전운영실",
+      "agency_type": "공공기관",
+      "contract_method": "제한경쟁",
+      "bsns_div": "일반용역",
+      "budget_amount": 85000000,
+      "order_planned_date": "2026-08-13T17:35:46+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20845778",
+      "officer": "박은영",
+      "officer_tel": "02-6393-2549",
       "score": 10,
       "matched_keywords": [
         "산림",
@@ -772,6 +772,98 @@
     },
     {
       "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00263570",
+      "title": "거면·인당지구 농촌공간정비사업 기본계획 수립 용역",
+      "agency": "경상남도 함양군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 216400000,
+      "order_planned_date": "2026-08-13T10:07:46+09:00",
+      "deadline": "2026-08-18T18:00:00+09:00",
+      "region": "경남",
+      "description": "일반용역\n참조번호: 재무과-32294",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=1",
+      "ref_no": "재무과-32294",
+      "officer": "노정훈",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-08-14T10:00:16.490608+09:00",
+      "last_seen_at": "2026-08-19T10:00:15.813356+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20847670",
+      "title": "2026년 농업용 암반관정 지하수 영향조사용역",
+      "agency": "경상북도 칠곡군",
+      "agency_dept": "건설과 건설행정팀",
+      "agency_type": "지자체",
+      "contract_method": "제한경쟁",
+      "bsns_div": "기술용역",
+      "budget_amount": 110000000,
+      "order_planned_date": "2026-08-18T13:46:44+09:00",
+      "deadline": null,
+      "region": "경북",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20847670",
+      "officer": "이정",
+      "officer_tel": "054-979-6787",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-08-19T10:00:15.813356+09:00",
+      "last_seen_at": "2026-08-19T10:00:15.813356+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00264680",
+      "title": "2026년 농업용 암반관정 지하수 영향조사용역",
+      "agency": "경상북도 칠곡군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 110000000,
+      "order_planned_date": "2026-08-18T13:45:36+09:00",
+      "deadline": "2026-08-23T23:59:00+09:00",
+      "region": "경북",
+      "description": "기술용역\n참조번호: 건설과-23612호",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00264680&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00264680&fileType=BFDTL&fileSeq=1",
+      "ref_no": "건설과-23612호",
+      "officer": "송보관",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-08-19T10:00:15.813356+09:00",
+      "last_seen_at": "2026-08-19T10:00:15.813356+09:00"
+    },
+    {
+      "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00261785",
       "title": "농업부문 기후변화적응 지원체계 및 직불제 도입방안 연구 용역",
       "agency": "한국농어촌공사",
@@ -910,41 +1002,6 @@
       "score": 5,
       "matched_keywords": [
         "산림"
-      ],
-      "first_seen_at": "2026-08-14T10:00:16.490608+09:00",
-      "last_seen_at": "2026-08-14T10:00:16.490608+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00263570",
-      "title": "거면·인당지구 농촌공간정비사업 기본계획 수립 용역",
-      "agency": "경상남도 함양군",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 216400000,
-      "order_planned_date": "2026-08-13T10:07:46+09:00",
-      "deadline": "2026-08-18T18:00:00+09:00",
-      "region": "경남",
-      "description": "일반용역\n참조번호: 재무과-32294",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00263570&fileType=BFDTL&fileSeq=1",
-      "ref_no": "재무과-32294",
-      "officer": "노정훈",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
       ],
       "first_seen_at": "2026-08-14T10:00:16.490608+09:00",
       "last_seen_at": "2026-08-14T10:00:16.490608+09:00"
