@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-19T10:00:15.813356+09:00",
+  "generated_at": "2026-08-21T10:00:22.810295+09:00",
   "stats": {
     "total": 103,
-    "fetched_this_run": 1235,
-    "research_passed_this_run": 72,
-    "new_this_run": 2,
+    "fetched_this_run": 0,
+    "research_passed_this_run": 0,
+    "new_this_run": 0,
     "min_score": 5,
     "research_only": true
   },
