@@ -38,6 +38,11 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
+    # kakao 단계가 응답에서 새 refresh_token 을 받으면 GITHUB_OUTPUT 에 기록.
+    # 로컬 rotate_kakao_token.ps1 이 매일 아침 이 outputs 를 gh api 로 조회해
+    # GitHub Secret 을 자동 갱신 (PAT 없이 로컬 인증된 gh CLI 로 처리).
+    outputs:
+      new_refresh_token: ${{ steps.kakao.outputs.new_refresh_token }}
     steps:
       - uses: actions/checkout@v4
         with:
