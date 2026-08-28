@@ -44,42 +44,64 @@ ENDPOINTS: list[Endpoint] = [
     Endpoint("/ao/HrcspSsstndrdInfoService",  "getPublicPrcureThngInfoServc", "pre_spec",   "inqry_dt"),
 ]
 
-# ─── 학술연구용역 필터 ────────────────────────────────────────────
-# 일반용역(학술연구) 만 통과. 시설공사·물품구매·SW·유지보수 등은 제외.
+# ─── 학술연구용역 필터 (재설계) ───────────────────────────────────
+# 나라장터 업무구분(bsnsDivNm)을 최우선 판정 기준으로 삼는다.
+# - '용역' 카테고리(일반용역/기술용역/학술연구/학술용역)면 원칙적으로 통과
+# - '공사', '물품', '외자' 카테고리는 하드 제외
+# - 그 위에서 제목·설명에 명백한 비-용역 지시어(공사/구매/급식/청소 등)면 최종 제외
+#
+# 종전 필터가 너무 엄격해 나라장터 웹 검색 결과 대비 유효 항목 다수를 놓치던 문제 해결.
 
-RESEARCH_INCLUDE = re.compile(
+# 명확한 학술·조사·연구·계획·평가·타당성 표현 (있으면 다른 조건 무관 통과)
+RESEARCH_STRONG = re.compile(
     r"(연구\s*용역|학술\s*연구|학술용역|조사\s*용역|조사연구|기초\s*연구|기획\s*연구|"
-    r"정책\s*연구|타당성\s*(조사|분석|연구)|실태\s*조사|모니터링\s*연구|연구개발|R&D|"
-    r"마스터플랜|기본\s*계획\s*수립|중장기\s*계획)"
+    r"정책\s*연구|타당성\s*(조사|분석|연구|검토)|실태\s*조사|모니터링|연구개발|R&D|"
+    r"마스터플랜|기본\s*계획\s*수립|중장기\s*계획|성과\s*평가|성과평가|"
+    r"역량강화|용역\s*연구|실증\s*연구|시범\s*사업|설계기준|평가\s*연구|"
+    r"영향\s*조사|영향조사|실무활용\s*정립|정립\s*연구|중심지\s*활성화|"
+    r"공간\s*정비\s*사업|공간정비|재구조화|기술\s*수요|수요\s*분석|기획\s*용역)"
 )
 
-RESEARCH_EXCLUDE = re.compile(
-    r"(공사|건설|시공|시설(?!.*조사)|설치|구입|구매|매입|임대|리스|"
-    r"유지\s*보수|유지보수|정비|청소|경비|급식|도서구매|장비\s*(구매|구입|도입)|"
-    r"기자재|소모품|납품|수리|교체|보강|보수공사|"
-    r"소프트웨어\s*개발|시스템\s*(구축|개발|운영|유지)|SW\s*개발|"
-    r"위탁\s*운영|관리\s*위탁|환경미화)"
+# 하드 제외 - 무조건 배제. bsnsDivNm 카테고리와 제목에서 이 표현이 나오면 용역 아님.
+RESEARCH_HARD_EXCLUDE = re.compile(
+    r"(신축\s*공사|건축\s*공사|토목\s*공사|시공|설치\s*공사|시설\s*공사|"
+    r"구매\s*계약|물품\s*구매|물품\s*납품|기자재\s*구매|장비\s*구매|"
+    r"임대\s*차|리스\s*계약|급식|청소|경비\s*용역|환경미화|"
+    r"보수\s*공사|보강\s*공사|리모델링|철거)"
 )
+
+# bsnsDivNm 카테고리별 판정
+BD_ALLOW = ("일반용역", "기술용역", "학술연구", "학술용역", "연구용역", "용역")
+BD_DENY  = ("공사", "물품", "외자", "리스", "임대")
 
 
 def _is_research(item: dict[str, Any]) -> bool:
-    hay = " ".join(filter(None, [
-        item.get("title"), item.get("description"),
-        item.get("bsns_div"), item.get("contract_method"),
-    ]))
-    if not hay:
+    title_desc = " ".join(filter(None, [item.get("title"), item.get("description")]))
+    if not title_desc:
         return False
-    if RESEARCH_EXCLUDE.search(hay):
-        # 제외 패턴이 있어도 명확한 연구 표현이 있으면 통과
-        if RESEARCH_INCLUDE.search(hay):
-            return True
-        return False
-    if RESEARCH_INCLUDE.search(hay):
-        return True
-    # bsnsDivNm 이 "일반용역(학술연구)" 등 학술 표기를 포함하면 통과
     bd = (item.get("bsns_div") or "").replace(" ", "")
-    if "학술연구" in bd or "학술용역" in bd:
+
+    # 1) 하드 제외: 신축공사·물품구매·급식 등 명백히 용역 아님
+    if RESEARCH_HARD_EXCLUDE.search(title_desc):
+        return False
+
+    # 2) bsnsDivNm 이 명시적 공사/물품/외자면 제외
+    if any(x in bd for x in BD_DENY):
+        return False
+
+    # 3) 명확한 연구·조사·평가 표현 있으면 통과 (모든 다른 조건 무관)
+    if RESEARCH_STRONG.search(title_desc):
         return True
+
+    # 4) bsnsDivNm 이 용역 카테고리이고, 제목이 연구·조사 성격 있으면 통과
+    if any(x in bd for x in BD_ALLOW):
+        # 용역 카테고리 내 하위 필터 - 연구·조사·분석·평가·계획·기획·전략·개발 등
+        if re.search(r"연구|조사|분석|평가|계획|기획|전략|정책|타당성|용역|"
+                     r"컨설팅|자문|진단|검토|수립|개발|설계|기준|기본구상|"
+                     r"활성화|정비|육성|경영체|기술\s*보급|보급|육종|품종|"
+                     r"인재\s*양성|양성|교육\s*훈련|프로그램", title_desc):
+            return True
+
     return False
 
 
