@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-28T10:00:13.104587+09:00",
+  "generated_at": "2026-08-28T15:10:26.115146+09:00",
   "stats": {
-    "total": 103,
-    "fetched_this_run": 0,
-    "research_passed_this_run": 0,
-    "new_this_run": 0,
+    "total": 105,
+    "fetched_this_run": 1503,
+    "research_passed_this_run": 98,
+    "new_this_run": 2,
     "min_score": 5,
     "research_only": true
   },
@@ -769,6 +769,88 @@
       ],
       "first_seen_at": "2026-06-03T15:09:24.548336+09:00",
       "last_seen_at": "2026-06-05T11:07:32.748408+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00267155",
+      "title": "농업생산기반시설 설계기준 실무활용 정립 연구 용역",
+      "agency": "한국농어촌공사 농어촌연구원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 70000000,
+      "order_planned_date": "2026-08-25T13:39:26+09:00",
+      "deadline": "2026-08-31T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 연구지원-2848",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267155&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267155&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267155&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267155&fileType=BFDTL&fileSeq=1",
+      "ref_no": "연구지원-2848",
+      "officer": "권정은",
+      "officer_tel": "031-400-1634",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-08-28T15:10:26.115146+09:00",
+      "last_seen_at": "2026-08-28T15:10:26.115146+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00267251",
+      "title": "2026년 입목처분 위탁조사 용역(1차)",
+      "agency": "산림청 동부지방산림청 강릉국유림관리소",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 9454000,
+      "order_planned_date": "2026-08-25T15:37:23+09:00",
+      "deadline": "2026-08-30T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 강릉국유림관리소-7552",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267251&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267251&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267251&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267251&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00267251&fileType=BFDTL&fileSeq=1",
+      "ref_no": "강릉국유림관리소-7552",
+      "officer": "황혜림",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-08-28T15:10:26.115146+09:00",
+      "last_seen_at": "2026-08-28T15:10:26.115146+09:00"
     },
     {
       "source_type": "pre_spec",
