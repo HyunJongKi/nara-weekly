@@ -449,14 +449,13 @@ function getFilters() {
 // 입찰공고기간 경과 판정: 명시 마감(사전규격 의견제출마감)이 지났거나,
 // 최근 수집창에서 14일 이상 사라진(=공고기간 종료) 건. 목록에서만 기본 숨김(차트는 1년 누적 전체).
 function isExpired(it) {
+  // deadline(사전규격 의견제출 마감일) 이 실제로 지난 것만 만료로 판정.
+  // last_seen_at 기준(수집창에서 사라짐)은 폐기 — workflow lookback 이 7일이라
+  // 옛 항목이 재수집 안 될 뿐 실제로는 아직 진행 중일 수 있어 과도한 필터였음.
   const today = new Date(); today.setHours(0, 0, 0, 0);
   if (it.deadline) {
     const d = new Date(it.deadline);
     if (!isNaN(d) && d < today) return true;
-  }
-  if (it.last_seen_at) {
-    const ls = new Date(it.last_seen_at);
-    if (!isNaN(ls) && (Date.now() - ls.getTime()) / 86400000 > 14) return true;
   }
   return false;
 }
