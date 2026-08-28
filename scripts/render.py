@@ -101,6 +101,17 @@ HTML = r"""<!doctype html>
   .card-prob .pct-low  { color:#64748b; }
   .chip.class-a { background:#dbeafe; color:#1d4ed8; font-weight:600; }
   .chip.class-b { background:#dcfce7; color:#166534; font-weight:600; }
+  /* 찜하기 (즐겨찾기) */
+  .card.favorite { background: linear-gradient(to right, #fef9c3, #fffbeb 40%); border: 2px solid #f59e0b; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.15); }
+  .card.favorite::before { content: "⭐ 찜한 공고"; position: absolute; top: -10px; left: 16px; background: #f59e0b; color: white; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .card { position: relative; }
+  .fav-btn { background: none; border: 1.5px solid #cbd5e1; border-radius: 999px; padding: 4px 10px; cursor: pointer; font-size: 15px; color: #94a3b8; transition: all 0.15s; display:inline-flex; align-items:center; gap:4px; font-weight:600; }
+  .fav-btn:hover { border-color: #f59e0b; color: #d97706; background: #fef9c3; }
+  .fav-btn.active { border-color: #f59e0b; color: #d97706; background: #fef3c7; }
+  .fav-btn.active:hover { background: #fef9c3; }
+  /* 찜 필터 토글 */
+  .fav-toggle { display:flex; align-items:center; gap:5px; font-size:12.5px; color:#78350f; cursor:pointer; white-space:nowrap; padding:5px 10px; background:#fef9c3; border:1px solid #fbbf24; border-radius:8px; font-weight:600; }
+  .fav-toggle input { width:15px; height:15px; accent-color: #f59e0b; cursor:pointer; }
   /* 임시 키워드 필터바 인라인 */
   .tempkw-inline { display:flex; align-items:center; gap:5px; flex-wrap:wrap; padding:4px 8px; border:1px dashed #ca8a04; border-radius:8px; background:#fef9c3; }
   .tempkw-inline label { font-size:11px; color:#854d0e; font-weight:600; }
@@ -219,6 +230,7 @@ HTML = r"""<!doctype html>
         <option value="budget">예산순</option>
       </select>
       <label class="exp-toggle" title="입찰공고기간이 경과(마감)했거나 최근 수집창에서 사라진 공고를 목록에 포함합니다. (차트는 1년 누적 전체 기준)"><input type="checkbox" id="showExpired"> 경과 공고 포함</label>
+      <label class="fav-toggle" title="⭐ 찜한 공고만 목록에 표시합니다."><input type="checkbox" id="favOnly"> ⭐ 찜한 것만</label>
       <button class="btn" id="reset">초기화</button>
       <button class="btn primary" id="xlsx">⬇ 엑셀 다운로드</button>
       <!-- 임시 키워드 인라인 (본인 브라우저에만 저장) -->
@@ -423,6 +435,16 @@ let AUGMENTED = [];      // 임시 키워드 적용본
 let CHARTS = {};
 let CURRENT_VIEW = "dashboard";
 let TEMP_KW = JSON.parse(localStorage.getItem(LS_TEMP_KW) || "[]");
+
+// ── 찜하기 (즐겨찾기) — external_id 기준으로 localStorage 저장 ──
+const LS_FAVS = "nw_favorites_v1";
+let FAVORITES = new Set(JSON.parse(localStorage.getItem(LS_FAVS) || "[]"));
+function isFav(it) { return FAVORITES.has(it.external_id); }
+function toggleFav(extId) {
+  if (FAVORITES.has(extId)) FAVORITES.delete(extId);
+  else FAVORITES.add(extId);
+  localStorage.setItem(LS_FAVS, JSON.stringify([...FAVORITES]));
+}
 
 // ── 유틸 ──
 function fmtMoney(n) {
@@ -774,8 +796,12 @@ function renderAll() {
   const avgWinPct = items.length ? Math.round(items.reduce((s,it)=>s+winProbability(it).pct, 0) / items.length) : 0;
   const highWinCount = items.filter(it => winProbability(it).pct >= 75).length;
 
+  // ⭐ 찜한 공고 개수 (현재 필터된 목록 안)
+  const favInFilter = items.filter(it => isFav(it)).length;
+
   document.getElementById("kpis").innerHTML = [
     {label:"총 공고건수", value: items.length.toLocaleString(), sub:`발주계획 ${A.byType.order_plan||0} · 사전규격 ${A.byType.pre_spec||0}`},
+    {label:"⭐ 찜한 공고", value: FAVORITES.size, sub: favInFilter !== FAVORITES.size ? `현재 필터에 ${favInFilter}건` : "관리자 관심 표시"},
     {label:"총 예산금액", value: fmtMoney(A.budgetSum), sub:"금액공개 건 합계"},
     {label:"평균 예산", value: fmtMoney(A.budgetAvg), sub:"금액공개 건 평균"},
     {label:"🎯 최다 성격", value: topAB.topA ? topAB.topA[0] : "-", sub: topAB.topA ? `${topAB.topA[1]}건` : ""},
@@ -882,11 +908,18 @@ function renderList(items, f) {
     arr = arr.filter(it => !isExpired(it));
     hidden = before - arr.length;
   }
+  // "⭐ 찜한 것만" 체크박스가 켜지면 찜한 것만 표시
+  const favOnly = (document.getElementById("favOnly") || {}).checked;
+  if (favOnly) arr = arr.filter(it => isFav(it));
+
   // 최신순: 발주예정일 우선, 없으면 갱신일 — 둘 다 ISO/yyyy-mm-dd 형식이라 문자열 정렬 OK
   const dateKey = it => it.order_planned_date || it.last_seen_at || "";
   if (f.sort === "recent") arr.sort((a,b) => dateKey(b).localeCompare(dateKey(a)));
   if (f.sort === "budget") arr.sort((a,b) => (b.budget_amount||0) - (a.budget_amount||0));
   if (f.sort === "score")  arr.sort((a,b) => (b.score||0) - (a.score||0));
+
+  // ⭐ 찜한 것들은 항상 최상단 재배치 (정렬 옵션 무관)
+  arr.sort((a,b) => (isFav(b)?1:0) - (isFav(a)?1:0));
 
   const el = document.getElementById("list");
   const note = hidden ? `<div class="list-note">진행 중 공고 <b>${arr.length}</b>건 · 경과(마감) <b>${hidden}</b>건 숨김 — '경과 공고 포함'으로 전체 보기</div>` : "";
@@ -906,10 +939,12 @@ function renderList(items, f) {
     const wp = winProbability(it);
     const grade = wp.pct>=75?"high":wp.pct>=55?"mid":"low";
     const a = classifyA(it), b = classifyB(it);
-    return `<article class="card">
+    const fav = isFav(it);
+    return `<article class="card${fav?" favorite":""}">
       <div class="card-head">
         <h4 class="card-title">${it.title||""}</h4>
         <div class="card-prob" title="수주 가능성 추정 %">
+          <button class="fav-btn${fav?" active":""}" data-fav-ext="${it.external_id}" title="${fav?"찜 해제":"찜하기 (상단 재배치)"}">${fav?"★":"☆"} <span style="font-size:11px">${fav?"찜":"찜"}</span></button>
           <span class="ink-bar ${grade}"><span style="width:${wp.pct}%"></span></span>
           <b class="pct-${grade}">${wp.pct}%</b>
         </div>
@@ -930,6 +965,18 @@ function renderList(items, f) {
       ${desc}
     </article>`;
   }).join("") + (arr.length > 300 ? `<div class="footnote">상위 300건만 표시됨 (전체 ${arr.length}건). 필터를 좁혀 보세요.</div>` : "");
+
+  // ⭐ 찜하기 버튼 이벤트 delegation
+  el.querySelectorAll(".fav-btn").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const extId = btn.dataset.favExt;
+      if (extId) {
+        toggleFav(extId);
+        renderAll();  // 재정렬(찜한 것 최상단)
+      }
+    });
+  });
 }
 
 // ── 엑셀 다운로드 ──
@@ -937,9 +984,18 @@ function downloadXlsx() {
   const f = getFilters();
   const items = applyFilter(AUGMENTED, f);
   if (items.length === 0) { alert("다운로드할 데이터가 없습니다. 필터를 확인하세요."); return; }
-  const rows = items.map(it => {
+  // 찜한 것 먼저, 그 다음 원본 순서
+  const sortedItems = items.slice().sort((a,b) => (isFav(b)?1:0) - (isFav(a)?1:0));
+  const rows = sortedItems.map(it => {
     const a = it.attachments || [];
+    const wp = winProbability(it);
+    const clsA = classifyA(it), clsB = classifyB(it), clsC = classifyC(it);
     const row = {
+      "⭐ 찜": isFav(it) ? "★" : "",
+      "수주가능성(%)": wp.pct,
+      "성격(A)": clsA.code + " " + clsA.label,
+      "분야(B)": clsB.code + " " + clsB.label,
+      "발주주체(C)": clsC.code + " " + clsC.label,
       "공고유형": TYPE_LABEL[it.source_type] || it.source_type,
       "제목": it.title || "",
       "발주기관": it.agency || "",
@@ -1071,6 +1127,7 @@ const DEFAULT_REPO_URL = "https://github.com/HyunJongKi/nara-weekly";
 function initUI() {
   // 필터
   const _se = document.getElementById("showExpired"); if (_se) _se.addEventListener("change", renderAll);
+  const _fo = document.getElementById("favOnly"); if (_fo) _fo.addEventListener("change", renderAll);
   ["q","type","kw","region","agency_type","sort"].forEach(id => {
     const el = document.getElementById(id); if (el) el.addEventListener("input", renderAll);
   });
