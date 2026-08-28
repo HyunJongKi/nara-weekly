@@ -4,8 +4,10 @@
 min_score: 5
 
 keywords:
+  # substring 매칭: "농업" 하나만 등록해도 "친환경농업", "농업경영체", "농업기술" 등 자동 매칭.
+  # 세부 키워드(친환경농업 등)를 별도로 두지 않는다 - 화면에 중복 카운트 유발.
   - { term: "농업",         weight: 5, group: "agriculture" }
-  - { term: "농촌",         weight: 5, group: "rural space" }
+  - { term: "농촌",         weight: 5, group: "rural" }
   - { term: "식량",         weight: 5, group: "agriculture" }
   - { term: "원예",         weight: 5, group: "agriculture" }
   - { term: "스마트팜",     weight: 6, group: "smartfarm" }
@@ -13,5 +15,3 @@ keywords:
   - { term: "노지스마트",   weight: 6, group: "smartfarm" }
   - { term: "산림",         weight: 5, group: "forestry" }
   - { term: "임업",         weight: 5, group: "forestry" }
-  - { term: "친환경농업",   weight: 5, group: "agriculture" }
-  - { term: "유기농산업",   weight: 5, group: "agriculture" }

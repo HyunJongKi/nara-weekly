@@ -227,8 +227,14 @@ def _iter_pages(ep: Endpoint, service_key: str, lookback: int, lookahead: int) -
         try:
             data = _fetch(url, params)
         except Exception as exc:
-            logger.warning("fetch failed page=%d op=%s: %s", page, ep.operation, exc)
-            break
+            # 이 페이지 fetch 실패해도 다음 페이지 시도 (break 대신 continue)
+            # 특정 페이지가 순간 장애를 만나도 이후 데이터를 놓치지 않도록.
+            logger.warning("fetch failed page=%d op=%s: %s — skip and continue", page, ep.operation, exc)
+            page += 1
+            if page > 200:
+                logger.warning("page guard at %s", ep.operation)
+                break
+            continue
 
         if isinstance(data, dict) and "nkoneps.com.response.ResponseError" in data:
             err = data["nkoneps.com.response.ResponseError"].get("header", {})
@@ -256,7 +262,7 @@ def _iter_pages(ep: Endpoint, service_key: str, lookback: int, lookahead: int) -
         if page * rows >= total:
             break
         page += 1
-        if page > 50:
+        if page > 200:  # 페이지 가드 50→200: 넓은 LOOKBACK 시 뒷 페이지 최신 항목 누락 방지
             logger.warning("page guard at %s", ep.operation)
             break
 
