@@ -92,6 +92,23 @@ HTML = r"""<!doctype html>
   .listwrap { display:flex; flex-direction:column; gap:10px; }
   .card { background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; }
   .card h4 { margin:0 0 6px; font-size:15px; }
+  .card-head { display:flex; align-items:flex-start; gap:12px; justify-content:space-between; margin-bottom:6px; }
+  .card-title { flex:1; margin:0; font-size:15px; }
+  .card-prob { display:flex; align-items:center; gap:8px; white-space:nowrap; }
+  .card-prob b { font-size:14px; }
+  .card-prob .pct-high { color:#16a34a; }
+  .card-prob .pct-mid  { color:#d97706; }
+  .card-prob .pct-low  { color:#64748b; }
+  .chip.class-a { background:#dbeafe; color:#1d4ed8; font-weight:600; }
+  .chip.class-b { background:#dcfce7; color:#166534; font-weight:600; }
+  /* 임시 키워드 필터바 인라인 */
+  .tempkw-inline { display:flex; align-items:center; gap:5px; flex-wrap:wrap; padding:4px 8px; border:1px dashed #ca8a04; border-radius:8px; background:#fef9c3; }
+  .tempkw-inline label { font-size:11px; color:#854d0e; font-weight:600; }
+  .tempkw-inline input.tk-in { padding:5px 8px; border:1px solid #eab308; border-radius:6px; font-size:13px; width:120px; background:white; }
+  .tempkw-inline button.tk-add { background:#eab308; color:white; border:0; border-radius:6px; padding:5px 9px; cursor:pointer; font-weight:600; font-size:12px; }
+  .tempkw-inline button.tk-add:hover { background:#ca8a04; }
+  .tempkw-inline .tk-chip { background:#fde68a; color:#854d0e; padding:3px 7px 3px 10px; border-radius:999px; font-size:12px; display:inline-flex; align-items:center; gap:4px; }
+  .tempkw-inline .tk-chip button { background:none; border:0; color:#854d0e; font-weight:bold; cursor:pointer; padding:0 3px; font-size:14px; }
   .card .agency { color: var(--muted); font-size:12.5px; margin-bottom:6px; }
   .chips { display:flex; flex-wrap:wrap; gap:4px; margin:6px 0; }
   .chip { background:var(--chip); color:var(--chip-text); padding:2px 8px; border-radius:999px; font-size:11.5px; }
@@ -166,7 +183,7 @@ HTML = r"""<!doctype html>
     <nav class="nav">
       <button class="active" data-view="dashboard"><span class="icon">📊</span><span class="label">대시보드</span></button>
       <button data-view="list"><span class="icon">📋</span><span class="label">공고 목록</span></button>
-      <button data-view="keyword"><span class="icon">🔍</span><span class="label">키워드 분석</span></button>
+      <button data-view="keyword"><span class="icon">🧭</span><span class="label">사업 분류 분석</span></button>
       <button data-view="region"><span class="icon">🗺️</span><span class="label">지역 분석</span></button>
       <button data-view="settings"><span class="icon">⚙️</span><span class="label">키워드 설정</span></button>
       <button data-view="about"><span class="icon">ℹ️</span><span class="label">설명</span></button>
@@ -204,6 +221,13 @@ HTML = r"""<!doctype html>
       <label class="exp-toggle" title="입찰공고기간이 경과(마감)했거나 최근 수집창에서 사라진 공고를 목록에 포함합니다. (차트는 1년 누적 전체 기준)"><input type="checkbox" id="showExpired"> 경과 공고 포함</label>
       <button class="btn" id="reset">초기화</button>
       <button class="btn primary" id="xlsx">⬇ 엑셀 다운로드</button>
+      <!-- 임시 키워드 인라인 (본인 브라우저에만 저장) -->
+      <div class="tempkw-inline" title="본인 브라우저에만 저장되는 임시 키워드. 즉시 차트·필터에 반영됩니다.">
+        <label>+ 임시 KW</label>
+        <input type="text" id="tk-in" class="tk-in" placeholder="예: 축산" />
+        <button class="tk-add" id="tk-add">추가</button>
+        <span id="tk-list"></span>
+      </div>
     </div>
 
     <!-- 대시보드 -->
@@ -259,30 +283,50 @@ HTML = r"""<!doctype html>
       <div id="list" class="listwrap"><div class="empty">데이터 로딩 중…</div></div>
     </section>
 
-    <!-- 키워드 분석 -->
+    <!-- 사업 분류 분석 (3축: 성격 A × 분야 B × 발주주체 C) -->
     <section data-view-pane="keyword" style="display:none">
       <div class="charts">
-        <div class="panel col-12">
-          <h3>키워드별 공고건수</h3>
-          <div class="chart-box tall"><canvas id="ch-keyword2"></canvas></div>
+        <div class="panel col-6">
+          <h3>🎯 사업 성격 (A축)  <span class="hint">정책·계획·타당성·조사·평가·위탁</span></h3>
+          <div class="chart-box tall"><canvas id="ch-classA"></canvas></div>
+        </div>
+        <div class="panel col-6">
+          <h3>🌾 대상 분야 (B축)  <span class="hint">농업·농촌·축산·스마트·산림·수자원</span></h3>
+          <div class="chart-box tall"><canvas id="ch-classB"></canvas></div>
         </div>
         <div class="panel col-12">
-          <h3>키워드 × 공고유형 (스택 바)</h3>
-          <div class="chart-box tall"><canvas id="ch-keyword-type"></canvas></div>
+          <h3>🔀 성격 × 분야 히트맵  <span class="hint">교차 분석: 어떤 분야에서 어떤 성격 사업이 많은지</span></h3>
+          <div class="chart-box tall"><canvas id="ch-classAB"></canvas></div>
+        </div>
+        <div class="panel col-12">
+          <h3>🏛️ 발주주체 × 분야 (C×B 스택바)  <span class="hint">누가 어떤 분야를 발주하는지</span></h3>
+          <div class="chart-box tall"><canvas id="ch-classCB"></canvas></div>
+        </div>
+        <div class="panel col-12">
+          <h3>🔍 (참고) 원 키워드별 매칭 빈도</h3>
+          <div class="chart-box"><canvas id="ch-keyword2"></canvas></div>
         </div>
       </div>
     </section>
 
-    <!-- 지역 분석 -->
+    <!-- 지역 분석 (지역 × 분야·성격) -->
     <section data-view-pane="region" style="display:none">
       <div class="charts">
         <div class="panel col-12">
-          <h3>지역별 공고건수</h3>
+          <h3>🗺️ 지역별 공고건수</h3>
           <div class="chart-box tall"><canvas id="ch-region2"></canvas></div>
         </div>
         <div class="panel col-12">
-          <h3>지역 × 공고유형 (스택 바)</h3>
-          <div class="chart-box tall"><canvas id="ch-region-type"></canvas></div>
+          <h3>🌾 지역 × 분야(B) 스택 바  <span class="hint">각 지역에서 어떤 분야가 강한지</span></h3>
+          <div class="chart-box tall"><canvas id="ch-region-domain"></canvas></div>
+        </div>
+        <div class="panel col-12">
+          <h3>🎯 지역 × 사업 성격(A) 스택 바  <span class="hint">각 지역에서 어떤 성격 사업이 많은지</span></h3>
+          <div class="chart-box tall"><canvas id="ch-region-nature"></canvas></div>
+        </div>
+        <div class="panel col-12">
+          <h3>공고유형(발주계획·사전규격) 지역 분포</h3>
+          <div class="chart-box"><canvas id="ch-region-type"></canvas></div>
         </div>
       </div>
     </section>
@@ -569,6 +613,52 @@ function timelineChart(canvasId, items) {
     ]}, options:{ responsive:true, maintainAspectRatio:false, plugins:{ legend:{ position:"bottom" } }, scales:{ y:{ beginAtZero:true, ticks:{ precision:0 } } } } });
 }
 
+// ── 사업 자동 분류 (3축: 성격 A × 분야 B × 발주주체 C) ──
+// 사용자 요청: A6(R&D), A7(설계·규격), A9(안전·환경조사) 는 수집단계 제외라 분류에도 없음
+const CLASSIFY_A = [
+  { code:"A1", label:"정책·제도 연구",  re:/정책\s*연구|제도\s*개선|법제|개정|개선\s*방안|제도\s*수립|규제/ },
+  { code:"A2", label:"계획 수립",       re:/기본\s*계획|종합\s*계획|마스터플랜|중장기|시행\s*계획|기본\s*구상|전략\s*수립|재생\s*기본/ },
+  { code:"A3", label:"타당성 조사",     re:/타당성|예비\s*타당성|사업성|기본구상/ },
+  { code:"A4", label:"실태·현황 조사",   re:/실태\s*조사|현황\s*조사|통계\s*조사|기초\s*조사|수요\s*조사|기술\s*수요|수요\s*분석/ },
+  { code:"A5", label:"성과·평가",       re:/성과\s*평가|영향\s*평가|효과\s*분석|모니터링|진단|성과분석|평가\s*연구/ },
+  { code:"A8", label:"위탁·지원",       re:/위탁\s*조사|위탁\s*운영|지원\s*사업|컨설팅|자문|용역\s*지원/ },
+];
+const CLASSIFY_B = [
+  { code:"B1", label:"농업 생산·기술",   re:/재배|영농|기술\s*보급|농기계|병해충|경작|농법/ },
+  { code:"B2", label:"농촌 공간·정비",   re:/농촌\s*공간|정비\s*사업|재구조화|재생|중심지\s*활성화|농촌\s*마을|공간\s*재구조화/ },
+  { code:"B3", label:"축산·경영체",     re:/축산|낙농|젖소|경영체|양돈|양계|가축/ },
+  { code:"B4", label:"스마트농업",      re:/스마트팜|노지\s*스마트|노지스마트|IoT|빅데이터|자동화|디지털\s*농업/ },
+  { code:"B5", label:"식량·안보",       re:/식량\s*안보|식량\s*수급|자급률|식량\s*정책/ },
+  { code:"B6", label:"원예·특작",       re:/원예|화훼|인삼|흑삼|채소|과수|특작|약용/ },
+  { code:"B7", label:"산림 자원·경영",  re:/산림\s*자원|임업|산림\s*복지|탄소\s*흡수|숲가꾸기|입목|산림\s*경영|목재/ },
+  { code:"B8", label:"산림 시설·환경",  re:/임도|산사태|산림\s*재해|재선충|방제|산림\s*안전|산림\s*환경/ },
+  { code:"B9", label:"농업기반·수자원", re:/저수지|관정|지하수|수리\s*시설|간척지|용수|배수/ },
+];
+const CLASSIFY_C = [  // agency_type + agency 조합
+  { code:"C1", label:"중앙부처",       match: it => (it.agency_type||"") === "중앙부처" },
+  { code:"C2", label:"공공기관",       match: it => (it.agency_type||"") === "공공기관" },
+  { code:"C3", label:"광역지자체",     match: it => (it.agency_type||"") === "지자체" && /특별시|광역시|특별자치도|특별자치시|^[가-힣]{2}도\b/.test(it.agency||"") },
+  { code:"C4", label:"기초지자체",     match: it => (it.agency_type||"") === "지자체" && !/특별시|광역시|특별자치도|특별자치시|^[가-힣]{2}도\b/.test(it.agency||"") },
+  { code:"C5", label:"교육·연구기관",  match: it => (it.agency_type||"") === "교육기관" },
+];
+const CLASSIFY_A_COLORS = {A1:"#2563eb",A2:"#0891b2",A3:"#7e22ce",A4:"#16a34a",A5:"#d97706",A8:"#64748b",A0:"#cbd5e1"};
+const CLASSIFY_B_COLORS = {B1:"#059669",B2:"#0284c7",B3:"#dc2626",B4:"#7c3aed",B5:"#ca8a04",B6:"#db2777",B7:"#65a30d",B8:"#78350f",B9:"#0d9488",B0:"#cbd5e1"};
+
+function classifyA(it) {
+  const t = (it.title||"") + " " + (it.description||"");
+  for (const c of CLASSIFY_A) if (c.re.test(t)) return c;
+  return { code:"A0", label:"기타" };
+}
+function classifyB(it) {
+  const t = (it.title||"") + " " + (it.description||"");
+  for (const c of CLASSIFY_B) if (c.re.test(t)) return c;
+  return { code:"B0", label:"기타" };
+}
+function classifyC(it) {
+  for (const c of CLASSIFY_C) if (c.match(it)) return c;
+  return { code:"C0", label:"기타" };
+}
+
 // ── 아이엔케이(주) 수주 가능성 추정 (실적 프로파일 반영) ──
 // INK 프로파일: ①주력=농업·식량 정책/제도 + 스마트팜·원예 기술R&D  ②적정규모=1억 미만 소형
 //               ③주력고객=공공기관·광역/기초 지자체
@@ -669,11 +759,28 @@ function renderAll() {
     `필터 결과 ${items.length.toLocaleString()}건 / 전체 ${AUGMENTED.length.toLocaleString()}건${TEMP_KW.length?` · 임시 키워드 ${TEMP_KW.length}개 적용`:""}`;
 
   const A = aggregate(items);
+  // 사업 분류(A·B) 상위 카테고리 산출
+  const topAB = (() => {
+    const bA={}, bB={};
+    for (const it of items) {
+      const a=classifyA(it).label, b=classifyB(it).label;
+      bA[a]=(bA[a]||0)+1; bB[b]=(bB[b]||0)+1;
+    }
+    const topA = Object.entries(bA).sort((x,y)=>y[1]-x[1])[0];
+    const topB = Object.entries(bB).sort((x,y)=>y[1]-x[1])[0];
+    return { topA, topB };
+  })();
+  // INK 평균 수주가능성
+  const avgWinPct = items.length ? Math.round(items.reduce((s,it)=>s+winProbability(it).pct, 0) / items.length) : 0;
+  const highWinCount = items.filter(it => winProbability(it).pct >= 75).length;
+
   document.getElementById("kpis").innerHTML = [
     {label:"총 공고건수", value: items.length.toLocaleString(), sub:`발주계획 ${A.byType.order_plan||0} · 사전규격 ${A.byType.pre_spec||0}`},
-    {label:"매칭 키워드 수", value: Object.keys(A.byKw).length, sub:"매칭된 회사 관심어"},
     {label:"총 예산금액", value: fmtMoney(A.budgetSum), sub:"금액공개 건 합계"},
     {label:"평균 예산", value: fmtMoney(A.budgetAvg), sub:"금액공개 건 평균"},
+    {label:"🎯 최다 성격", value: topAB.topA ? topAB.topA[0] : "-", sub: topAB.topA ? `${topAB.topA[1]}건` : ""},
+    {label:"🌾 최다 분야", value: topAB.topB ? topAB.topB[0] : "-", sub: topAB.topB ? `${topAB.topB[1]}건` : ""},
+    {label:"평균 수주가능성", value: avgWinPct + "%", sub:`유망(≥75%) ${highWinCount}건`},
     {label:"지역 수", value: Object.keys(A.byRegion).length, sub:"발주기관 소재 기준"},
   ].map(k => `<div class="kpi"><div class="label">${k.label}</div><div class="value">${k.value||"-"}</div><div class="sub">${k.sub||""}</div></div>`).join("");
 
@@ -693,17 +800,69 @@ function renderAll() {
     renderInkRanking(items);
   }
   if (CURRENT_VIEW === "keyword") {
+    // === 사업 분류 분석 ===
+    // 각 items 를 A / B / C 축으로 태깅
+    const byA = {}, byB = {}, byAB = {}, byCB = {};
+    for (const it of items) {
+      const a = classifyA(it), b = classifyB(it), c = classifyC(it);
+      byA[a.label] = (byA[a.label]||0) + 1;
+      byB[b.label] = (byB[b.label]||0) + 1;
+      const abKey = a.label + "||" + b.label;
+      byAB[abKey] = (byAB[abKey]||0) + 1;
+      if (!byCB[c.label]) byCB[c.label] = {};
+      byCB[c.label][b.label] = (byCB[c.label][b.label]||0) + 1;
+    }
+    // A축 도넛
+    const aEntries = Object.entries(byA).sort((x,y)=>y[1]-x[1]);
+    doughnutChart("ch-classA", aEntries.map(x=>x[0]), aEntries.map(x=>x[1]));
+    // B축 바 (수평)
+    const bEntries = Object.entries(byB).sort((x,y)=>y[1]-x[1]);
+    barChart("ch-classB", bEntries.map(x=>x[0]), bEntries.map(x=>x[1]), "건수", {horizontal:true, colors:"#059669"});
+    // A × B 스택바
+    const bLabels2 = bEntries.map(x=>x[0]);
+    stackedBar("ch-classAB", bLabels2, aEntries.map(([a],idx) => ({
+      label: a,
+      data: bLabels2.map(bl => byAB[a+"||"+bl] || 0),
+      backgroundColor: CLASSIFY_A_COLORS[(CLASSIFY_A.find(x=>x.label===a)||{}).code] || "#cbd5e1",
+    })));
+    // C × B 스택바
+    const cEntries = Object.entries(byCB).sort((x,y)=>Object.values(y[1]).reduce((a,b)=>a+b,0) - Object.values(x[1]).reduce((a,b)=>a+b,0));
+    stackedBar("ch-classCB", cEntries.map(x=>x[0]), bLabels2.map((bl,idx) => ({
+      label: bl,
+      data: cEntries.map(([c]) => byCB[c][bl] || 0),
+      backgroundColor: CLASSIFY_B_COLORS[(CLASSIFY_B.find(x=>x.label===bl)||{}).code] || "#cbd5e1",
+    })));
+    // (참고) 원 키워드
     const kw = Object.entries(A.byKw).sort((a,b)=>b[1]-a[1]);
     barChart("ch-keyword2", kw.map(([k])=>k), kw.map(([,v])=>v), "건수", {colors:"#2563eb", horizontal:true});
-    const kwLabels = kw.map(([k])=>k);
-    stackedBar("ch-keyword-type", kwLabels, [
-      { label:"발주계획", data: kwLabels.map(k=>(A.byKwType[k]||{}).order_plan||0), backgroundColor:"#2563eb" },
-      { label:"사전규격", data: kwLabels.map(k=>(A.byKwType[k]||{}).pre_spec||0),  backgroundColor:"#16a34a" },
-    ]);
   }
   if (CURRENT_VIEW === "region") {
     const reg = Object.entries(A.byRegion).sort((a,b)=>b[1]-a[1]);
     barChart("ch-region2", reg.map(([k])=>k), reg.map(([,v])=>v), "건수", {colors:"#16a34a"});
+    // 지역 × 분야(B)
+    const byRegB = {};
+    const byRegA = {};
+    for (const it of items) {
+      const r = it.region || "중앙/전국";
+      const b = classifyB(it).label;
+      const a = classifyA(it).label;
+      if (!byRegB[r]) byRegB[r] = {};
+      if (!byRegA[r]) byRegA[r] = {};
+      byRegB[r][b] = (byRegB[r][b]||0) + 1;
+      byRegA[r][a] = (byRegA[r][a]||0) + 1;
+    }
+    const bLabels = CLASSIFY_B.map(x=>x.label).concat(["기타"]);
+    stackedBar("ch-region-domain", reg.map(([r])=>r), bLabels.map((bl) => ({
+      label: bl,
+      data: reg.map(([r]) => (byRegB[r]||{})[bl] || 0),
+      backgroundColor: CLASSIFY_B_COLORS[(CLASSIFY_B.find(x=>x.label===bl)||{}).code] || "#cbd5e1",
+    })).filter(ds => ds.data.some(v => v > 0)));
+    const aLabels = CLASSIFY_A.map(x=>x.label).concat(["기타"]);
+    stackedBar("ch-region-nature", reg.map(([r])=>r), aLabels.map((al) => ({
+      label: al,
+      data: reg.map(([r]) => (byRegA[r]||{})[al] || 0),
+      backgroundColor: CLASSIFY_A_COLORS[(CLASSIFY_A.find(x=>x.label===al)||{}).code] || "#cbd5e1",
+    })).filter(ds => ds.data.some(v => v > 0)));
     const regLabels = reg.map(([k])=>k);
     stackedBar("ch-region-type", regLabels, [
       { label:"발주계획", data: regLabels.map(k=>(A.byRegionType[k]||{}).order_plan||0), backgroundColor:"#2563eb" },
@@ -743,14 +902,25 @@ function renderList(items, f) {
     const budget = it.budget_amount ? ` · ${fmtMoney(it.budget_amount)}` : "";
     const region = it.region ? ` · ${it.region}` : "";
     const desc = it.description ? `<details><summary>상세</summary><pre>${(it.description||"").replace(/</g,"&lt;")}</pre></details>` : "";
+    // 수주 가능성 + 분류 태그
+    const wp = winProbability(it);
+    const grade = wp.pct>=75?"high":wp.pct>=55?"mid":"low";
+    const a = classifyA(it), b = classifyB(it);
     return `<article class="card">
-      <h4>${it.title||""}</h4>
+      <div class="card-head">
+        <h4 class="card-title">${it.title||""}</h4>
+        <div class="card-prob" title="수주 가능성 추정 %">
+          <span class="ink-bar ${grade}"><span style="width:${wp.pct}%"></span></span>
+          <b class="pct-${grade}">${wp.pct}%</b>
+        </div>
+      </div>
       <div class="agency">${it.agency||""}${it.agency_dept?" / "+it.agency_dept:""}${budget}${region}${it.bsns_div?" · "+it.bsns_div:""}</div>
       <div class="chips">
         <span class="chip type">${TYPE_LABEL[it.source_type]||it.source_type}</span>
+        <span class="chip class-a">${a.code} ${a.label}</span>
+        <span class="chip class-b">${b.code} ${b.label}</span>
         <span class="chip agency_type">${it.agency_type||"기타"}</span>
         <span class="chip region">${it.region||"중앙/전국"}</span>
-        <span class="chip score">점수 ${it.score||0}</span>
         ${kws}
       </div>
       ${atts}
@@ -811,21 +981,46 @@ function downloadXlsx() {
 
 // ── 키워드 설정 UI ──
 function renderTempKwList() {
+  // 사이드바 설정 뷰의 상세 관리
   const el = document.getElementById("temp-kw-list");
-  if (!el) return;
-  if (TEMP_KW.length === 0) {
-    el.innerHTML = '<div style="color:var(--muted);font-size:13px">아직 추가된 임시 키워드가 없습니다.</div>';
-    return;
+  if (el) {
+    if (TEMP_KW.length === 0) {
+      el.innerHTML = '<div style="color:var(--muted);font-size:13px">아직 추가된 임시 키워드가 없습니다.</div>';
+    } else {
+      el.innerHTML = TEMP_KW.map((k,i) =>
+        `<span class="chip-edit">${k.term} <small style="color:#a16207">×${k.weight}</small>
+           <button data-idx="${i}" title="삭제">×</button></span>`
+      ).join(" ");
+      el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+        TEMP_KW.splice(+b.dataset.idx, 1);
+        localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
+        rebuildAugmented(); renderTempKwList(); renderAll();
+      }));
+    }
   }
-  el.innerHTML = TEMP_KW.map((k,i) =>
-    `<span class="chip-edit">${k.term} <small style="color:#a16207">×${k.weight}</small>
-       <button data-idx="${i}" title="삭제">×</button></span>`
-  ).join(" ");
-  el.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
-    TEMP_KW.splice(+b.dataset.idx, 1);
-    localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
-    rebuildAugmented(); renderTempKwList(); renderAll();
-  }));
+  // 필터바 인라인 목록
+  const inline = document.getElementById("tk-list");
+  if (inline) {
+    inline.innerHTML = TEMP_KW.map((k,i) =>
+      `<span class="tk-chip">${k.term}<button data-tki="${i}">×</button></span>`
+    ).join(" ");
+    inline.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+      TEMP_KW.splice(+b.dataset.tki, 1);
+      localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
+      rebuildAugmented(); renderTempKwList(); renderAll();
+    }));
+  }
+}
+
+function inlineAddTk() {
+  const inp = document.getElementById("tk-in");
+  if (!inp) return;
+  const t = inp.value.trim();
+  if (!t) return;
+  if (!TEMP_KW.some(k => k.term === t)) TEMP_KW.push({term: t, weight: 5});
+  localStorage.setItem(LS_TEMP_KW, JSON.stringify(TEMP_KW));
+  inp.value = "";
+  rebuildAugmented(); renderTempKwList(); renderAll();
 }
 function updateGithubEditLink() {
   let u = document.getElementById("repo-url").value.trim();
@@ -885,6 +1080,10 @@ function initUI() {
     renderAll();
   });
   document.getElementById("xlsx").addEventListener("click", downloadXlsx);
+  // 필터바 인라인 임시 키워드
+  const tkBtn = document.getElementById("tk-add"); if (tkBtn) tkBtn.addEventListener("click", inlineAddTk);
+  const tkIn = document.getElementById("tk-in");
+  if (tkIn) tkIn.addEventListener("keydown", e => { if (e.key === "Enter") inlineAddTk(); });
   document.querySelectorAll(".nav button").forEach(b =>
     b.addEventListener("click", () => setView(b.dataset.view))
   );
