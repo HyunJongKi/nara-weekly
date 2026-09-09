@@ -112,6 +112,14 @@ HTML = r"""<!doctype html>
   /* 찜 필터 토글 */
   .fav-toggle { display:flex; align-items:center; gap:5px; font-size:12.5px; color:#78350f; cursor:pointer; white-space:nowrap; padding:5px 10px; background:#fef9c3; border:1px solid #fbbf24; border-radius:8px; font-weight:600; }
   .fav-toggle input { width:15px; height:15px; accent-color: #f59e0b; cursor:pointer; }
+  /* 지역제한·계약방법 경고 */
+  .warn-toggle { display:flex; align-items:center; gap:5px; font-size:12.5px; color:#991b1b; cursor:pointer; white-space:nowrap; padding:5px 10px; background:#fee2e2; border:1px solid #fca5a5; border-radius:8px; font-weight:600; }
+  .warn-toggle input { width:15px; height:15px; accent-color: #dc2626; cursor:pointer; }
+  .warn-badges { display:flex; flex-wrap:wrap; gap:4px; margin-top:6px; }
+  .warn-badge { display:inline-flex; align-items:center; gap:3px; padding:3px 8px; border-radius:6px; font-size:11.5px; font-weight:600; }
+  .warn-badge.sev-high { background:#fee2e2; color:#991b1b; border:1px solid #fca5a5; }
+  .warn-badge.sev-mid  { background:#fef3c7; color:#92400e; border:1px solid #fde68a; }
+  .card.restricted { background: linear-gradient(to right, #fef2f2 0%, transparent 30%); }
   /* 임시 키워드 필터바 인라인 */
   .tempkw-inline { display:flex; align-items:center; gap:5px; flex-wrap:wrap; padding:4px 8px; border:1px dashed #ca8a04; border-radius:8px; background:#fef9c3; }
   .tempkw-inline label { font-size:11px; color:#854d0e; font-weight:600; }
@@ -231,6 +239,7 @@ HTML = r"""<!doctype html>
       </select>
       <label class="exp-toggle" title="입찰공고기간이 경과(마감)했거나 최근 수집창에서 사라진 공고를 목록에 포함합니다. (차트는 1년 누적 전체 기준)"><input type="checkbox" id="showExpired"> 경과 공고 포함</label>
       <label class="fav-toggle" title="⭐ 찜한 공고만 목록에 표시합니다."><input type="checkbox" id="favOnly"> ⭐ 찜한 것만</label>
+      <label class="warn-toggle" title="INK(서울) 참가 어려운 것으로 추정되는 공고(지역제한/수의계약/지명경쟁)를 목록에서 제외합니다."><input type="checkbox" id="excludeRestricted"> ⚠️ 지역제한 제외</label>
       <button class="btn" id="reset">초기화</button>
       <button class="btn primary" id="xlsx">⬇ 엑셀 다운로드</button>
       <!-- 임시 키워드 인라인 (본인 브라우저에만 저장) -->
@@ -435,6 +444,31 @@ let AUGMENTED = [];      // 임시 키워드 적용본
 let CHARTS = {};
 let CURRENT_VIEW = "dashboard";
 let TEMP_KW = JSON.parse(localStorage.getItem(LS_TEMP_KW) || "[]");
+
+// ── 지역제한·계약방법 참가가능성 판단 (INK = 서울특별시 소재) ──
+// 실제 나라장터 입찰공고의 '참가가능지역' 필드는 사전규격 API 에 없어
+// 발주기관 지역/유형/계약방법으로 추정하고, 카드에 경고 배지만 표시(제외 안함).
+const INK_HOME_REGION = "서울";
+function participationWarnings(it) {
+  const agency = it.agency || "";
+  const region = it.region || "";
+  const at = it.agency_type || "";
+  const cm = it.contract_method || "";
+  const w = [];
+  // 1) 계약방법 - 수의계약/지명경쟁은 특정 업체 지정
+  if (/수의|수의계약/.test(cm))       w.push({sev:"high", label:"수의계약", detail:"발주기관이 특정 업체 지정 · 일반 참여 불가"});
+  else if (/지명|지명경쟁/.test(cm))  w.push({sev:"high", label:"지명경쟁",  detail:"몇 개 업체만 지명 · 참여 어려움"});
+  // 2) 지역제한 추정 (INK=서울)
+  const nonSeoul = region && region !== INK_HOME_REGION && region !== "중앙/전국";
+  if (at === "지자체" && nonSeoul) {
+    w.push({sev:"high", label:"지역제한 가능("+region+")", detail:"타 지역 지자체 발주 · 참가가능지역 제한 확률 높음"});
+  } else if (at === "공공기관" && /지역본부|지방|지사|지역센터/.test(agency) && nonSeoul) {
+    w.push({sev:"mid",  label:"지역본부 발주("+region+")", detail:"공공기관 지역본부는 지역제한 가능"});
+  } else if (at === "교육기관" && nonSeoul && /대학교|학교|대학/.test(agency)) {
+    w.push({sev:"mid",  label:"지역대학("+region+")", detail:"지역 소재 대학 발주 · 지역제한 가능"});
+  }
+  return w;
+}
 
 // ── 찜하기 (즐겨찾기) — external_id 기준으로 localStorage 저장 ──
 const LS_FAVS = "nw_favorites_v1";
@@ -798,10 +832,14 @@ function renderAll() {
 
   // ⭐ 찜한 공고 개수 (현재 필터된 목록 안)
   const favInFilter = items.filter(it => isFav(it)).length;
+  // ⚠️ 지역제한/수의계약 가능성 있는 것 카운트
+  const restrictedCount = items.filter(it => participationWarnings(it).length > 0).length;
+  const cleanCount = items.length - restrictedCount;
 
   document.getElementById("kpis").innerHTML = [
     {label:"총 공고건수", value: items.length.toLocaleString(), sub:`발주계획 ${A.byType.order_plan||0} · 사전규격 ${A.byType.pre_spec||0}`},
     {label:"⭐ 찜한 공고", value: FAVORITES.size, sub: favInFilter !== FAVORITES.size ? `현재 필터에 ${favInFilter}건` : "관리자 관심 표시"},
+    {label:"✅ 참가 가능(추정)", value: cleanCount, sub:`⚠️ 지역제한 등 ${restrictedCount}건 제외`},
     {label:"총 예산금액", value: fmtMoney(A.budgetSum), sub:"금액공개 건 합계"},
     {label:"평균 예산", value: fmtMoney(A.budgetAvg), sub:"금액공개 건 평균"},
     {label:"🎯 최다 성격", value: topAB.topA ? topAB.topA[0] : "-", sub: topAB.topA ? `${topAB.topA[1]}건` : ""},
@@ -911,6 +949,14 @@ function renderList(items, f) {
   // "⭐ 찜한 것만" 체크박스가 켜지면 찜한 것만 표시
   const favOnly = (document.getElementById("favOnly") || {}).checked;
   if (favOnly) arr = arr.filter(it => isFav(it));
+  // "⚠️ 지역제한 제외" 옵션이 켜지면 참가 어려움 추정 항목 제외
+  const excludeR = (document.getElementById("excludeRestricted") || {}).checked;
+  let restrictedHidden = 0;
+  if (excludeR) {
+    const before = arr.length;
+    arr = arr.filter(it => participationWarnings(it).length === 0);
+    restrictedHidden = before - arr.length;
+  }
 
   // 최신순: 발주예정일 우선, 없으면 갱신일 — 둘 다 ISO/yyyy-mm-dd 형식이라 문자열 정렬 OK
   const dateKey = it => it.order_planned_date || it.last_seen_at || "";
@@ -922,7 +968,10 @@ function renderList(items, f) {
   arr.sort((a,b) => (isFav(b)?1:0) - (isFav(a)?1:0));
 
   const el = document.getElementById("list");
-  const note = hidden ? `<div class="list-note">진행 중 공고 <b>${arr.length}</b>건 · 경과(마감) <b>${hidden}</b>건 숨김 — '경과 공고 포함'으로 전체 보기</div>` : "";
+  const noteParts = [];
+  if (hidden) noteParts.push(`경과(마감) <b>${hidden}</b>건 숨김`);
+  if (restrictedHidden) noteParts.push(`지역제한/수의계약 <b>${restrictedHidden}</b>건 숨김`);
+  const note = noteParts.length ? `<div class="list-note">진행 중 <b>${arr.length}</b>건 · ${noteParts.join(" · ")}</div>` : "";
   if (arr.length === 0) { el.innerHTML = note + '<div class="empty">진행 중인(미경과) 공고가 없습니다. \'경과 공고 포함\'을 켜면 전체를 볼 수 있습니다.</div>'; return; }
   el.innerHTML = note + arr.slice(0, 300).map(it => {
     const kws = (it.matched_keywords||[]).map(k => {
@@ -940,7 +989,9 @@ function renderList(items, f) {
     const grade = wp.pct>=75?"high":wp.pct>=55?"mid":"low";
     const a = classifyA(it), b = classifyB(it);
     const fav = isFav(it);
-    return `<article class="card${fav?" favorite":""}">
+    const warns = participationWarnings(it);
+    const warnBadges = warns.length ? `<div class="warn-badges">${warns.map(w=>`<span class="warn-badge sev-${w.sev}" title="${w.detail}">⚠️ ${w.label}</span>`).join("")}</div>` : "";
+    return `<article class="card${fav?" favorite":""}${warns.length?" restricted":""}">
       <div class="card-head">
         <h4 class="card-title">${it.title||""}</h4>
         <div class="card-prob" title="수주 가능성 추정 %">
@@ -949,6 +1000,7 @@ function renderList(items, f) {
           <b class="pct-${grade}">${wp.pct}%</b>
         </div>
       </div>
+      ${warnBadges}
       <div class="agency">${it.agency||""}${it.agency_dept?" / "+it.agency_dept:""}${budget}${region}${it.bsns_div?" · "+it.bsns_div:""}</div>
       <div class="chips">
         <span class="chip type">${TYPE_LABEL[it.source_type]||it.source_type}</span>
@@ -990,8 +1042,10 @@ function downloadXlsx() {
     const a = it.attachments || [];
     const wp = winProbability(it);
     const clsA = classifyA(it), clsB = classifyB(it), clsC = classifyC(it);
+    const warns = participationWarnings(it);
     const row = {
       "⭐ 찜": isFav(it) ? "★" : "",
+      "참가가능성": warns.length === 0 ? "✅ 가능" : `⚠️ ${warns.map(w=>w.label).join(", ")}`,
       "수주가능성(%)": wp.pct,
       "성격(A)": clsA.code + " " + clsA.label,
       "분야(B)": clsB.code + " " + clsB.label,
@@ -1128,6 +1182,7 @@ function initUI() {
   // 필터
   const _se = document.getElementById("showExpired"); if (_se) _se.addEventListener("change", renderAll);
   const _fo = document.getElementById("favOnly"); if (_fo) _fo.addEventListener("change", renderAll);
+  const _er = document.getElementById("excludeRestricted"); if (_er) _er.addEventListener("change", renderAll);
   ["q","type","kw","region","agency_type","sort"].forEach(id => {
     const el = document.getElementById(id); if (el) el.addEventListener("input", renderAll);
   });
