@@ -121,6 +121,12 @@
   .chip.type { background:#dcfce7; color:#166534; }
   .chip.region { background:#f3e8ff; color:#7e22ce; }
   .chip.agency_type { background:#fee2e2; color:#b91c1c; }
+  /* 소스 배지 - 어느 사이트에서 왔는지 즉시 보이도록 서로 다른 톤 */
+  .chip.source { font-weight:700; border:1px solid transparent; }
+  .chip.source.src-nara    { background:#e0f2fe; color:#075985; border-color:#7dd3fc; }
+  .chip.source.src-iris    { background:#ede9fe; color:#5b21b6; border-color:#c4b5fd; }
+  .chip.source.src-bizinfo { background:#fef3c7; color:#92400e; border-color:#fcd34d; }
+  .chip.source.src-kofpi   { background:#dcfce7; color:#166534; border-color:#86efac; }
   .chip.temp { background:#fef9c3; color:#854d0e; border:1px dashed #ca8a04; }
   .attachments { display:flex; flex-wrap:wrap; gap:6px; margin-top:6px; }
   .att-link { background:#eef2ff; color:#3730a3; padding:4px 9px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #c7d2fe; }
@@ -203,7 +209,7 @@
     <header class="page-head">
       <div>
         <h2 id="page-title">대시보드</h2>
-        <div class="meta" id="page-sub">검색어 매칭 발주계획·사전규격 통합 통계</div>
+        <div class="meta" id="page-sub">🏛️ 나라장터 + 🔬 IRIS + 💼 기업마당 + 🌲 임업진흥원 통합 발주정보</div>
       </div>
       <div class="meta" id="page-stat"></div>
     </header>
@@ -212,8 +218,18 @@
       <input type="search" id="q" placeholder="제목·기관·내용 검색…">
       <select id="type">
         <option value="">전체 유형</option>
-        <option value="order_plan">발주계획</option>
-        <option value="pre_spec">사전규격</option>
+        <option value="order_plan">🏛️ 발주계획</option>
+        <option value="pre_spec">🏛️ 사전규격</option>
+        <option value="iris_rnd">🔬 IRIS 사업공고</option>
+        <option value="bizinfo_support">💼 기업마당 지원</option>
+        <option value="kofpi_bid">🌲 임업진흥원 공모</option>
+      </select>
+      <select id="source">
+        <option value="">전체 출처</option>
+        <option value="nara">🏛️ 나라장터</option>
+        <option value="iris">🔬 IRIS</option>
+        <option value="bizinfo">💼 기업마당</option>
+        <option value="kofpi">🌲 임업진흥원</option>
       </select>
       <select id="kw"><option value="">전체 키워드</option></select>
       <select id="region"><option value="">전체 지역</option></select>
@@ -282,7 +298,7 @@
           </div>
         </div>
       </div>
-      <div class="footnote">※ 본 통계는 나라장터에 게시된 발주계획·사전규격 공고를 기반으로 분석되었으며, 실제 계약과는 차이가 있을 수 있습니다.</div>
+      <div class="footnote">※ 본 통계는 🏛️ 나라장터(발주계획·사전규격) + 🔬 IRIS(범부처 R&D 사업공고) + 💼 기업마당(중소벤처 지원사업) + 🌲 임업진흥원 공고를 통합한 것으로, 3개 외부 소스는 나라장터와 중복되지 않는 항목만 표시됩니다. 실제 계약과는 차이가 있을 수 있습니다.</div>
     </section>
 
     <!-- 목록 -->
@@ -411,7 +427,25 @@
   </main>
 
 <script>
-const TYPE_LABEL = { order_plan: "발주계획", pre_spec: "사전규격" };
+const TYPE_LABEL = {
+  order_plan:      "발주계획",
+  pre_spec:        "사전규격",
+  iris_rnd:        "IRIS 사업공고",
+  bizinfo_support: "기업마당 지원",
+  kofpi_bid:       "임업진흥원 공모",
+};
+// 출처별 배지 - 사이트가 어디인지 즉시 인식되도록 카드 상단에 표시.
+const SOURCE_META = {
+  order_plan:      { label: "🏛️ 나라장터",   cls: "src-nara"    },
+  pre_spec:        { label: "🏛️ 나라장터",   cls: "src-nara"    },
+  iris_rnd:        { label: "🔬 IRIS",        cls: "src-iris"    },
+  bizinfo_support: { label: "💼 기업마당",    cls: "src-bizinfo" },
+  kofpi_bid:       { label: "🌲 임업진흥원",  cls: "src-kofpi"   },
+};
+function sourceBadge(src) {
+  const m = SOURCE_META[src] || { label: src || "기타", cls: "src-etc" };
+  return `<span class="chip source ${m.cls}">${m.label}</span>`;
+}
 const BUDGET_BUCKETS = [
   { label: "5천만 미만", max: 5e7 },
   { label: "0.5~1억",   max: 1e8 },
@@ -540,11 +574,20 @@ function getFilters() {
   return {
     q: document.getElementById("q").value.trim().toLowerCase(),
     t: document.getElementById("type").value,
+    src: (document.getElementById("source") || {value:""}).value,
     k: document.getElementById("kw").value,
     r: document.getElementById("region").value,
     at: document.getElementById("agency_type").value,
     sort: document.getElementById("sort").value,
   };
+}
+// source_type → source group (필터 매핑)
+function sourceGroup(st) {
+  if (st === "order_plan" || st === "pre_spec") return "nara";
+  if (st === "iris_rnd") return "iris";
+  if (st === "bizinfo_support") return "bizinfo";
+  if (st === "kofpi_bid") return "kofpi";
+  return st;
 }
 // 입찰공고기간 경과 판정: 명시 마감(사전규격 의견제출마감)이 지났거나,
 // 최근 수집창에서 14일 이상 사라진(=공고기간 종료) 건. 목록에서만 기본 숨김(차트는 1년 누적 전체).
@@ -562,6 +605,7 @@ function isExpired(it) {
 function applyFilter(items, f) {
   return items.filter(it => {
     if (f.t && it.source_type !== f.t) return false;
+    if (f.src && sourceGroup(it.source_type) !== f.src) return false;
     if (f.k && !(it.matched_keywords || []).includes(f.k)) return false;
     if (f.r && (it.region||"중앙/전국") !== f.r) return false;
     if (f.at && (it.agency_type||"기타") !== f.at) return false;
@@ -575,13 +619,17 @@ function applyFilter(items, f) {
 
 // ── 집계 ──
 function aggregate(items) {
-  const byDate = {}, byType = {order_plan:0, pre_spec:0}, byBudget = {}, byRegion = {}, byAgency = {}, byAgencyType = {}, byKw = {};
+  const byDate = {}, byType = {order_plan:0, pre_spec:0, iris_rnd:0, bizinfo_support:0, kofpi_bid:0};
+  const bySource = {nara:0, iris:0, bizinfo:0, kofpi:0};
+  const byBudget = {}, byRegion = {}, byAgency = {}, byAgencyType = {}, byKw = {};
   const byKwType = {}, byRegionType = {};
   let budgetSum = 0, budgetCnt = 0;
   for (const it of items) {
     const d = (it.order_planned_date || it.last_seen_at || "").slice(0,10);
     if (d) byDate[d] = (byDate[d]||0) + 1;
     byType[it.source_type] = (byType[it.source_type]||0) + 1;
+    const grp = sourceGroup(it.source_type);
+    bySource[grp] = (bySource[grp]||0) + 1;
     const b = bucketOf(it.budget_amount);
     if (b) byBudget[b] = (byBudget[b]||0) + 1;
     const r = it.region || "중앙/전국";
@@ -598,7 +646,7 @@ function aggregate(items) {
     });
     if (typeof it.budget_amount === "number" && it.budget_amount > 0) { budgetSum += it.budget_amount; budgetCnt += 1; }
   }
-  return { byDate, byType, byBudget, byRegion, byAgency, byAgencyType, byKw, byKwType, byRegionType,
+  return { byDate, byType, bySource, byBudget, byRegion, byAgency, byAgencyType, byKw, byKwType, byRegionType,
            budgetSum, budgetAvg: budgetCnt ? budgetSum/budgetCnt : 0 };
 }
 
@@ -822,8 +870,16 @@ function renderAll() {
   const restrictedCount = items.filter(it => participationWarnings(it).length > 0).length;
   const cleanCount = items.length - restrictedCount;
 
+  const srcSubParts = [];
+  if (A.bySource.nara)     srcSubParts.push(`🏛️ 나라장터 ${A.bySource.nara}`);
+  if (A.bySource.iris)     srcSubParts.push(`🔬 IRIS ${A.bySource.iris}`);
+  if (A.bySource.bizinfo)  srcSubParts.push(`💼 기업마당 ${A.bySource.bizinfo}`);
+  if (A.bySource.kofpi)    srcSubParts.push(`🌲 임업진흥원 ${A.bySource.kofpi}`);
+  const srcSub = srcSubParts.join(" · ") || "-";
+
   document.getElementById("kpis").innerHTML = [
     {label:"총 공고건수", value: items.length.toLocaleString(), sub:`발주계획 ${A.byType.order_plan||0} · 사전규격 ${A.byType.pre_spec||0}`},
+    {label:"🌐 출처별", value: (A.bySource.nara||0)+(A.bySource.iris||0)+(A.bySource.bizinfo||0)+(A.bySource.kofpi||0), sub: srcSub},
     {label:"⭐ 찜한 공고", value: FAVORITES.size, sub: favInFilter !== FAVORITES.size ? `현재 필터에 ${favInFilter}건` : "관리자 관심 표시"},
     {label:"✅ 참가 가능(추정)", value: cleanCount, sub:`⚠️ 지역제한 등 ${restrictedCount}건 제외`},
     {label:"총 예산금액", value: fmtMoney(A.budgetSum), sub:"금액공개 건 합계"},
@@ -836,7 +892,17 @@ function renderAll() {
 
   if (CURRENT_VIEW === "dashboard") {
     timelineChart("ch-timeline", items);
-    doughnutChart("ch-type", ["발주계획","사전규격"], [A.byType.order_plan||0, A.byType.pre_spec||0]);
+    // 도넛 - 5가지 소스 (값이 0이면 자동 제외)
+    (function() {
+      const rows = [
+        ["🏛️ 발주계획", A.byType.order_plan],
+        ["🏛️ 사전규격", A.byType.pre_spec],
+        ["🔬 IRIS",        A.byType.iris_rnd],
+        ["💼 기업마당",    A.byType.bizinfo_support],
+        ["🌲 임업진흥원",  A.byType.kofpi_bid],
+      ].filter(([, v]) => (v||0) > 0);
+      doughnutChart("ch-type", rows.map(r=>r[0]), rows.map(r=>r[1]));
+    })();
     barChart("ch-budget", BUDGET_BUCKETS.map(b=>b.label), BUDGET_BUCKETS.map(b=>A.byBudget[b.label]||0), "건수", {colors:"#0891b2"});
     const at = Object.entries(A.byAgencyType).sort((a,b)=>b[1]-a[1]);
     barChart("ch-agency-type", at.map(([k])=>k), at.map(([,v])=>v), "건수", {colors:"#7e22ce"});
@@ -989,6 +1055,7 @@ function renderList(items, f) {
       ${warnBadges}
       <div class="agency">${it.agency||""}${it.agency_dept?" / "+it.agency_dept:""}${budget}${region}${it.bsns_div?" · "+it.bsns_div:""}</div>
       <div class="chips">
+        ${sourceBadge(it.source_type)}
         <span class="chip type">${TYPE_LABEL[it.source_type]||it.source_type}</span>
         <span class="chip class-a">${a.code} ${a.label}</span>
         <span class="chip class-b">${b.code} ${b.label}</span>
@@ -1031,6 +1098,7 @@ function downloadXlsx() {
     const warns = participationWarnings(it);
     const row = {
       "⭐ 찜": isFav(it) ? "★" : "",
+      "출처": (SOURCE_META[it.source_type]||{label:""}).label,
       "참가가능성": warns.length === 0 ? "✅ 가능" : `⚠️ ${warns.map(w=>w.label).join(", ")}`,
       "수주가능성(%)": wp.pct,
       "성격(A)": clsA.code + " " + clsA.label,
@@ -1150,7 +1218,7 @@ function setView(name) {
   document.getElementById("filter-bar").style.display = (name === "settings" || name === "about") ? "none" : "";
   const titles = { dashboard:"대시보드", list:"공고 목록", keyword:"키워드 분석", region:"지역 분석", settings:"키워드 설정", about:"설명" };
   const subs = {
-    dashboard:"검색어 매칭 발주계획·사전규격 통합 통계",
+    dashboard:"🏛️ 나라장터 + 🔬 IRIS + 💼 기업마당 + 🌲 임업진흥원 통합 발주정보",
     list:"필터·정렬된 공고 목록 (엑셀 다운로드 가능)",
     keyword:"키워드별 매칭 빈도와 유형 분포",
     region:"지역별 공고 분포",
@@ -1169,11 +1237,13 @@ function initUI() {
   const _se = document.getElementById("showExpired"); if (_se) _se.addEventListener("change", renderAll);
   const _fo = document.getElementById("favOnly"); if (_fo) _fo.addEventListener("change", renderAll);
   const _er = document.getElementById("excludeRestricted"); if (_er) _er.addEventListener("change", renderAll);
-  ["q","type","kw","region","agency_type","sort"].forEach(id => {
+  ["q","type","source","kw","region","agency_type","sort"].forEach(id => {
     const el = document.getElementById(id); if (el) el.addEventListener("input", renderAll);
   });
   document.getElementById("reset").addEventListener("click", () => {
-    ["q","type","kw","region","agency_type"].forEach(id => document.getElementById(id).value = "");
+    ["q","type","source","kw","region","agency_type"].forEach(id => {
+      const el = document.getElementById(id); if (el) el.value = "";
+    });
     document.getElementById("sort").value = "recent";
     renderAll();
   });

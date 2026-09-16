@@ -20,6 +20,14 @@ import httpx
 import yaml
 from tenacity import retry, stop_after_attempt, wait_exponential
 
+try:
+    # 패키지 임포트 (python -m scripts.collect)
+    from .collectors import bizinfo_support, iris_msit, kofpi_bid
+except ImportError:  # pragma: no cover - 스크립트 직접 실행 지원
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from collectors import bizinfo_support, iris_msit, kofpi_bid  # type: ignore
+
 logger = logging.getLogger(__name__)
 
 KST = timezone(timedelta(hours=9))
@@ -391,6 +399,88 @@ def _normalize_pre_spec(raw: dict[str, Any]) -> dict[str, Any] | None:
 NORMALIZERS = {"order_plan": _normalize_order_plan, "pre_spec": _normalize_pre_spec}
 
 
+# ─── 외부 소스(3사) 통합·중복 제거 ─────────────────────────────
+
+EXTERNAL_COLLECTORS = {
+    "iris_rnd":         iris_msit.collect,
+    "bizinfo_support":  bizinfo_support.collect,
+    "kofpi_bid":        kofpi_bid.collect,
+}
+
+
+def _normalize_title(title: str | None) -> str:
+    """중복 판정용 제목 정규화 - 공백·괄호·구두점·특수기호 제거 후 소문자.
+
+    사용처: 나라장터 항목과 외부 사이트 항목의 제목이 사실상 동일한지 비교.
+    """
+    if not title:
+        return ""
+    s = re.sub(r"[\s()\[\]{}<>\-_,./·:;'\"！!?，、。、㈜（）［］｛｝〈〉《》「」『』]", "", title)
+    return s.lower()
+
+
+def _apply_external_sources(existing: dict[str, dict[str, Any]],
+                            keywords: list[dict[str, Any]],
+                            min_score: int,
+                            run_started: str) -> tuple[int, int, list[dict[str, Any]], dict[str, int]]:
+    """3개 외부 collector 호출 → 나라장터 중복 제거 → 필터/매칭 → existing에 병합.
+
+    반환: (fetched, passed, new_items, per_source_new_counts)
+    """
+    # 나라장터 항목 제목 집합 (중복 판정 기준)
+    nara_titles = {
+        _normalize_title(v.get("title"))
+        for v in existing.values()
+        if v.get("source_type") in ("order_plan", "pre_spec") and v.get("title")
+    }
+
+    total_fetched = 0
+    total_passed = 0
+    new_items: list[dict[str, Any]] = []
+    per_source: dict[str, int] = {k: 0 for k in EXTERNAL_COLLECTORS}
+
+    for src_type, collector_fn in EXTERNAL_COLLECTORS.items():
+        try:
+            candidates = collector_fn()
+        except Exception as exc:
+            logger.warning("external collector %s failed: %s", src_type, exc)
+            continue
+        total_fetched += len(candidates)
+
+        for item in candidates:
+            title = item.get("title") or ""
+            # 1) 나라장터 중복 제거 - 제목 정규화 매칭
+            norm = _normalize_title(title)
+            if norm and norm in nara_titles:
+                logger.info("external dedupe [%s] '%s' matches nara — skip",
+                            src_type, title[:40])
+                continue
+
+            # 2) 관련성 판정: R&D·설계·안전점검·공사 계열은 무조건 제외
+            title_desc = " ".join(filter(None, [title, item.get("description")]))
+            if RESEARCH_HARD_EXCLUDE.search(title_desc):
+                continue
+
+            # 3) 키워드 매칭 - 최소 점수 미달이면 제외
+            score, matched = _score_item(item, keywords)
+            if score < min_score:
+                continue
+            total_passed += 1
+
+            item["score"] = score
+            item["matched_keywords"] = matched
+            item["first_seen_at"] = existing.get(
+                item["external_id"], {}).get("first_seen_at", run_started)
+            item["last_seen_at"] = run_started
+
+            if item["external_id"] not in existing:
+                new_items.append(item)
+                per_source[src_type] += 1
+            existing[item["external_id"]] = item
+
+    return total_fetched, total_passed, new_items, per_source
+
+
 # ─── 키워드 매칭 ────────────────────────────────────────────────
 
 def _load_keywords() -> tuple[list[dict[str, Any]], int]:
@@ -480,11 +570,26 @@ def collect(service_key: str, lookback: int = 10, lookahead: int = 60,
                 new_items.append(item)
             existing[item["external_id"]] = item
 
+    # ── 외부 소스(IRIS · 기업마당 · 임업진흥원) 통합 ──
+    ext_fetched, ext_passed, ext_new, ext_per_src = _apply_external_sources(
+        existing, keywords, min_score, run_started,
+    )
+    new_items.extend(ext_new)
+    new_count += len(ext_new)
+    fetched += ext_fetched
+    research_passed += ext_passed
+
     all_items = sorted(
         existing.values(),
         key=lambda x: (x.get("score", 0), x.get("last_seen_at") or ""),
         reverse=True,
     )
+
+    # 소스별 항목 총합 (전체 누적 기준)
+    src_totals: dict[str, int] = {}
+    for it in all_items:
+        st = it.get("source_type") or "unknown"
+        src_totals[st] = src_totals.get(st, 0) + 1
 
     payload = {
         "generated_at": run_started,
@@ -495,6 +600,8 @@ def collect(service_key: str, lookback: int = 10, lookahead: int = 60,
             "new_this_run": new_count,
             "min_score": min_score,
             "research_only": research_only,
+            "external_new_this_run": ext_per_src,
+            "source_totals": src_totals,
         },
         "items": all_items,
     }

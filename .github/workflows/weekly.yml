@@ -77,6 +77,8 @@ jobs:
         if: steps.gate.outputs.skip != 'true'
         env:
           G2B_SERVICE_KEY: ${{ secrets.G2B_SERVICE_KEY }}
+          # IRIS(과기정통부 사업공고)는 별도 활용신청 인증키. 미설정 시 iris collector 는 skip.
+          IRIS_SERVICE_KEY: ${{ secrets.IRIS_SERVICE_KEY }}
           LOOKBACK_DAYS: "30"    # 7→30일: 이전 실행이 놓친 항목도 catch-up
           LOOKAHEAD_DAYS: "90"
           RESEARCH_ONLY: "1"
