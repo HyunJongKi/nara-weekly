@@ -1,25 +1,58 @@
 {
-  "generated_at": "2026-09-25T10:00:16.258157+09:00",
+  "generated_at": "2026-09-30T10:00:15.550235+09:00",
   "stats": {
-    "total": 417,
-    "fetched_this_run": 5151,
-    "research_passed_this_run": 4070,
-    "new_this_run": 8,
+    "total": 432,
+    "fetched_this_run": 5278,
+    "research_passed_this_run": 4097,
+    "new_this_run": 15,
     "min_score": 5,
     "research_only": true,
     "external_new_this_run": {
       "iris_rnd": 0,
-      "bizinfo_support": 0,
+      "bizinfo_support": 3,
       "kofpi_bid": 0
     },
     "source_totals": {
-      "pre_spec": 369,
-      "order_plan": 38,
+      "pre_spec": 375,
+      "order_plan": 44,
       "kofpi_bid": 9,
-      "bizinfo_support": 1
+      "bizinfo_support": 4
     }
   },
   "items": [
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00279080",
+      "title": "고령자의 텃밭활동 치유효과 구명을 위한 소변샘플 활용 대사체 분석",
+      "agency": "농촌진흥청 국립원예특작과학원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 65000000,
+      "order_planned_date": "2026-09-29T13:12:29+09:00",
+      "deadline": "2026-10-04T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 도시농업과-1551",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279080&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00279080&fileType=BFDTL&fileSeq=1",
+      "ref_no": "도시농업과-1551",
+      "officer": "소지수",
+      "officer_tel": "063-238-6217",
+      "score": 15,
+      "matched_keywords": [
+        "농업",
+        "농촌",
+        "원예"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
     {
       "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00247236",
@@ -83,7 +116,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -110,7 +143,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -137,7 +170,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -339,38 +372,6 @@
     },
     {
       "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00268885",
-      "title": "제7회 임업인의 날 행사대행",
-      "agency": "산림청",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 90000000,
-      "order_planned_date": "2026-08-28T17:00:46+09:00",
-      "deadline": "2026-09-02T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 사유림경영소득과-4307",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00268885&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00268885&fileType=BFDTL&fileSeq=1",
-      "ref_no": "사유림경영소득과-4307",
-      "officer": "이주현",
-      "officer_tel": "042-481-4017",
-      "score": 10,
-      "matched_keywords": [
-        "산림",
-        "임업"
-      ],
-      "first_seen_at": "2026-08-28T16:58:41.120432+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
       "external_id": "pre_spec::R26BD00270372",
       "title": "주촌면 원지지구(1지구) 농촌공간정비사업 농업클러스터부지 건설폐기물 처리용역",
       "agency": "김해시도시개발공사",
@@ -399,7 +400,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -431,7 +432,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -458,7 +459,7 @@
         "임업"
       ],
       "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -485,7 +486,7 @@
         "임업"
       ],
       "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -498,20 +499,20 @@
       "bsns_div": "일반용역",
       "budget_amount": 300000000,
       "order_planned_date": "2026-09-17T14:59:35+09:00",
-      "deadline": "2026-09-23T23:59:00+09:00",
+      "deadline": "2026-10-04T23:59:00+09:00",
       "region": "경남",
       "description": "일반용역\n참조번호: 농업정책과-40192호(055-639-6345)",
       "attachments": [
         {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=1",
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=2",
           "name": "첨부1"
         },
         {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=2",
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=3",
           "name": "첨부2"
         }
       ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=1",
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275885&fileType=BFDTL&fileSeq=2",
       "ref_no": "농업정책과-40192호(055-639-6345)",
       "officer": "제상우",
       "officer_tel": "055-639-3503",
@@ -521,7 +522,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -557,7 +558,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -589,7 +590,7 @@
         "농촌"
       ],
       "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -621,6 +622,119 @@
         "원예"
       ],
       "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20882242",
+      "title": "고령자의 텃밭활동 치유효과 구명을 위한 소변샘플 활용 대사체 분석",
+      "agency": "농촌진흥청 국립원예특작과학원",
+      "agency_dept": "운영지원과",
+      "agency_type": "중앙부처",
+      "contract_method": "제한경쟁",
+      "bsns_div": "일반용역",
+      "budget_amount": 65000000,
+      "order_planned_date": "2026-09-29T13:11:05+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20882242",
+      "officer": "소지수",
+      "officer_tel": "063-238-6217",
+      "score": 10,
+      "matched_keywords": [
+        "농촌",
+        "원예"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278886",
+      "title": "제22회 임업인 한마음대회 행사대행용역(무대설치 및 행사진행 등)",
+      "agency": "산림조합중앙회전북지역본부",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 51000000,
+      "order_planned_date": "2026-09-28T20:33:54+09:00",
+      "deadline": "2026-10-01T09:00:00+09:00",
+      "region": "전북",
+      "description": "일반용역\n참조번호: 전북지역본부-3",
+      "attachments": [],
+      "url": null,
+      "ref_no": "전북지역본부-3",
+      "officer": "최백석",
+      "officer_tel": null,
+      "score": 10,
+      "matched_keywords": [
+        "산림",
+        "임업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278900",
+      "title": "제22회 임업인 한마음대회 행사대행 용역",
+      "agency": "산림조합중앙회전북지역본부",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 100000000,
+      "order_planned_date": "2026-09-28T23:37:58+09:00",
+      "deadline": "2026-10-02T09:00:00+09:00",
+      "region": "전북",
+      "description": "일반용역\n참조번호: 전북지역본부-4",
+      "attachments": [],
+      "url": null,
+      "ref_no": "전북지역본부-4",
+      "officer": "최백석",
+      "officer_tel": null,
+      "score": 10,
+      "matched_keywords": [
+        "산림",
+        "임업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00268885",
+      "title": "제7회 임업인의 날 행사대행",
+      "agency": "산림청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 90000000,
+      "order_planned_date": "2026-08-28T17:00:46+09:00",
+      "deadline": "2026-09-02T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 사유림경영소득과-4307",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00268885&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00268885&fileType=BFDTL&fileSeq=1",
+      "ref_no": "사유림경영소득과-4307",
+      "officer": "이주현",
+      "officer_tel": "042-481-4017",
+      "score": 10,
+      "matched_keywords": [
+        "산림",
+        "임업"
+      ],
+      "first_seen_at": "2026-08-28T16:58:41.120432+09:00",
       "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
     },
     {
@@ -1484,7 +1598,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1519,7 +1633,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1554,7 +1668,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1589,7 +1703,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1624,7 +1738,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1655,7 +1769,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-16T20:33:37.073828+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1690,7 +1804,7 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "pre_spec",
@@ -1721,7 +1835,65 @@
         "스마트팜"
       ],
       "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278718",
+      "title": "[충남앵커 4-5-A-1] 스마트팜 전문 기술인력 양성 교육과정 및 지역특화작물 전문가 양성 교육과정 운영",
+      "agency": "중부대학교",
+      "agency_dept": null,
+      "agency_type": "교육기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 80000000,
+      "order_planned_date": "2026-09-28T16:08:30+09:00",
+      "deadline": "2026-10-03T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 3058204964",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278718&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278718&fileType=BFDTL&fileSeq=1",
+      "ref_no": "3058204964",
+      "officer": "이종승",
+      "officer_tel": null,
+      "score": 6,
+      "matched_keywords": [
+        "스마트팜"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "bizinfo_support",
+      "external_id": "bizinfo_support::PBLN_000000000126775",
+      "title": "[울산] 울주군 2026년 4차 청년 스마트팜 보급 육성 지원사업 지원기업 모집 공고",
+      "agency": "울산광역시",
+      "agency_dept": "울산테크노파크",
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "창업",
+      "budget_amount": null,
+      "order_planned_date": "2026-09-28T00:00:00+09:00",
+      "deadline": "2026-10-09T23:59:00+09:00",
+      "region": "울산",
+      "description": "지원분야: 창업\n신청기간: 2026-09-23 ~ 2026-10-09\n소관부처·지자체: 울산광역시\n사업수행기관: 울산테크노파크\n출처: 기업마당(bizinfo)",
+      "attachments": [],
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126775",
+      "ref_no": "PBLN_000000000126775",
+      "officer": null,
+      "officer_tel": null,
+      "source_label": "💼 기업마당",
+      "score": 6,
+      "matched_keywords": [
+        "스마트팜"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "order_plan",
@@ -2155,7 +2327,7 @@
         "임업"
       ],
       "first_seen_at": "2026-09-16T20:06:55.626771+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "kofpi_bid",
@@ -2182,7 +2354,7 @@
         "임업"
       ],
       "first_seen_at": "2026-09-16T20:06:55.626771+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "kofpi_bid",
@@ -2209,7 +2381,2131 @@
         "임업"
       ],
       "first_seen_at": "2026-09-16T20:06:55.626771+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269089",
+      "title": "고창읍 농촌중심지 활성화사업 지역역량강화용역",
+      "agency": "전북특별자치도 고창군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 1477390000,
+      "order_planned_date": "2026-08-31T09:58:09+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "전북",
+      "description": "일반용역\n참조번호: 농촌활력과-8327",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=1",
+      "ref_no": "농촌활력과-8327",
+      "officer": "정승경",
+      "officer_tel": "063-560-2502",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269131",
+      "title": "농업법인 관리 및 사업범위 실효성 제고를 위한 제도개선 방안 마련",
+      "agency": "농림수산식품교육문화정보원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 52800000,
+      "order_planned_date": "2026-08-31T11:03:31+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: AI추진단-98",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269131&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269131&fileType=BFDTL&fileSeq=1",
+      "ref_no": "AI추진단-98",
+      "officer": "김기홍",
+      "officer_tel": "044-861-8832",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269133",
+      "title": "2026년 청년농업인 농업자금 활용역량 강화 교육",
+      "agency": "농림수산식품교육문화정보원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 55000000,
+      "order_planned_date": "2026-08-31T11:05:55+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 청년농육성실-1470",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269133&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269133&fileType=BFDTL&fileSeq=1",
+      "ref_no": "청년농육성실-1470",
+      "officer": "김기홍",
+      "officer_tel": "044-861-8832",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269263",
+      "title": "의성읍 농촌중심지활성화사업(중심지) 지역역량강화 용역",
+      "agency": "한국농어촌공사 경북지역본부 의성.군위지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 521900000,
+      "order_planned_date": "2026-08-31T14:50:10+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "경북",
+      "description": "일반용역\n참조번호: 의성군위농지관리-",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=1",
+      "ref_no": "의성군위농지관리-",
+      "officer": "김가현",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269270",
+      "title": "2026년 입목처분(제5차_조촌리) 위탁조사 용역사업",
+      "agency": "산림청 중부지방산림청 충주국유림관리소",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 13325000,
+      "order_planned_date": "2026-08-31T14:35:08+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 충주국유림관리소-6354",
+      "attachments": [],
+      "url": null,
+      "ref_no": "충주국유림관리소-6354",
+      "officer": "김준성",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269275",
+      "title": "2026년 입목처분(제6차_문암리) 위탁조사 용역사업",
+      "agency": "산림청 중부지방산림청 충주국유림관리소",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 9284000,
+      "order_planned_date": "2026-08-31T14:37:12+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 충주국유림관리소-6355",
+      "attachments": [],
+      "url": null,
+      "ref_no": "충주국유림관리소-6355",
+      "officer": "김준성",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269317",
+      "title": "2026년 농업기술사업화지원 성과관리 및 사업고도화",
+      "agency": "한국농업기술진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 151450000,
+      "order_planned_date": "2026-08-31T15:22:34+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 운영지원실-2608311\n[1^8016159001^기타사업지원서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269317&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269317&fileType=BFDTL&fileSeq=1",
+      "ref_no": "운영지원실-2608311",
+      "officer": "조선영",
+      "officer_tel": "070-4056-8943",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269473",
+      "title": "농업기반시설관리시스템 기능개선 및 유지관리 용역",
+      "agency": "한국농어촌공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 751454000,
+      "order_planned_date": "2026-08-31T18:15:46+09:00",
+      "deadline": "2026-09-05T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 수자원시설디지털-394",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=1",
+      "ref_no": "수자원시설디지털-394",
+      "officer": "김태정",
+      "officer_tel": "063-540-1128",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269662",
+      "title": "광석지구 다목적농촌용수개발사업 폐기물처리용역",
+      "agency": "한국농어촌공사 충남지역본부 논산지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 1366594000,
+      "order_planned_date": "2026-09-01T11:30:34+09:00",
+      "deadline": "2026-09-07T23:59:00+09:00",
+      "region": "충남",
+      "description": "일반용역\n참조번호: 논산고객-5108",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=1",
+      "ref_no": "논산고객-5108",
+      "officer": "김나연",
+      "officer_tel": "041-730-2115",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269801",
+      "title": "[긴급] 2026년 농업인역량지원센터 홍보 디자인 및 영상 제작 용역 사전규격 공개",
+      "agency": "주식회사 배움창작소",
+      "agency_dept": null,
+      "agency_type": "기타",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 34000000,
+      "order_planned_date": "2026-09-01T15:37:13+09:00",
+      "deadline": "2026-09-04T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 20260901",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269801&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269801&fileType=BFDTL&fileSeq=1",
+      "ref_no": "20260901",
+      "officer": "장은희",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00269848",
+      "title": "국립농업박물관 상설전시 부분 개선 연출 설계 및 제작·설치 용역",
+      "agency": "국립농업박물관",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 141374000,
+      "order_planned_date": "2026-09-01T16:01:40+09:00",
+      "deadline": "2026-09-06T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 전시기획팀-1068\n[1^7215409902^전시홍보관설치및디자인서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=2",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=3",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=2",
+      "ref_no": "전시기획팀-1068",
+      "officer": "김성경",
+      "officer_tel": "070-4056-7765",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00270157",
+      "title": "2026년 농업마이스터 지정자 국외연수 운영",
+      "agency": "농림수산식품교육문화정보원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 63679000,
+      "order_planned_date": "2026-09-02T10:40:13+09:00",
+      "deadline": "2026-09-07T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 전문인재실-755",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270157&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270157&fileType=BFDTL&fileSeq=1",
+      "ref_no": "전문인재실-755",
+      "officer": "김기홍",
+      "officer_tel": "044-861-8832",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00270298",
+      "title": "2026년 산림경영지도원 자격전형 위탁 용역",
+      "agency": "산림조합중앙회",
+      "agency_dept": null,
+      "agency_type": "기타",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 60000000,
+      "order_planned_date": "2026-09-02T14:27:08+09:00",
+      "deadline": "2026-09-06T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 산림조합중앙회 제2026-34호 ",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림조합중앙회 제2026-34호",
+      "officer": "전지원",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00270618",
+      "title": "금호지구 농촌공간정비사업 건설폐기물처리 용역",
+      "agency": "한국농어촌공사 경남지역본부 거창.함양지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 671250000,
+      "order_planned_date": "2026-09-03T09:48:04+09:00",
+      "deadline": "2026-09-08T23:59:00+09:00",
+      "region": "경남",
+      "description": "일반용역\n참조번호: 거창함양농지관리-4046",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=1",
+      "ref_no": "거창함양농지관리-4046",
+      "officer": "최성은",
+      "officer_tel": "055-320-4817",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00270679",
+      "title": "「국립종자원 정보통신망 운영 사업자 선정」 사업(장기계속)",
+      "agency": "농림축산식품부 국립종자원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 1491235400,
+      "order_planned_date": "2026-09-03T11:07:56+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 식량종자과-1992호\n[1^8399999801^유선통신서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270679&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270679&fileType=BFDTL&fileSeq=1",
+      "ref_no": "식량종자과-1992호",
+      "officer": "강태희",
+      "officer_tel": "070-4056-7989",
+      "score": 5,
+      "matched_keywords": [
+        "식량"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00271681",
+      "title": "국립농업박물관 곤충정원 조성 전시 연출 설계 및 설치 용역",
+      "agency": "국립농업박물관",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 77000000,
+      "order_planned_date": "2026-09-07T08:38:44+09:00",
+      "deadline": "2026-09-12T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 농업기획팀-1157",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271681&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271681&fileType=BFDTL&fileSeq=1",
+      "ref_no": "농업기획팀-1157",
+      "officer": "성진욱",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00271753",
+      "title": "영동군 어촌지구 농촌공간정비사업 기본계획수립용역",
+      "agency": "한국농어촌공사 충북지역본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 302049000,
+      "order_planned_date": "2026-09-07T10:33:26+09:00",
+      "deadline": "2026-09-10T23:59:00+09:00",
+      "region": "충북",
+      "description": "기술용역\n참조번호: 충북농지관리-7377",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=1",
+      "ref_no": "충북농지관리-7377",
+      "officer": "송여진",
+      "officer_tel": "043-290-3305",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00271880",
+      "title": "(장기계속) KOICA 라오스, 방글라데시 혁신적 농촌공동체 개발 프로그램 영향평가(1차) 용역",
+      "agency": "한국국제협력단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 948920880,
+      "order_planned_date": "2026-09-08T17:19:35+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 협평가-1499",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=5",
+          "name": "첨부5"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=1",
+      "ref_no": "협평가-1499",
+      "officer": "정혜민",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00271893",
+      "title": "방글라데시 혁신적 농촌공동체 개발 사업(SPEPP) 사업관리(PMC) 용역",
+      "agency": "한국국제협력단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 31760940903,
+      "order_planned_date": "2026-09-08T09:06:40+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 협서태-439",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=1",
+      "ref_no": "협서태-439",
+      "officer": "오하람",
+      "officer_tel": "031-740-0353",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272048",
+      "title": "몽골 울란바토르시 지속가능한 4계절 온실 구축을 통한 농업생산 역량강화  PMC 용역",
+      "agency": "한국국제협력단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 7058311913,
+      "order_planned_date": "2026-09-08T17:50:32+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 협서태-411",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=1",
+      "ref_no": "협서태-411",
+      "officer": "오하람",
+      "officer_tel": "031-740-0353",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272134",
+      "title": "2026년 소나무재선충병 무인항공기 예찰 AI 분석 용역",
+      "agency": "경상북도 안동시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 112310000,
+      "order_planned_date": "2026-09-07T18:37:59+09:00",
+      "deadline": "2026-09-12T23:59:00+09:00",
+      "region": "경북",
+      "description": "일반용역\n참조번호: 산림과-16446",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272134&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272134&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림과-16446",
+      "officer": "금보경",
+      "officer_tel": "054-840-6136",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272359",
+      "title": "농업용 친환경 미생물 제제 산업화 플랫폼 구축 연구용역",
+      "agency": "국립경국대학교 행정지원본부",
+      "agency_dept": null,
+      "agency_type": "교육기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-09-08T18:11:57+09:00",
+      "deadline": "2026-09-11T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 통합지원실-13356",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272359&fileType=BFDTL&fileSeq=2",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272359&fileType=BFDTL&fileSeq=2",
+      "ref_no": "통합지원실-13356",
+      "officer": "이채영",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272624",
+      "title": "2026년 10~12월 모가면 거점소독시설 운영 용역",
+      "agency": "경기도 이천시 농업기술센터",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 86500000,
+      "order_planned_date": "2026-09-08T19:08:45+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "경기",
+      "description": "일반용역\n참조번호: 축산과-33181",
+      "attachments": [],
+      "url": null,
+      "ref_no": "축산과-33181",
+      "officer": "정지현",
+      "officer_tel": "031-6190-7311",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272627",
+      "title": "라오스 혁신적 농촌공동체 개발 프로그램(2026-2031/2,000만불) PMC 용역",
+      "agency": "한국국제협력단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 13241340246,
+      "order_planned_date": "2026-09-09T16:05:43+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 협아일-3522",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=5",
+          "name": "첨부5"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=1",
+      "ref_no": "협아일-3522",
+      "officer": "정혜민",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00272708",
+      "title": "2026년 제1차 입목처분 위탁사업",
+      "agency": "산림청 북부지방산림청 수원국유림관리소",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 16112000,
+      "order_planned_date": "2026-09-09T10:15:28+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 수원국유림관리소-11389",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=1",
+      "ref_no": "수원국유림관리소-11389",
+      "officer": "이연재",
+      "officer_tel": "033-550-9911",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273085",
+      "title": "울진 금강소나무림 소나무재선충병 예찰 및 피해분석 용역",
+      "agency": "한국산림재난안전기술공단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 320000000,
+      "order_planned_date": "2026-09-09T18:43:53+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 1",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273085&fileType=BFDTL&fileSeq=2",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273085&fileType=BFDTL&fileSeq=2",
+      "ref_no": "1",
+      "officer": "석호석",
+      "officer_tel": "043-279-5306",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273086",
+      "title": "2026년 치산정보시스템 기능개선",
+      "agency": "한국산림재난안전기술공단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 119000000,
+      "order_planned_date": "2026-09-09T18:45:17+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 1",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273086&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273086&fileType=BFDTL&fileSeq=1",
+      "ref_no": "1",
+      "officer": "석호석",
+      "officer_tel": "043-279-5306",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273090",
+      "title": "소나무재선충병 예찰 발전방안 마련",
+      "agency": "한국산림재난안전기술공단",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 250000000,
+      "order_planned_date": "2026-09-09T18:49:07+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 1",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273090&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273090&fileType=BFDTL&fileSeq=1",
+      "ref_no": "1",
+      "officer": "석호석",
+      "officer_tel": "043-279-5306",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273333",
+      "title": "2026년 서부지방산림청 유아숲체험원 정기 위험성평가 컨설팅 용역",
+      "agency": "산림청 서부지방산림청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 24695000,
+      "order_planned_date": "2026-09-10T13:44:48+09:00",
+      "deadline": "2026-09-15T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 운영재산관리팀-5259",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273333&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273333&fileType=BFDTL&fileSeq=1",
+      "ref_no": "운영재산관리팀-5259",
+      "officer": "김지은",
+      "officer_tel": "033-550-9912",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273356",
+      "title": "의성읍 농촌중심지활성화사업(배후마을) 지역역량강화 용역",
+      "agency": "한국농어촌공사 경북지역본부 의성.군위지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 1692300000,
+      "order_planned_date": "2026-09-10T16:23:24+09:00",
+      "deadline": "2026-09-15T23:59:00+09:00",
+      "region": "경북",
+      "description": "일반용역\n참조번호: 의성군위농지관리-",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=1",
+      "ref_no": "의성군위농지관리-",
+      "officer": "김가현",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273357",
+      "title": "2026년 하반기 농업생산기반정비사업 토양조사 및 시험분석 용역",
+      "agency": "한국농어촌공사 안전기술본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 131700000,
+      "order_planned_date": "2026-09-10T13:55:47+09:00",
+      "deadline": "2026-09-15T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 안전기술기획-3388",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=4",
+          "name": "첨부4"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=5",
+          "name": "첨부5"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=1",
+      "ref_no": "안전기술기획-3388",
+      "officer": "박준형",
+      "officer_tel": "042-479-8209",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273633",
+      "title": "한국산림복지진흥원 개원 10주년 기념 행사 운영",
+      "agency": "한국산림복지진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 95000000,
+      "order_planned_date": "2026-09-10T19:20:28+09:00",
+      "deadline": "2026-09-13T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 전략기획팀-3198",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=1",
+      "ref_no": "전략기획팀-3198",
+      "officer": "김다영",
+      "officer_tel": "042-719-4130",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00273841",
+      "title": "2026년 녹색자금통합관리시스템 집행검증 기능 개발",
+      "agency": "한국산림복지진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 85000000,
+      "order_planned_date": "2026-09-11T13:11:55+09:00",
+      "deadline": "2026-09-14T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 예산운영팀-1875",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=1",
+      "ref_no": "예산운영팀-1875",
+      "officer": "김다영",
+      "officer_tel": "042-719-4130",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00274596",
+      "title": "광양 세풍관정 외 17개소 농업용 대형관정 사후관리 용역",
+      "agency": "전남광주통합특별시 광양시",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 86182000,
+      "order_planned_date": "2026-09-14T18:22:14+09:00",
+      "deadline": "2026-09-19T23:59:00+09:00",
+      "region": "광주",
+      "description": "기술용역\n참조번호: 광양시",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274596&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274596&fileType=BFDTL&fileSeq=1",
+      "ref_no": "광양시",
+      "officer": "김명국",
+      "officer_tel": "061-797-3272",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00274672",
+      "title": "국립농업박물관 소장 박물관자료 상태조사",
+      "agency": "국립농업박물관",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-09-15T09:01:57+09:00",
+      "deadline": "2026-09-20T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 유물팀-843",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=1",
+      "ref_no": "유물팀-843",
+      "officer": "성진욱",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00274673",
+      "title": "국립농업박물관 소장 박물관자료 보존처리",
+      "agency": "국립농업박물관",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 106000000,
+      "order_planned_date": "2026-09-15T09:04:39+09:00",
+      "deadline": "2026-09-20T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 유물팀-844",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=1",
+      "ref_no": "유물팀-844",
+      "officer": "성진욱",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00275167",
+      "title": "양양군 목재문화체험장 교육프로그램 운영 용역 사전규격 공개",
+      "agency": "강원특별자치도 양양군",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 98000000,
+      "order_planned_date": "2026-09-16T09:19:26+09:00",
+      "deadline": "2026-09-21T23:59:00+09:00",
+      "region": "강원",
+      "description": "일반용역\n참조번호: 양양군 산림녹지과",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=1",
+      "ref_no": "양양군 산림녹지과",
+      "officer": "이영섭",
+      "officer_tel": "033-670-2126",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00275263",
+      "title": "명석면 동전지구 농촌공간정비사업 지장건축물(축사)건설폐기물처리 용역",
+      "agency": "한국농어촌공사 경남지역본부 진주.산청지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 500300000,
+      "order_planned_date": "2026-09-16T14:10:45+09:00",
+      "deadline": "2026-09-21T23:59:00+09:00",
+      "region": "경남",
+      "description": "일반용역\n참조번호: 진주산청농지관리-6704",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275263&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275263&fileType=BFDTL&fileSeq=1",
+      "ref_no": "진주산청농지관리-6704",
+      "officer": "김보경",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-16T20:33:37.073828+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00275547",
+      "title": "26~28년 가리왕산 생태복구 식물상 모니터링 학술연구용역",
+      "agency": "강원특별자치도",
+      "agency_dept": null,
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 292846000,
+      "order_planned_date": "2026-09-16T17:27:33+09:00",
+      "deadline": "2026-09-20T23:59:00+09:00",
+      "region": "강원",
+      "description": "일반용역\n참조번호: 산림관리과-15548",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림관리과-15548",
+      "officer": "이종묵",
+      "officer_tel": "***********",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-16T20:33:37.073828+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00275640",
+      "title": "2027년 딥러닝 농업면적시스템 유지관리 사업",
+      "agency": "국가데이터처",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 40000000,
+      "order_planned_date": "2026-09-17T08:22:34+09:00",
+      "deadline": "2026-09-22T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 1240000",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275640&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275640&fileType=BFDTL&fileSeq=1",
+      "ref_no": "1240000",
+      "officer": "손지희",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00276320",
+      "title": "2026년 하반기 FAC 식량원조 및 APTERR 식량지원 물류용역",
+      "agency": "한국농수산식품유통공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 2161031416,
+      "order_planned_date": "2026-09-18T13:46:02+09:00",
+      "deadline": "2026-09-23T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 사전공개요청서(20260918)",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276320&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276320&fileType=BFDTL&fileSeq=1",
+      "ref_no": "사전공개요청서(20260918)",
+      "officer": "김지연",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "식량"
+      ],
+      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00276339",
+      "title": "메가프로젝트 연계 농업용수 대체 개발사업 기본구상 및 사업계획 적정성 검토 용역",
+      "agency": "한국농어촌공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 360000000,
+      "order_planned_date": "2026-09-18T13:50:56+09:00",
+      "deadline": "2026-09-26T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 기후대응계획-1720",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=2",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=3",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=4",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=2",
+      "ref_no": "기후대응계획-1720",
+      "officer": "박진영",
+      "officer_tel": "055-320-4812",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00276613",
+      "title": "27~28년도 국립산림과학원 연구정보시스템 통합 운영 및 유지관리",
+      "agency": "산림청 국립산림과학원",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 3224880620,
+      "order_planned_date": "2026-09-21T08:22:25+09:00",
+      "deadline": "2026-09-30T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 연구기획과-4157\n[1^8111189901^정보시스템유지관리서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276613&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276613&fileType=BFDTL&fileSeq=1",
+      "ref_no": "연구기획과-4157",
+      "officer": "이종진",
+      "officer_tel": "070-4056-8682",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00276831",
+      "title": "한국임업진흥원 전산실 이전·구축",
+      "agency": "한국임업진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 907150000,
+      "order_planned_date": "2026-09-21T14:50:24+09:00",
+      "deadline": "2026-09-26T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: AI빅데이터실-1399\n[1^8111179901^정보인프라구축서비스]",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276831&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276831&fileType=BFDTL&fileSeq=1",
+      "ref_no": "AI빅데이터실-1399",
+      "officer": "조윤정",
+      "officer_tel": "02-590-8873",
+      "score": 5,
+      "matched_keywords": [
+        "임업"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00277291",
+      "title": "한국산림복지진흥원 숲여행 브랜드 개발 및 운영체계 구축",
+      "agency": "한국산림복지진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-09-22T13:38:13+09:00",
+      "deadline": "2026-09-25T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 산업성장지원팀-1929",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산업성장지원팀-1929",
+      "officer": "김다영",
+      "officer_tel": "042-719-4130",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00277741",
+      "title": "2026년 스마트농업 기술역량 교육맵 개선",
+      "agency": "농림수산식품교육문화정보원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 50000000,
+      "order_planned_date": "2026-09-23T09:33:37+09:00",
+      "deadline": "2026-09-28T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 인재기획실-425",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277741&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277741&fileType=BFDTL&fileSeq=1",
+      "ref_no": "인재기획실-425",
+      "officer": "김기홍",
+      "officer_tel": "044-861-8832",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "kofpi_bid",
+      "external_id": "kofpi_bid::12668",
+      "title": "2026년 제2차 목재등급평가사 양성교육",
+      "agency": "한국임업진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "긴급/공지/교육/행사",
+      "budget_amount": null,
+      "order_planned_date": "2026-09-18T00:00:00+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": "카테고리: 긴급/공지/교육/행사\n출처: 한국임업진흥원",
+      "attachments": [],
+      "url": "https://www.kofpi.or.kr/notice/notice_01view.do?bb_seq=12668",
+      "ref_no": "3036",
+      "officer": null,
+      "officer_tel": null,
+      "source_label": "🌲 임업진흥원",
+      "score": 5,
+      "matched_keywords": [
+        "임업"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "kofpi_bid",
+      "external_id": "kofpi_bid::12669",
+      "title": "2026년 제2차 목재등급평가사 양성 교육",
+      "agency": "한국임업진흥원",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "긴급/공지",
+      "budget_amount": null,
+      "order_planned_date": "2026-09-18T00:00:00+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": "카테고리: 긴급/공지\n출처: 한국임업진흥원",
+      "attachments": [],
+      "url": "https://www.kofpi.or.kr/notice/notice_01view.do?bb_seq=12669",
+      "ref_no": "3035",
+      "officer": null,
+      "officer_tel": null,
+      "source_label": "🌲 임업진흥원",
+      "score": 5,
+      "matched_keywords": [
+        "임업"
+      ],
+      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00277911",
+      "title": "장흥군 회진면 진목지구 농촌공간정비사업 기본계획수립 용역",
+      "agency": "한국농어촌공사 전남지역본부",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 187000000,
+      "order_planned_date": "2026-09-23T12:05:42+09:00",
+      "deadline": "2026-10-01T23:59:00+09:00",
+      "region": "전남",
+      "description": "일반용역\n참조번호: 전남농지관리-",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=1",
+      "ref_no": "전남농지관리-",
+      "officer": "류선아",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278089",
+      "title": "2026학년도 경북 청년리더 양성 선진농업 역량강화 글로벌 현장실습교육 위탁 용역",
+      "agency": "경상북도교육청 한국생명과학고등학교",
+      "agency_dept": null,
+      "agency_type": "교육기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 94953700,
+      "order_planned_date": "2026-09-23T14:56:11+09:00",
+      "deadline": "2026-09-28T23:59:00+09:00",
+      "region": "경북",
+      "description": "일반용역\n참조번호: 한국생명과학고등학교-14557",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278089&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278089&fileType=BFDTL&fileSeq=1",
+      "ref_no": "한국생명과학고등학교-14557",
+      "officer": "김예은",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278104",
+      "title": "2027년 사방사업 타당성평가 위탁용역(1차)",
+      "agency": "산림청 서부지방산림청",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "기술용역",
+      "budget_amount": 108512000,
+      "order_planned_date": "2026-09-23T15:09:36+09:00",
+      "deadline": "2026-09-28T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "기술용역\n참조번호: 산림재난안전과-7354",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278104&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278104&fileType=BFDTL&fileSeq=1",
+      "ref_no": "산림재난안전과-7354",
+      "officer": "김지은",
+      "officer_tel": "033-550-9912",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278176",
+      "title": "2027년 농업면적 전자조사 시스템 유지관리 사업",
+      "agency": "국가데이터처",
+      "agency_dept": null,
+      "agency_type": "중앙부처",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 62000000,
+      "order_planned_date": "2026-09-23T15:55:54+09:00",
+      "deadline": "2026-09-28T23:59:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: 1240000",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278176&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278176&fileType=BFDTL&fileSeq=1",
+      "ref_no": "1240000",
+      "officer": "손지희",
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278224",
+      "title": "소양호 상류유역 농업비점오염저감 용역",
+      "agency": "한국수자원공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 5458800000,
+      "order_planned_date": "2026-09-23T16:30:31+09:00",
+      "deadline": "2026-09-28T17:00:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: S5202602513",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278224&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278224&fileType=BFDTL&fileSeq=1",
+      "ref_no": "S5202602513",
+      "officer": null,
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278225",
+      "title": "대청호 상류유역 농업비점오염저감 용역",
+      "agency": "한국수자원공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 5359370000,
+      "order_planned_date": "2026-09-23T16:31:33+09:00",
+      "deadline": "2026-09-28T17:00:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: S5202602514",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278225&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278225&fileType=BFDTL&fileSeq=1",
+      "ref_no": "S5202602514",
+      "officer": null,
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278226",
+      "title": "용담호 상류유역 농업비점오염저감 용역",
+      "agency": "한국수자원공사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 5474480000,
+      "order_planned_date": "2026-09-23T16:31:36+09:00",
+      "deadline": "2026-09-28T17:00:00+09:00",
+      "region": "중앙/전국",
+      "description": "일반용역\n참조번호: S5202602515",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278226&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278226&fileType=BFDTL&fileSeq=1",
+      "ref_no": "S5202602515",
+      "officer": null,
+      "officer_tel": null,
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20883028",
+      "title": "상림~하림 도시생태축 복원사업 기본계획 용역",
+      "agency": "경상남도 함양군",
+      "agency_dept": "산림녹지과",
+      "agency_type": "지자체",
+      "contract_method": "일반경쟁",
+      "bsns_div": "기술용역",
+      "budget_amount": 266108000,
+      "order_planned_date": "2026-09-29T22:56:25+09:00",
+      "deadline": null,
+      "region": "경남",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20883028",
+      "officer": "산림녹지과",
+      "officer_tel": "055-960-6012",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20882283",
+      "title": "2026학년도 경북 청년리더 양성 선진농업 역량강화 글로벌 현장실습교육 위탁 용역",
+      "agency": "경상북도교육청 한국생명과학고등학교",
+      "agency_dept": "행정실",
+      "agency_type": "교육기관",
+      "contract_method": "제한경쟁",
+      "bsns_div": "일반용역",
+      "budget_amount": 94953700,
+      "order_planned_date": "2026-09-29T13:28:56+09:00",
+      "deadline": null,
+      "region": "경북",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20882283",
+      "officer": "김예은",
+      "officer_tel": "054-840-2563",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20882567",
+      "title": "2027년 농업면적 전자조사 시스템 유지관리 사업",
+      "agency": "국가데이터처",
+      "agency_dept": "농어업통계과",
+      "agency_type": "중앙부처",
+      "contract_method": "제한경쟁",
+      "bsns_div": "일반용역",
+      "budget_amount": 62000000,
+      "order_planned_date": "2026-09-29T15:45:46+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20882567",
+      "officer": "이진우",
+      "officer_tel": "042-481-3605",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20882448",
+      "title": "2026년 하반기 동부지방산림청 안전보건교육 위탁용역",
+      "agency": "산림청 동부지방산림청",
+      "agency_dept": "운영재산관리팀",
+      "agency_type": "중앙부처",
+      "contract_method": "수의계약",
+      "bsns_div": "일반용역",
+      "budget_amount": 7750000,
+      "order_planned_date": "2026-09-29T14:51:19+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20882448",
+      "officer": "강지민",
+      "officer_tel": "033-640-8514",
+      "score": 5,
+      "matched_keywords": [
+        "산림"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "order_plan",
+      "external_id": "order_plan::R26DD20882514",
+      "title": "2026 농촌형 교통모델 모니터링 및 만족도조사 용역",
+      "agency": "한국농어촌공사 지역개발지원단",
+      "agency_dept": "지역개발지원단",
+      "agency_type": "공공기관",
+      "contract_method": "수의계약",
+      "bsns_div": "일반용역",
+      "budget_amount": 53000000,
+      "order_planned_date": "2026-09-29T15:17:48+09:00",
+      "deadline": null,
+      "region": "중앙/전국",
+      "description": null,
+      "attachments": [],
+      "url": null,
+      "ref_no": "R26DD20882514",
+      "officer": "채아람",
+      "officer_tel": "044-202-0313",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278808",
+      "title": "스마트원예단지 기반조성사업 폐기물처리용역",
+      "agency": "한국농어촌공사 충남지역본부 논산지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 137580000,
+      "order_planned_date": "2026-09-28T17:18:39+09:00",
+      "deadline": "2026-10-02T23:59:00+09:00",
+      "region": "충남",
+      "description": "일반용역\n참조번호: 논산고객-5530",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278808&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278808&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278808&fileType=BFDTL&fileSeq=1",
+      "ref_no": "논산고객-5530",
+      "officer": "김나연",
+      "officer_tel": "041-730-2115",
+      "score": 5,
+      "matched_keywords": [
+        "원예"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "pre_spec",
+      "external_id": "pre_spec::R26BD00278952",
+      "title": "순창읍 농촌중심지활성화사업 배후마을 서비스전달(2차) 용역",
+      "agency": "한국농어촌공사 전북지역본부 순창지사",
+      "agency_dept": null,
+      "agency_type": "공공기관",
+      "contract_method": null,
+      "bsns_div": "일반용역",
+      "budget_amount": 198137000,
+      "order_planned_date": "2026-09-29T09:40:01+09:00",
+      "deadline": "2026-10-05T23:59:00+09:00",
+      "region": "전북",
+      "description": "일반용역\n참조번호: 순창농지관리-4942-20260929",
+      "attachments": [
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278952&fileType=BFDTL&fileSeq=1",
+          "name": "첨부1"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278952&fileType=BFDTL&fileSeq=2",
+          "name": "첨부2"
+        },
+        {
+          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278952&fileType=BFDTL&fileSeq=3",
+          "name": "첨부3"
+        }
+      ],
+      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278952&fileType=BFDTL&fileSeq=1",
+      "ref_no": "순창농지관리-4942-20260929",
+      "officer": "박가은",
+      "officer_tel": "063-650-7020",
+      "score": 5,
+      "matched_keywords": [
+        "농촌"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "bizinfo_support",
+      "external_id": "bizinfo_support::PBLN_000000000126858",
+      "title": "[전북] 군산시 2026년 5차 여성농업인 상생카드 지원사업 신청 공고",
+      "agency": "전북특별자치도",
+      "agency_dept": "기초자치단체",
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "경영",
+      "budget_amount": null,
+      "order_planned_date": "2026-09-29T00:00:00+09:00",
+      "deadline": "2026-10-06T23:59:00+09:00",
+      "region": "전북",
+      "description": "지원분야: 경영\n신청기간: 2026-09-23 ~ 2026-10-06\n소관부처·지자체: 전북특별자치도\n사업수행기관: 기초자치단체\n출처: 기업마당(bizinfo)",
+      "attachments": [],
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126858",
+      "ref_no": "PBLN_000000000126858",
+      "officer": null,
+      "officer_tel": null,
+      "source_label": "💼 기업마당",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
+    },
+    {
+      "source_type": "bizinfo_support",
+      "external_id": "bizinfo_support::PBLN_000000000126776",
+      "title": "[전북] 인공지능 분야 기술지도 희망기업 모집 상시 공고(AI융합 지능형 농업 생태계 구축 사업)",
+      "agency": "전북특별자치도",
+      "agency_dept": "전북테크노파크",
+      "agency_type": "지자체",
+      "contract_method": null,
+      "bsns_div": "기술",
+      "budget_amount": null,
+      "order_planned_date": "2026-09-28T00:00:00+09:00",
+      "deadline": null,
+      "region": "전북",
+      "description": "지원분야: 기술\n신청기간: 상시 접수\n소관부처·지자체: 전북특별자치도\n사업수행기관: 전북테크노파크\n출처: 기업마당(bizinfo)",
+      "attachments": [],
+      "url": "https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?pblancId=PBLN_000000000126776",
+      "ref_no": "PBLN_000000000126776",
+      "officer": null,
+      "officer_tel": null,
+      "source_label": "💼 기업마당",
+      "score": 5,
+      "matched_keywords": [
+        "농업"
+      ],
+      "first_seen_at": "2026-09-30T10:00:15.550235+09:00",
+      "last_seen_at": "2026-09-30T10:00:15.550235+09:00"
     },
     {
       "source_type": "kofpi_bid",
@@ -2464,1593 +4760,6 @@
       "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
     },
     {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269089",
-      "title": "고창읍 농촌중심지 활성화사업 지역역량강화용역",
-      "agency": "전북특별자치도 고창군",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 1477390000,
-      "order_planned_date": "2026-08-31T09:58:09+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "전북",
-      "description": "일반용역\n참조번호: 농촌활력과-8327",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269089&fileType=BFDTL&fileSeq=1",
-      "ref_no": "농촌활력과-8327",
-      "officer": "정승경",
-      "officer_tel": "063-560-2502",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269131",
-      "title": "농업법인 관리 및 사업범위 실효성 제고를 위한 제도개선 방안 마련",
-      "agency": "농림수산식품교육문화정보원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 52800000,
-      "order_planned_date": "2026-08-31T11:03:31+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: AI추진단-98",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269131&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269131&fileType=BFDTL&fileSeq=1",
-      "ref_no": "AI추진단-98",
-      "officer": "김기홍",
-      "officer_tel": "044-861-8832",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269133",
-      "title": "2026년 청년농업인 농업자금 활용역량 강화 교육",
-      "agency": "농림수산식품교육문화정보원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 55000000,
-      "order_planned_date": "2026-08-31T11:05:55+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 청년농육성실-1470",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269133&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269133&fileType=BFDTL&fileSeq=1",
-      "ref_no": "청년농육성실-1470",
-      "officer": "김기홍",
-      "officer_tel": "044-861-8832",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269263",
-      "title": "의성읍 농촌중심지활성화사업(중심지) 지역역량강화 용역",
-      "agency": "한국농어촌공사 경북지역본부 의성.군위지사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 521900000,
-      "order_planned_date": "2026-08-31T14:50:10+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "경북",
-      "description": "일반용역\n참조번호: 의성군위농지관리-",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269263&fileType=BFDTL&fileSeq=1",
-      "ref_no": "의성군위농지관리-",
-      "officer": "김가현",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269270",
-      "title": "2026년 입목처분(제5차_조촌리) 위탁조사 용역사업",
-      "agency": "산림청 중부지방산림청 충주국유림관리소",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 13325000,
-      "order_planned_date": "2026-08-31T14:35:08+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "기술용역\n참조번호: 충주국유림관리소-6354",
-      "attachments": [],
-      "url": null,
-      "ref_no": "충주국유림관리소-6354",
-      "officer": "김준성",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269275",
-      "title": "2026년 입목처분(제6차_문암리) 위탁조사 용역사업",
-      "agency": "산림청 중부지방산림청 충주국유림관리소",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 9284000,
-      "order_planned_date": "2026-08-31T14:37:12+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "기술용역\n참조번호: 충주국유림관리소-6355",
-      "attachments": [],
-      "url": null,
-      "ref_no": "충주국유림관리소-6355",
-      "officer": "김준성",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269317",
-      "title": "2026년 농업기술사업화지원 성과관리 및 사업고도화",
-      "agency": "한국농업기술진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 151450000,
-      "order_planned_date": "2026-08-31T15:22:34+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 운영지원실-2608311\n[1^8016159001^기타사업지원서비스]",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269317&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269317&fileType=BFDTL&fileSeq=1",
-      "ref_no": "운영지원실-2608311",
-      "officer": "조선영",
-      "officer_tel": "070-4056-8943",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269473",
-      "title": "농업기반시설관리시스템 기능개선 및 유지관리 용역",
-      "agency": "한국농어촌공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 751454000,
-      "order_planned_date": "2026-08-31T18:15:46+09:00",
-      "deadline": "2026-09-05T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 수자원시설디지털-394",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269473&fileType=BFDTL&fileSeq=1",
-      "ref_no": "수자원시설디지털-394",
-      "officer": "김태정",
-      "officer_tel": "063-540-1128",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269662",
-      "title": "광석지구 다목적농촌용수개발사업 폐기물처리용역",
-      "agency": "한국농어촌공사 충남지역본부 논산지사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 1366594000,
-      "order_planned_date": "2026-09-01T11:30:34+09:00",
-      "deadline": "2026-09-07T23:59:00+09:00",
-      "region": "충남",
-      "description": "일반용역\n참조번호: 논산고객-5108",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269662&fileType=BFDTL&fileSeq=1",
-      "ref_no": "논산고객-5108",
-      "officer": "김나연",
-      "officer_tel": "041-730-2115",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269801",
-      "title": "[긴급] 2026년 농업인역량지원센터 홍보 디자인 및 영상 제작 용역 사전규격 공개",
-      "agency": "주식회사 배움창작소",
-      "agency_dept": null,
-      "agency_type": "기타",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 34000000,
-      "order_planned_date": "2026-09-01T15:37:13+09:00",
-      "deadline": "2026-09-04T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 20260901",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269801&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269801&fileType=BFDTL&fileSeq=1",
-      "ref_no": "20260901",
-      "officer": "장은희",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00269848",
-      "title": "국립농업박물관 상설전시 부분 개선 연출 설계 및 제작·설치 용역",
-      "agency": "국립농업박물관",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 141374000,
-      "order_planned_date": "2026-09-01T16:01:40+09:00",
-      "deadline": "2026-09-06T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 전시기획팀-1068\n[1^7215409902^전시홍보관설치및디자인서비스]",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=2",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=3",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00269848&fileType=BFDTL&fileSeq=2",
-      "ref_no": "전시기획팀-1068",
-      "officer": "김성경",
-      "officer_tel": "070-4056-7765",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-02T10:00:13.661471+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00270157",
-      "title": "2026년 농업마이스터 지정자 국외연수 운영",
-      "agency": "농림수산식품교육문화정보원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 63679000,
-      "order_planned_date": "2026-09-02T10:40:13+09:00",
-      "deadline": "2026-09-07T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 전문인재실-755",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270157&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270157&fileType=BFDTL&fileSeq=1",
-      "ref_no": "전문인재실-755",
-      "officer": "김기홍",
-      "officer_tel": "044-861-8832",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00270298",
-      "title": "2026년 산림경영지도원 자격전형 위탁 용역",
-      "agency": "산림조합중앙회",
-      "agency_dept": null,
-      "agency_type": "기타",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 60000000,
-      "order_planned_date": "2026-09-02T14:27:08+09:00",
-      "deadline": "2026-09-06T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 산림조합중앙회 제2026-34호 ",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270298&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산림조합중앙회 제2026-34호",
-      "officer": "전지원",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00270618",
-      "title": "금호지구 농촌공간정비사업 건설폐기물처리 용역",
-      "agency": "한국농어촌공사 경남지역본부 거창.함양지사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 671250000,
-      "order_planned_date": "2026-09-03T09:48:04+09:00",
-      "deadline": "2026-09-08T23:59:00+09:00",
-      "region": "경남",
-      "description": "일반용역\n참조번호: 거창함양농지관리-4046",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270618&fileType=BFDTL&fileSeq=1",
-      "ref_no": "거창함양농지관리-4046",
-      "officer": "최성은",
-      "officer_tel": "055-320-4817",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00270679",
-      "title": "「국립종자원 정보통신망 운영 사업자 선정」 사업(장기계속)",
-      "agency": "농림축산식품부 국립종자원",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 1491235400,
-      "order_planned_date": "2026-09-03T11:07:56+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 식량종자과-1992호\n[1^8399999801^유선통신서비스]",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270679&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00270679&fileType=BFDTL&fileSeq=1",
-      "ref_no": "식량종자과-1992호",
-      "officer": "강태희",
-      "officer_tel": "070-4056-7989",
-      "score": 5,
-      "matched_keywords": [
-        "식량"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00271681",
-      "title": "국립농업박물관 곤충정원 조성 전시 연출 설계 및 설치 용역",
-      "agency": "국립농업박물관",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 77000000,
-      "order_planned_date": "2026-09-07T08:38:44+09:00",
-      "deadline": "2026-09-12T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 농업기획팀-1157",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271681&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271681&fileType=BFDTL&fileSeq=1",
-      "ref_no": "농업기획팀-1157",
-      "officer": "성진욱",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00271753",
-      "title": "영동군 어촌지구 농촌공간정비사업 기본계획수립용역",
-      "agency": "한국농어촌공사 충북지역본부",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 302049000,
-      "order_planned_date": "2026-09-07T10:33:26+09:00",
-      "deadline": "2026-09-10T23:59:00+09:00",
-      "region": "충북",
-      "description": "기술용역\n참조번호: 충북농지관리-7377",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=4",
-          "name": "첨부4"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271753&fileType=BFDTL&fileSeq=1",
-      "ref_no": "충북농지관리-7377",
-      "officer": "송여진",
-      "officer_tel": "043-290-3305",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00271880",
-      "title": "(장기계속) KOICA 라오스, 방글라데시 혁신적 농촌공동체 개발 프로그램 영향평가(1차) 용역",
-      "agency": "한국국제협력단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 948920880,
-      "order_planned_date": "2026-09-08T17:19:35+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 협평가-1499",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=4",
-          "name": "첨부4"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=5",
-          "name": "첨부5"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271880&fileType=BFDTL&fileSeq=1",
-      "ref_no": "협평가-1499",
-      "officer": "정혜민",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00271893",
-      "title": "방글라데시 혁신적 농촌공동체 개발 사업(SPEPP) 사업관리(PMC) 용역",
-      "agency": "한국국제협력단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 31760940903,
-      "order_planned_date": "2026-09-08T09:06:40+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 협서태-439",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00271893&fileType=BFDTL&fileSeq=1",
-      "ref_no": "협서태-439",
-      "officer": "오하람",
-      "officer_tel": "031-740-0353",
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272048",
-      "title": "몽골 울란바토르시 지속가능한 4계절 온실 구축을 통한 농업생산 역량강화  PMC 용역",
-      "agency": "한국국제협력단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 7058311913,
-      "order_planned_date": "2026-09-08T17:50:32+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 협서태-411",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272048&fileType=BFDTL&fileSeq=1",
-      "ref_no": "협서태-411",
-      "officer": "오하람",
-      "officer_tel": "031-740-0353",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272134",
-      "title": "2026년 소나무재선충병 무인항공기 예찰 AI 분석 용역",
-      "agency": "경상북도 안동시",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 112310000,
-      "order_planned_date": "2026-09-07T18:37:59+09:00",
-      "deadline": "2026-09-12T23:59:00+09:00",
-      "region": "경북",
-      "description": "일반용역\n참조번호: 산림과-16446",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272134&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272134&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산림과-16446",
-      "officer": "금보경",
-      "officer_tel": "054-840-6136",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272359",
-      "title": "농업용 친환경 미생물 제제 산업화 플랫폼 구축 연구용역",
-      "agency": "국립경국대학교 행정지원본부",
-      "agency_dept": null,
-      "agency_type": "교육기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 50000000,
-      "order_planned_date": "2026-09-08T18:11:57+09:00",
-      "deadline": "2026-09-11T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 통합지원실-13356",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272359&fileType=BFDTL&fileSeq=2",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272359&fileType=BFDTL&fileSeq=2",
-      "ref_no": "통합지원실-13356",
-      "officer": "이채영",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272624",
-      "title": "2026년 10~12월 모가면 거점소독시설 운영 용역",
-      "agency": "경기도 이천시 농업기술센터",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 86500000,
-      "order_planned_date": "2026-09-08T19:08:45+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "경기",
-      "description": "일반용역\n참조번호: 축산과-33181",
-      "attachments": [],
-      "url": null,
-      "ref_no": "축산과-33181",
-      "officer": "정지현",
-      "officer_tel": "031-6190-7311",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-09T10:00:20.209836+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272627",
-      "title": "라오스 혁신적 농촌공동체 개발 프로그램(2026-2031/2,000만불) PMC 용역",
-      "agency": "한국국제협력단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 13241340246,
-      "order_planned_date": "2026-09-09T16:05:43+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 협아일-3522",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=4",
-          "name": "첨부4"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=5",
-          "name": "첨부5"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272627&fileType=BFDTL&fileSeq=1",
-      "ref_no": "협아일-3522",
-      "officer": "정혜민",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00272708",
-      "title": "2026년 제1차 입목처분 위탁사업",
-      "agency": "산림청 북부지방산림청 수원국유림관리소",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 16112000,
-      "order_planned_date": "2026-09-09T10:15:28+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 수원국유림관리소-11389",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00272708&fileType=BFDTL&fileSeq=1",
-      "ref_no": "수원국유림관리소-11389",
-      "officer": "이연재",
-      "officer_tel": "033-550-9911",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273085",
-      "title": "울진 금강소나무림 소나무재선충병 예찰 및 피해분석 용역",
-      "agency": "한국산림재난안전기술공단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 320000000,
-      "order_planned_date": "2026-09-09T18:43:53+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 1",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273085&fileType=BFDTL&fileSeq=2",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273085&fileType=BFDTL&fileSeq=2",
-      "ref_no": "1",
-      "officer": "석호석",
-      "officer_tel": "043-279-5306",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273086",
-      "title": "2026년 치산정보시스템 기능개선",
-      "agency": "한국산림재난안전기술공단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 119000000,
-      "order_planned_date": "2026-09-09T18:45:17+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 1",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273086&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273086&fileType=BFDTL&fileSeq=1",
-      "ref_no": "1",
-      "officer": "석호석",
-      "officer_tel": "043-279-5306",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273090",
-      "title": "소나무재선충병 예찰 발전방안 마련",
-      "agency": "한국산림재난안전기술공단",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 250000000,
-      "order_planned_date": "2026-09-09T18:49:07+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 1",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273090&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273090&fileType=BFDTL&fileSeq=1",
-      "ref_no": "1",
-      "officer": "석호석",
-      "officer_tel": "043-279-5306",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273333",
-      "title": "2026년 서부지방산림청 유아숲체험원 정기 위험성평가 컨설팅 용역",
-      "agency": "산림청 서부지방산림청",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 24695000,
-      "order_planned_date": "2026-09-10T13:44:48+09:00",
-      "deadline": "2026-09-15T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 운영재산관리팀-5259",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273333&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273333&fileType=BFDTL&fileSeq=1",
-      "ref_no": "운영재산관리팀-5259",
-      "officer": "김지은",
-      "officer_tel": "033-550-9912",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273356",
-      "title": "의성읍 농촌중심지활성화사업(배후마을) 지역역량강화 용역",
-      "agency": "한국농어촌공사 경북지역본부 의성.군위지사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 1692300000,
-      "order_planned_date": "2026-09-10T16:23:24+09:00",
-      "deadline": "2026-09-15T23:59:00+09:00",
-      "region": "경북",
-      "description": "일반용역\n참조번호: 의성군위농지관리-",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273356&fileType=BFDTL&fileSeq=1",
-      "ref_no": "의성군위농지관리-",
-      "officer": "김가현",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273357",
-      "title": "2026년 하반기 농업생산기반정비사업 토양조사 및 시험분석 용역",
-      "agency": "한국농어촌공사 안전기술본부",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 131700000,
-      "order_planned_date": "2026-09-10T13:55:47+09:00",
-      "deadline": "2026-09-15T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 안전기술기획-3388",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=4",
-          "name": "첨부4"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=5",
-          "name": "첨부5"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273357&fileType=BFDTL&fileSeq=1",
-      "ref_no": "안전기술기획-3388",
-      "officer": "박준형",
-      "officer_tel": "042-479-8209",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273633",
-      "title": "한국산림복지진흥원 개원 10주년 기념 행사 운영",
-      "agency": "한국산림복지진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 95000000,
-      "order_planned_date": "2026-09-10T19:20:28+09:00",
-      "deadline": "2026-09-13T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 전략기획팀-3198",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273633&fileType=BFDTL&fileSeq=1",
-      "ref_no": "전략기획팀-3198",
-      "officer": "김다영",
-      "officer_tel": "042-719-4130",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00273841",
-      "title": "2026년 녹색자금통합관리시스템 집행검증 기능 개발",
-      "agency": "한국산림복지진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 85000000,
-      "order_planned_date": "2026-09-11T13:11:55+09:00",
-      "deadline": "2026-09-14T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 예산운영팀-1875",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00273841&fileType=BFDTL&fileSeq=1",
-      "ref_no": "예산운영팀-1875",
-      "officer": "김다영",
-      "officer_tel": "042-719-4130",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-11T16:00:34.543438+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00274596",
-      "title": "광양 세풍관정 외 17개소 농업용 대형관정 사후관리 용역",
-      "agency": "전남광주통합특별시 광양시",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 86182000,
-      "order_planned_date": "2026-09-14T18:22:14+09:00",
-      "deadline": "2026-09-19T23:59:00+09:00",
-      "region": "광주",
-      "description": "기술용역\n참조번호: 광양시",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274596&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274596&fileType=BFDTL&fileSeq=1",
-      "ref_no": "광양시",
-      "officer": "김명국",
-      "officer_tel": "061-797-3272",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00274672",
-      "title": "국립농업박물관 소장 박물관자료 상태조사",
-      "agency": "국립농업박물관",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 50000000,
-      "order_planned_date": "2026-09-15T09:01:57+09:00",
-      "deadline": "2026-09-20T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 유물팀-843",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274672&fileType=BFDTL&fileSeq=1",
-      "ref_no": "유물팀-843",
-      "officer": "성진욱",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00274673",
-      "title": "국립농업박물관 소장 박물관자료 보존처리",
-      "agency": "국립농업박물관",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 106000000,
-      "order_planned_date": "2026-09-15T09:04:39+09:00",
-      "deadline": "2026-09-20T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 유물팀-844",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00274673&fileType=BFDTL&fileSeq=1",
-      "ref_no": "유물팀-844",
-      "officer": "성진욱",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00275167",
-      "title": "양양군 목재문화체험장 교육프로그램 운영 용역 사전규격 공개",
-      "agency": "강원특별자치도 양양군",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 98000000,
-      "order_planned_date": "2026-09-16T09:19:26+09:00",
-      "deadline": "2026-09-21T23:59:00+09:00",
-      "region": "강원",
-      "description": "일반용역\n참조번호: 양양군 산림녹지과",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275167&fileType=BFDTL&fileSeq=1",
-      "ref_no": "양양군 산림녹지과",
-      "officer": "이영섭",
-      "officer_tel": "033-670-2126",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-16T10:00:14.418830+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00275263",
-      "title": "명석면 동전지구 농촌공간정비사업 지장건축물(축사)건설폐기물처리 용역",
-      "agency": "한국농어촌공사 경남지역본부 진주.산청지사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 500300000,
-      "order_planned_date": "2026-09-16T14:10:45+09:00",
-      "deadline": "2026-09-21T23:59:00+09:00",
-      "region": "경남",
-      "description": "일반용역\n참조번호: 진주산청농지관리-6704",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275263&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275263&fileType=BFDTL&fileSeq=1",
-      "ref_no": "진주산청농지관리-6704",
-      "officer": "김보경",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-16T20:33:37.073828+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00275547",
-      "title": "26~28년 가리왕산 생태복구 식물상 모니터링 학술연구용역",
-      "agency": "강원특별자치도",
-      "agency_dept": null,
-      "agency_type": "지자체",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 292846000,
-      "order_planned_date": "2026-09-16T17:27:33+09:00",
-      "deadline": "2026-09-20T23:59:00+09:00",
-      "region": "강원",
-      "description": "일반용역\n참조번호: 산림관리과-15548",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275547&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산림관리과-15548",
-      "officer": "이종묵",
-      "officer_tel": "***********",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-16T20:33:37.073828+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00275640",
-      "title": "2027년 딥러닝 농업면적시스템 유지관리 사업",
-      "agency": "국가데이터처",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 40000000,
-      "order_planned_date": "2026-09-17T08:22:34+09:00",
-      "deadline": "2026-09-22T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 1240000",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275640&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00275640&fileType=BFDTL&fileSeq=1",
-      "ref_no": "1240000",
-      "officer": "손지희",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00276320",
-      "title": "2026년 하반기 FAC 식량원조 및 APTERR 식량지원 물류용역",
-      "agency": "한국농수산식품유통공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 2161031416,
-      "order_planned_date": "2026-09-18T13:46:02+09:00",
-      "deadline": "2026-09-23T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 사전공개요청서(20260918)",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276320&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276320&fileType=BFDTL&fileSeq=1",
-      "ref_no": "사전공개요청서(20260918)",
-      "officer": "김지연",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "식량"
-      ],
-      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00276339",
-      "title": "메가프로젝트 연계 농업용수 대체 개발사업 기본구상 및 사업계획 적정성 검토 용역",
-      "agency": "한국농어촌공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 360000000,
-      "order_planned_date": "2026-09-18T13:50:56+09:00",
-      "deadline": "2026-09-26T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 기후대응계획-1720",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=2",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=3",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=4",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276339&fileType=BFDTL&fileSeq=2",
-      "ref_no": "기후대응계획-1720",
-      "officer": "박진영",
-      "officer_tel": "055-320-4812",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-18T16:00:35.710222+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00276613",
-      "title": "27~28년도 국립산림과학원 연구정보시스템 통합 운영 및 유지관리",
-      "agency": "산림청 국립산림과학원",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 3224880620,
-      "order_planned_date": "2026-09-21T08:22:25+09:00",
-      "deadline": "2026-09-30T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 연구기획과-4157\n[1^8111189901^정보시스템유지관리서비스]",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276613&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276613&fileType=BFDTL&fileSeq=1",
-      "ref_no": "연구기획과-4157",
-      "officer": "이종진",
-      "officer_tel": "070-4056-8682",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00276831",
-      "title": "한국임업진흥원 전산실 이전·구축",
-      "agency": "한국임업진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 907150000,
-      "order_planned_date": "2026-09-21T14:50:24+09:00",
-      "deadline": "2026-09-26T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: AI빅데이터실-1399\n[1^8111179901^정보인프라구축서비스]",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276831&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00276831&fileType=BFDTL&fileSeq=1",
-      "ref_no": "AI빅데이터실-1399",
-      "officer": "조윤정",
-      "officer_tel": "02-590-8873",
-      "score": 5,
-      "matched_keywords": [
-        "임업"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00277291",
-      "title": "한국산림복지진흥원 숲여행 브랜드 개발 및 운영체계 구축",
-      "agency": "한국산림복지진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 50000000,
-      "order_planned_date": "2026-09-22T13:38:13+09:00",
-      "deadline": "2026-09-25T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 산업성장지원팀-1929",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277291&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산업성장지원팀-1929",
-      "officer": "김다영",
-      "officer_tel": "042-719-4130",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00277741",
-      "title": "2026년 스마트농업 기술역량 교육맵 개선",
-      "agency": "농림수산식품교육문화정보원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 50000000,
-      "order_planned_date": "2026-09-23T09:33:37+09:00",
-      "deadline": "2026-09-28T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 인재기획실-425",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277741&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277741&fileType=BFDTL&fileSeq=1",
-      "ref_no": "인재기획실-425",
-      "officer": "김기홍",
-      "officer_tel": "044-861-8832",
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
       "source_type": "bizinfo_support",
       "external_id": "bizinfo_support::PBLN_000000000126711",
       "title": "[강원] 춘천시 2026년 외국인 근로자 숙소지원(개보수) 사업 재공고",
@@ -4075,285 +4784,6 @@
         "농업"
       ],
       "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "kofpi_bid",
-      "external_id": "kofpi_bid::12668",
-      "title": "2026년 제2차 목재등급평가사 양성교육",
-      "agency": "한국임업진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "긴급/공지/교육/행사",
-      "budget_amount": null,
-      "order_planned_date": "2026-09-18T00:00:00+09:00",
-      "deadline": null,
-      "region": "중앙/전국",
-      "description": "카테고리: 긴급/공지/교육/행사\n출처: 한국임업진흥원",
-      "attachments": [],
-      "url": "https://www.kofpi.or.kr/notice/notice_01view.do?bb_seq=12668",
-      "ref_no": "3036",
-      "officer": null,
-      "officer_tel": null,
-      "source_label": "🌲 임업진흥원",
-      "score": 5,
-      "matched_keywords": [
-        "임업"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "kofpi_bid",
-      "external_id": "kofpi_bid::12669",
-      "title": "2026년 제2차 목재등급평가사 양성 교육",
-      "agency": "한국임업진흥원",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "긴급/공지",
-      "budget_amount": null,
-      "order_planned_date": "2026-09-18T00:00:00+09:00",
-      "deadline": null,
-      "region": "중앙/전국",
-      "description": "카테고리: 긴급/공지\n출처: 한국임업진흥원",
-      "attachments": [],
-      "url": "https://www.kofpi.or.kr/notice/notice_01view.do?bb_seq=12669",
-      "ref_no": "3035",
-      "officer": null,
-      "officer_tel": null,
-      "source_label": "🌲 임업진흥원",
-      "score": 5,
-      "matched_keywords": [
-        "임업"
-      ],
-      "first_seen_at": "2026-09-23T10:00:15.275714+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00277911",
-      "title": "장흥군 회진면 진목지구 농촌공간정비사업 기본계획수립 용역",
-      "agency": "한국농어촌공사 전남지역본부",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 187000000,
-      "order_planned_date": "2026-09-23T12:05:42+09:00",
-      "deadline": "2026-10-01T23:59:00+09:00",
-      "region": "전남",
-      "description": "일반용역\n참조번호: 전남농지관리-",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=2",
-          "name": "첨부2"
-        },
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=3",
-          "name": "첨부3"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00277911&fileType=BFDTL&fileSeq=1",
-      "ref_no": "전남농지관리-",
-      "officer": "류선아",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농촌"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278089",
-      "title": "2026학년도 경북 청년리더 양성 선진농업 역량강화 글로벌 현장실습교육 위탁 용역",
-      "agency": "경상북도교육청 한국생명과학고등학교",
-      "agency_dept": null,
-      "agency_type": "교육기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 94953700,
-      "order_planned_date": "2026-09-23T14:56:11+09:00",
-      "deadline": "2026-09-28T23:59:00+09:00",
-      "region": "경북",
-      "description": "일반용역\n참조번호: 한국생명과학고등학교-14557",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278089&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278089&fileType=BFDTL&fileSeq=1",
-      "ref_no": "한국생명과학고등학교-14557",
-      "officer": "김예은",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278104",
-      "title": "2027년 사방사업 타당성평가 위탁용역(1차)",
-      "agency": "산림청 서부지방산림청",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "기술용역",
-      "budget_amount": 108512000,
-      "order_planned_date": "2026-09-23T15:09:36+09:00",
-      "deadline": "2026-09-28T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "기술용역\n참조번호: 산림재난안전과-7354",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278104&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278104&fileType=BFDTL&fileSeq=1",
-      "ref_no": "산림재난안전과-7354",
-      "officer": "김지은",
-      "officer_tel": "033-550-9912",
-      "score": 5,
-      "matched_keywords": [
-        "산림"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278176",
-      "title": "2027년 농업면적 전자조사 시스템 유지관리 사업",
-      "agency": "국가데이터처",
-      "agency_dept": null,
-      "agency_type": "중앙부처",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 62000000,
-      "order_planned_date": "2026-09-23T15:55:54+09:00",
-      "deadline": "2026-09-28T23:59:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: 1240000",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278176&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278176&fileType=BFDTL&fileSeq=1",
-      "ref_no": "1240000",
-      "officer": "손지희",
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278224",
-      "title": "소양호 상류유역 농업비점오염저감 용역",
-      "agency": "한국수자원공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 5458800000,
-      "order_planned_date": "2026-09-23T16:30:31+09:00",
-      "deadline": "2026-09-28T17:00:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: S5202602513",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278224&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278224&fileType=BFDTL&fileSeq=1",
-      "ref_no": "S5202602513",
-      "officer": null,
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278225",
-      "title": "대청호 상류유역 농업비점오염저감 용역",
-      "agency": "한국수자원공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 5359370000,
-      "order_planned_date": "2026-09-23T16:31:33+09:00",
-      "deadline": "2026-09-28T17:00:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: S5202602514",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278225&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278225&fileType=BFDTL&fileSeq=1",
-      "ref_no": "S5202602514",
-      "officer": null,
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
-      "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
-    },
-    {
-      "source_type": "pre_spec",
-      "external_id": "pre_spec::R26BD00278226",
-      "title": "용담호 상류유역 농업비점오염저감 용역",
-      "agency": "한국수자원공사",
-      "agency_dept": null,
-      "agency_type": "공공기관",
-      "contract_method": null,
-      "bsns_div": "일반용역",
-      "budget_amount": 5474480000,
-      "order_planned_date": "2026-09-23T16:31:36+09:00",
-      "deadline": "2026-09-28T17:00:00+09:00",
-      "region": "중앙/전국",
-      "description": "일반용역\n참조번호: S5202602515",
-      "attachments": [
-        {
-          "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278226&fileType=BFDTL&fileSeq=1",
-          "name": "첨부1"
-        }
-      ],
-      "url": "https://www.g2b.go.kr/pn/pnz/pnza/UntyAtchFile/downloadFile.do?bfSpecRegNo=R26BD00278226&fileType=BFDTL&fileSeq=1",
-      "ref_no": "S5202602515",
-      "officer": null,
-      "officer_tel": null,
-      "score": 5,
-      "matched_keywords": [
-        "농업"
-      ],
-      "first_seen_at": "2026-09-25T10:00:16.258157+09:00",
       "last_seen_at": "2026-09-25T10:00:16.258157+09:00"
     },
     {
